@@ -277,10 +277,10 @@ begin
   ssRst := TStringStream.Create('', encode);
   try
     // add cookie
-    self.CookieManager.AddServerCookie(
-      //'ACCESS_TICKET="TGT-171-O42vP4LGehJ3z3VGOXPteuccJWdxBvSDTa1bUlSX1VT2miqnKM-cas.ecarpo.com"',
-      THttpUtils.fCookie,
-      url);
+//    self.CookieManager.AddServerCookie(
+//      //'ACCESS_TICKET="TGT-171-O42vP4LGehJ3z3VGOXPteuccJWdxBvSDTa1bUlSX1VT2miqnKM-cas.ecarpo.com"',
+//      THttpUtils.fCookie,
+//      url);
     statusCode := doResponse(ssRst);
     if ( statusCode = 200 ) then begin
       Result := ssRst.DataString;

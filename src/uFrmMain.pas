@@ -5,7 +5,8 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ComCtrls, Vcl.ToolWin, Data.DB,
-  Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.Grids, Vcl.DBGrids, FireDAC.VCLUI.Memo, uDbConfig;
+  Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.Grids, Vcl.DBGrids, FireDAC.VCLUI.Memo, uDbConfig,
+  uFrmUrlParam;
 
 type
   TfrmMain = class(TForm)
@@ -42,6 +43,13 @@ type
     FDGUIxFormsMemoSql: TFDGUIxFormsMemo;
     FDGUIxFormsMemoResult: TFDGUIxFormsMemo;
     FDGUIxFormsMemo1: TFDGUIxFormsMemo;
+    PageControl1: TPageControl;
+    TabSheet1: TTabSheet;
+    TabSheet2: TTabSheet;
+    frameUrlParam1: TframeUrlParam;
+    TabSheet3: TTabSheet;
+    Splitter3: TSplitter;
+    FDGUIxFormsMemo2: TFDGUIxFormsMemo;
     procedure ToolButton1Click(Sender: TObject);
     procedure ToolButton2Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);

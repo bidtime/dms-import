@@ -13,7 +13,9 @@ uses
   uLogFile in 'src\utils\uLogFile.pas',
   uLog4me in 'src\utils\uLog4me.pas',
   uUploadDTO in 'src\utils\uUploadDTO.pas',
-  uJsonSUtils in 'src\utils\uJsonSUtils.pas';
+  uJsonSUtils in 'src\utils\uJsonSUtils.pas',
+  uUploadPost in 'src\utils\uUploadPost.pas',
+  uFrmUrlParam in 'src\frame\uFrmUrlParam.pas' {frameUrlParam: TFrame};
 
 {$R *.res}
 
