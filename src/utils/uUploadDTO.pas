@@ -35,7 +35,8 @@ type
     class function DeSerialize<T>(const S: string): TReturnDTO<T>; static;
     class function tryDeSerialize<T>(const S: string): TReturnDTO<T>; static;
     //class function success(const S: string): boolean; static;
-    class function success(const S: string; var msg: string): boolean; static;
+    class function success(const S: string; var msg: string): boolean; overload;
+    class function success(const S: string; var msg, data: string): boolean; overload;
     class function trySuccess(const S: string): boolean; static;
   end;
 
@@ -108,6 +109,26 @@ begin
       Result := (jsonObj.GetValue('success') as TJSONBool).AsBoolean;
       if not Result then begin
         msg := (jsonObj.GetValue('msg') as TJSONString).value;
+      end;
+    end;
+  finally
+    jsonObj.Free;
+  end;
+end;
+
+class function TReturnDTOUtils.success(const S: string; var msg, data: string): boolean;
+var
+  jsonObj: TJSONObject;
+begin
+  Result := false;
+  jsonObj := TJSONObject.ParseJSONValue(S) as TJSONObject;
+  try
+    if Assigned(jsonObj) then begin
+      Result := (jsonObj.GetValue('success') as TJSONBool).AsBoolean;
+      if not Result then begin
+        msg := (jsonObj.GetValue('msg') as TJSONString).value;
+      end else begin
+        jsonObj.TryGetValue('data', data);
       end;
     end;
   finally

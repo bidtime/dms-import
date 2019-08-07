@@ -1,38 +1,51 @@
-unit uFrmUrlParam;
+unit uFrameUrlResult;
 
 interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes,
-  Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+  Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls,
+  FireDAC.VCLUI.Memo, Vcl.ExtCtrls;
 
 type
-  TframeUrlParam = class(TFrame)
-    memoCtx: TMemo;
-    edtUrl: TEdit;
+  TframeUrlResult = class(TFrame)
     Label11: TLabel;
     Label12: TLabel;
+    memoCtx: TMemo;
+    edtUrl: TEdit;
     Button2: TButton;
+    Splitter1: TSplitter;
+    memoResult: TMemo;
+    GroupBox1: TGroupBox;
+    procedure Button2Click(Sender: TObject);
   private
     { Private declarations }
-    //FServer: string;
-    //FAPIUrl: string;
   public
     { Public declarations }
     procedure server(const srvPort: string);
-    //property Server: string read FServer write FServer;
-    //property APIUrl: string read FAPIUrl write FAPIUrl;
   end;
 
 implementation
 
-uses uCharSplit;
+uses uCharSplit, uHttpPostData;
 
 {$R *.dfm}
 
-{ TframeUrlParam }
+procedure TframeUrlResult.Button2Click(Sender: TObject);
+var msg, data: string;
+  b: boolean;
+begin
+  b := THttpPostData.post(self.edtUrl.Text, self.memoCtx.Text, 5000, 20000, msg, data);
+  self.memoResult.Lines.Add('url:' + self.edtUrl.Text);
+  self.memoResult.Lines.Add('ctx:' + self.memoCtx.Text);
+  self.memoResult.Lines.Add('  ----  ');
+  self.memoResult.Lines.Add('  rst:' + BoolToStr(b, true));
+  self.memoResult.Lines.Add('  msg:' + msg);
+  self.memoResult.Lines.Add('  data:' + data);
+  self.memoResult.Lines.Add('  ----  ');
+end;
 
-procedure TframeUrlParam.server(const srvPort: string);
+procedure TframeUrlResult.server(const srvPort: string);
   function getUrl(S: string; srvPort: string): string;
   var tmp: string;
   begin

@@ -120,7 +120,7 @@ class function THttpUtils.postJson(const url: string; const S: string;
   const tmConn, tmRes: integer): string;
 var ss: TStringStream;
 begin
-  ss := TStringStream.Create(S);
+  ss := TStringStream.Create(S, TEncoding.UTF8);
   try
     ss.WriteString(S);
     Result := THttpUtils.post(url, ss, tmConn, tmRes);

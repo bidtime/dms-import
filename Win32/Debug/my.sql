@@ -1,2 +1,2 @@
 ﻿select *
- from ap_menu
+ from dms_repair_workhour

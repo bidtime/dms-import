@@ -9,7 +9,7 @@ type
   TDataSetConvertJson = class
   private
     { Private declarations }
-    class function toJson(const dataSet: TDataSet; jsonObj: TJSONObject; logs: TStrings = nil ): string; overload;
+    class function toJson(const dataSet: TDataSet; logs: TStrings = nil ): string; overload;
   public
     { Public declarations }
     class function convert(const dataSet: TDataSet; const useData: boolean; logs: TStrings = nil ): string; overload;
@@ -17,7 +17,7 @@ type
 
 implementation
 
-class function TDataSetConvertJson.toJson(const dataSet: TDataSet; jsonObj: TJSONObject;
+class function TDataSetConvertJson.toJson(const dataSet: TDataSet;
   logs: TStrings): string;
 
   {ftUnknown, ftString, ftSmallint, ftInteger, ftWord, // 0..4
@@ -81,7 +81,7 @@ class function TDataSetConvertJson.toJson(const dataSet: TDataSet; jsonObj: TJSO
     end;
   end;
 
-  procedure rowsToJson(jsonObj: TJSONObject);
+  function rowsToJson(): string;
   var jsonArr: TJSONArray;
     jo: TJSONObject;
   begin
@@ -94,18 +94,43 @@ class function TDataSetConvertJson.toJson(const dataSet: TDataSet; jsonObj: TJSO
         jsonArr.AddElement(jo);
         dataSet.Next;
       end;
-      jsonObj.AddPair('data', jsonArr);
+      Result := jsonArr.ToJSON;
     finally
-      //jsonArr.Free;
+      jsonArr.Free;
     end;
   end;
 
+  function rjson(): string;
+  var jsonObj: TJSONObject;
+  begin
+    jsonObj := TJSONObject.Create;
+    try
+      rowToJson(jsonObj);
+      Result := jsonObj.ToJSON;
+    finally
+      jsonObj.Free;
+    end;
+  end;
+
+  function tox(const S: string): string;
+  var ss: TStringStream;
+  begin
+    ss := TStringStream.Create(S, TEncoding.UTF8);
+    try
+      ss.WriteString(S);
+      Result := ss.DataString;
+    finally
+      ss.Free;
+    end;
+  end;
+var str: string;
 begin
   if dataSet.RecordCount=1 then begin
-    rowToJson(jsonObj);
+    str := rjson();
   end else begin
-    rowsToJson(jsonObj);
+    str := rowsToJson();
   end;
+  Result := tox(str);
 end;
 
 class function TDataSetConvertJson.convert(const dataSet: TDataSet; const useData: boolean; logs: TStrings): string;
@@ -121,22 +146,21 @@ class function TDataSetConvertJson.convert(const dataSet: TDataSet; const useDat
     Result := jsonObj;
   end;
 
-var
-  jsonObj: TJSONObject;
+//var jsonObj: TJSONObject;
 begin
   if dataSet.Active = false then begin
     exit;
   end;
-  jsonObj := TJSONObject.Create;
+  //jsonObj := TJSONObject.Create;
   try
-    toJson(dataSet, jsonObj, logs);
-    if useData then begin
-      Result := getData(jsonObj).ToString;
-    end else begin
-      Result := jsonObj.ToString;
-    end;
+    Result := toJson(dataSet, logs);
+//    if useData then begin
+//      Result := getData(jsonObj).ToString;
+//    end else begin
+//      Result := jsonObj.ToString;
+//    end;
   finally
-    jsonObj.Free;
+    //jsonObj.Free;
   end;
 end;
 

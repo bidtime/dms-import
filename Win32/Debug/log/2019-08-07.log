@@ -1,0 +1,771 @@
+15:34:49.955 [INFO ]start...
+15:35:16.503 [INFO ]stop.
+15:35:16.503 [INFO ]
+15:35:42.436 [INFO ]start...
+15:37:40.889 [INFO ]start...
+15:37:48.179 [INFO ]stop.
+15:37:48.179 [INFO ]
+15:46:14.707 [INFO ]start...
+15:47:23.126 [INFO ]start...
+15:48:08.185 [INFO ]stop.
+15:48:08.185 [INFO ]
+15:51:51.717 [INFO ]start...
+15:52:25.858 [INFO ]stop.
+15:52:25.858 [INFO ]
+15:53:10.786 [INFO ]start...
+15:53:34.874 [INFO ]stop.
+15:53:34.874 [INFO ]
+16:32:47.799 [INFO ]start...
+16:32:54.285 [INFO ]stop.
+16:32:54.285 [INFO ]
+16:33:15.329 [INFO ]start...
+16:33:18.467 [INFO ]POST: begin, http://172.16.200.233:8082/api/user/login, POST, TStringStream->TStringStream
+16:34:41.609 [ERROR]上传数据出错: http://172.16.200.233:8082/api/user/login, Error querying headers: (12019) 要求操作句柄的状态错误, Result
+ 
+16:34:43.590 [INFO ]POST: begin, http://172.16.200.233:8082/api/user/login, POST, TStringStream->TStringStream
+16:34:43.640 [ERROR]POST: end, http://172.16.200.233:8082/api/user/login, POST, TStringStream->TStringStream, state(500), result()
+16:34:43.641 [INFO ]上传数据失败: http://172.16.200.233:8082/api/user/login, , False
+msg:
+data: 
+16:34:46.406 [INFO ]POST: begin, http://172.16.200.233:8082/api/user/login, POST, TStringStream->TStringStream
+16:34:46.443 [ERROR]POST: end, http://172.16.200.233:8082/api/user/login, POST, TStringStream->TStringStream, state(500), result()
+16:34:46.443 [INFO ]上传数据失败: http://172.16.200.233:8082/api/user/login, , False
+msg:
+data: 
+16:35:11.534 [INFO ]POST: begin, http://172.16.200.233:8082/api/user/login, POST, TStringStream->TStringStream
+16:35:11.548 [ERROR]POST: end, http://172.16.200.233:8082/api/user/login, POST, TStringStream->TStringStream, state(500), result()
+16:37:54.587 [INFO ]上传数据失败: http://172.16.200.233:8082/api/user/login, , False
+msg:
+data: 
+16:37:59.972 [INFO ]POST: begin, http://172.16.200.233:8082/api/user/login, POST, TStringStream->TStringStream
+16:38:05.176 [ERROR]上传数据出错: http://172.16.200.233:8082/api/user/login, Error querying headers: (12019) 要求操作句柄的状态错误, False
+msg:
+data: 
+16:38:26.394 [INFO ]start...
+16:38:31.281 [INFO ]POST: begin, http://172.16.200.233:8082/api/user/login, POST, TStringStream->TStringStream
+16:38:42.075 [ERROR]上传数据出错: http://172.16.200.233:8082/api/user/login, Error querying headers: (12019) 要求操作句柄的状态错误, Result
+ 
+16:39:23.229 [INFO ]stop.
+16:39:23.229 [INFO ]
+16:40:49.376 [INFO ]start...
+16:40:53.766 [INFO ]POST: begin, http://172.16.200.233:8082/api/user/login, POST, TStringStream->TStringStream
+16:41:07.677 [ERROR]上传数据出错: http://172.16.200.233:8082/api/user/login, Error querying headers: (12019) 要求操作句柄的状态错误, Result
+ 
+16:41:36.547 [INFO ]POST: begin, http://172.16.200.233:8082/api/user/login, POST, TStringStream->TStringStream
+16:41:47.628 [INFO ]start...
+16:41:55.460 [INFO ]POST: begin, http://172.16.200.233:8082/api/user/login, POST, TStringStream->TStringStream
+16:42:02.010 [ERROR]上传数据出错: http://172.16.200.233:8082/api/user/login, Error querying headers: (12019) 要求操作句柄的状态错误, Result
+ 
+16:42:28.916 [INFO ]POST: begin, http://172.16.200.233:8082/api/user/login, POST, TStringStream->TStringStream
+16:42:39.025 [ERROR]上传数据出错: http://172.16.200.233:8082/api/user/login, Error querying headers: (12019) 要求操作句柄的状态错误, False
+msg:
+data: 
+16:43:35.075 [INFO ]POST: begin, http://172.16.200.233:8082/api/user/login, POST, TStringStream->TStringStream
+16:43:35.137 [ERROR]POST: end, http://172.16.200.233:8082/api/user/login, POST, TStringStream->TStringStream, state(500), result()
+16:43:41.049 [INFO ]上传数据失败: http://172.16.200.233:8082/api/user/login, , False
+msg:
+data: 
+16:45:19.444 [INFO ]POST: begin, http://172.16.200.233:8082/api/user/login, POST, TStringStream->TStringStream
+16:45:33.188 [ERROR]上传数据出错: http://172.16.200.233:8082/api/user/login, Error querying headers: (12019) 要求操作句柄的状态错误, False
+msg:
+data: 
+16:46:22.499 [INFO ]POST: begin, http://172.16.200.233:8082/api/user/login, POST, TStringStream->TStringStream
+16:47:25.154 [ERROR]上传数据出错: http://172.16.200.233:8082/api/user/login, Error querying headers: (12019) 要求操作句柄的状态错误, False
+msg:
+data: 
+17:03:39.270 [INFO ]POST: begin, http://172.16.200.233:8082/api/user/login, POST, TStringStream->TStringStream
+17:04:18.209 [ERROR]上传数据出错: http://172.16.200.233:8082/api/user/login, Error querying headers: (12019) 要求操作句柄的状态错误, False
+msg:
+data: 
+17:04:21.205 [INFO ]stop.
+17:04:21.205 [INFO ]
+17:04:43.006 [INFO ]start...
+17:04:49.826 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/user/login, POST, TStringStream->TStringStream
+17:04:52.733 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/user/login, POST, TStringStream->TStringStream, state(200), result({"msg":"请求参数不能为空","success":false})
+17:04:53.099 [INFO ]上传数据失败: http://172.16.200.233:8082/api/dms/import/user/login, 请求参数不能为空, Result
+ 
+17:09:13.195 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/user/login, POST, TStringStream->TStringStream
+17:09:15.701 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/user/login, POST, TStringStream->TStringStream, state(200), result({"msg":"请求参数不能为空","success":false})
+17:09:15.701 [INFO ]上传数据失败: http://172.16.200.233:8082/api/dms/import/user/login, 请求参数不能为空, False
+msg:请求参数不能为空
+data: 
+17:09:55.136 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/user/login, POST, TStringStream->TStringStream
+17:10:14.792 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/user/login, POST, TStringStream->TStringStream, state(200), result({"msg":"请求参数不能为空","success":false})
+17:10:34.530 [INFO ]上传数据失败: http://172.16.200.233:8082/api/dms/import/user/login, 请求参数不能为空, False
+msg:请求参数不能为空
+data: 
+17:31:48.445 [INFO ]start...
+17:31:50.762 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/user/login, POST, TStringStream->TStringStream
+17:31:56.225 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/user/login, POST, TStringStream->TStringStream, state(200), result({"code":null,"data":"ok","msg":null,"success":true,"total":null})
+17:31:56.225 [INFO ]上传数据成功: http://172.16.200.233:8082/api/dms/import/user/login, {
+"user": "jss",
+"pwd": "123456"
+}
+ 
+17:34:13.982 [INFO ]start...
+17:34:16.495 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/user/login, POST, TStringStream->TStringStream
+17:34:16.605 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/user/login, POST, TStringStream->TStringStream, state(200), result({"code":null,"data":"ok","msg":null,"success":true,"total":null})
+17:34:16.605 [INFO ]上传数据成功: http://172.16.200.233:8082/api/dms/import/user/login, {
+"user": "jss",
+"pwd": "123456"
+}
+ 
+17:34:24.986 [INFO ]stop.
+17:34:24.986 [INFO ]
+17:34:34.430 [INFO ]start...
+17:34:35.961 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/user/login, POST, TStringStream->TStringStream
+17:34:36.068 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/user/login, POST, TStringStream->TStringStream, state(200), result({"code":null,"data":"ok","msg":null,"success":true,"total":null})
+17:34:36.068 [INFO ]上传数据成功: http://172.16.200.233:8082/api/dms/import/user/login, {
+"user": "jss",
+"pwd": "123456"
+}
+ 
+17:34:43.065 [INFO ]stop.
+17:34:43.065 [INFO ]
+17:45:45.444 [INFO ]start...
+17:49:10.633 [INFO ]stop.
+17:49:10.633 [INFO ]
+17:49:36.996 [INFO ]start...
+17:50:11.983 [INFO ]stop.
+17:50:11.983 [INFO ]
+17:51:24.367 [INFO ]start...
+17:51:56.693 [INFO ]stop.
+17:51:56.693 [INFO ]
+17:52:57.317 [INFO ]start...
+18:05:41.576 [INFO ]start...
+18:05:58.909 [INFO ]stop.
+18:05:58.909 [INFO ]
+18:06:23.894 [INFO ]start...
+18:06:25.514 [INFO ]stop.
+18:06:25.514 [INFO ]
+18:07:03.912 [INFO ]start...
+18:07:07.818 [INFO ]POST: begin, /api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream
+18:07:11.723 [ERROR]POST: end, /api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream, state(0), result()
+18:07:11.723 [INFO ]上传数据失败: /api/dms/import/dms_storeroom_shelflocation/insert, , [{"id":46,"store_id":0,"location_code":"","location_name":"","location_area":"","functio
+n_type":0,"occupy_status":"False","room_type":"\u81EA
+\u6709","from_store_id":0,"remark":"","status":"False"},
+{"id":47,"store_id":1,"location_code":"location_code","location_name":"location_name",
+"location_area":"location_area","function_type":1,"occupy_status":"True","room_type"
+:"\u81EA\u6709","from_store_id":1,"remark":"remark","status":"True"}]
+ 
+18:08:13.993 [INFO ]stop.
+18:08:13.993 [INFO ]
+18:08:42.054 [INFO ]start...
+18:08:45.561 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream
+18:08:45.663 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream, state(200), result({"msg":"请求参数不能为空","success":false})
+18:08:45.663 [INFO ]上传数据失败: http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, 请求参数不能为空, [{"id":46,"store_id":0,"location_code":"","location_name":"","location_area":"","functio
+n_type":0,"occupy_status":"False","room_type":"\u81EA
+\u6709","from_store_id":0,"remark":"","status":"False"},
+{"id":47,"store_id":1,"location_code":"location_code","location_name":"location_name",
+"location_area":"location_area","function_type":1,"occupy_status":"True","room_type"
+:"\u81EA\u6709","from_store_id":1,"remark":"remark","status":"True"}]
+ 
+18:26:53.129 [INFO ]start...
+18:27:52.427 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream
+18:27:52.495 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream, state(200), result({"msg":"请求参数不能为空","success":false})
+18:27:52.495 [INFO ]上传数据失败: http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, 请求参数不能为空, [{"id":46,"store_id":0,"location_code":"","location_name":"","location_area":"","functio
+n_type":0,"occupy_status":"False","room_type":"自有","from_store_id":0,"remark":"","status":"False"},
+{"id":47,"store_id":1,"location_code":"location_code","location_name":"location_name",
+"location_area":"location_area","function_type":1,"occupy_status":"True","room_type"
+:"自有","from_store_id":1,"remark":"remark","status":"True"}]
+ 
+18:28:20.602 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream
+18:28:20.622 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream, state(200), result({"msg":"请求参数不能为空","success":false})
+18:28:20.622 [INFO ]上传数据失败: http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, 请求参数不能为空, {"id":46,"store_id":0,"location_code":"","location_name":"","location_area":"","functio
+n_type":0,"occupy_status":"False","room_type":"自有","from_store_id":0,"remark":"","status":"False"} 
+18:30:45.138 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream
+18:30:45.153 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream, state(200), result({"msg":"请求参数不能为空","success":false})
+18:30:45.153 [INFO ]上传数据失败: http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, 请求参数不能为空, {
+	"id": 46,
+	"store_id": 0,
+	"location_code": "",
+	"location_name": "",
+	"location_area": "",
+	"function_type": 0,
+	"occupy_status": "False",
+	"room_type": "自有",
+	"from_store_id": 0,
+	"remark": "",
+	"status": "False"
+} 
+18:31:01.504 [INFO ]stop.
+18:31:01.504 [INFO ]
+18:32:31.001 [INFO ]start...
+18:32:39.398 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream
+18:32:39.495 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream, state(200), result({"msg":"请求参数不能为空","success":false})
+18:32:39.495 [INFO ]上传数据失败: http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, 请求参数不能为空, {
+	"store_id": 0,
+	"location_code": "1",
+	"location_name": "",
+	"location_area": "",
+	"function_type": 0,
+	"occupy_status": "1",
+	"room_type": "自有",
+	"from_store_id": 0,
+	"remark": "",
+	"status": "1"
+}
+ 
+18:33:16.730 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream
+18:33:17.025 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream, state(200), result({"msg":"咦，真不巧，您访问的网页打了个盹","success":false})
+18:33:17.025 [INFO ]上传数据失败: http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, 咦，真不巧，您访问的网页打了个盹, {
+	"store_id": 0,
+	"location_code": "1",
+	"location_name": "",
+	"location_area": "",
+	"function_type": 0,
+	"occupy_status": "1",
+	"room_type": "\u81EA\u6709",
+	"from_store_id": 0,
+	"remark": "",
+	"status": "1"
+}
+ 
+18:34:28.688 [INFO ]stop.
+18:34:28.688 [INFO ]
+18:34:52.247 [INFO ]start...
+18:34:59.952 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream
+18:35:35.307 [ERROR]上传数据出错: http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, Error querying headers: (12019) 要求操作句柄的状态错误, {
+	"store_id": 0,
+	"location_code": "1",
+	"location_name": "",
+	"location_area": "",
+	"function_type": 0,
+	"occupy_status": "1",
+	"room_type": "\u81EA\u6709",
+	"from_store_id": 0,
+	"remark": "",
+	"status": "1"
+}
+ 
+18:35:36.953 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream
+18:35:37.553 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream, state(200), result({"code":null,"data":1,"msg":null,"success":true,"total":null})
+18:35:37.553 [INFO ]上传数据成功: http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, {
+	"store_id": 0,
+	"location_code": "1",
+	"location_name": "",
+	"location_area": "",
+	"function_type": 0,
+	"occupy_status": "1",
+	"room_type": "\u81EA\u6709",
+	"from_store_id": 0,
+	"remark": "",
+	"status": "1"
+}
+ 
+18:38:22.828 [INFO ]stop.
+18:38:22.828 [INFO ]
+18:41:25.936 [INFO ]start...
+18:41:31.091 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream
+18:41:31.317 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream, state(200), result({"msg":"咦，真不巧，您访问的网页打了个盹","success":false})
+18:41:31.317 [INFO ]上传数据失败: http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, 咦，真不巧，您访问的网页打了个盹, {
+	"store_id": 0,
+	"location_code": "1",
+	"location_name": "",
+	"location_area": "",
+	"function_type": 0,
+	"occupy_status": "1",
+	"room_type": "\u81EA\u6709",
+	"from_store_id": 0,
+	"remark": "",
+	"status": "1"
+}
+ 
+18:42:02.447 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream
+18:42:02.572 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream, state(200), result({"code":null,"data":1,"msg":null,"success":true,"total":null})
+18:42:02.572 [INFO ]上传数据成功: http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, {
+	"store_id": 0,
+	"location_code": "2",
+	"location_name": "",
+	"location_area": "",
+	"function_type": 0,
+	"occupy_status": "1",
+	"room_type": "\u81EA\u6709",
+	"from_store_id": 0,
+	"remark": "",
+	"status": "1"
+}
+ 
+18:42:20.159 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream
+18:42:20.267 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream, state(200), result({"msg":"咦，真不巧，您访问的网页打了个盹","success":false})
+18:42:20.267 [INFO ]上传数据失败: http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, 咦，真不巧，您访问的网页打了个盹, {
+	"store_id": 0,
+	"location_code": "2",
+	"location_name": "",
+	"location_area": "",
+	"function_type": 0,
+	"occupy_status": "1",
+	"room_type": "自有",
+	"from_store_id": 0,
+	"remark": "",
+	"status": "1"
+}
+ 
+18:43:25.687 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream
+18:46:07.016 [ERROR]上传数据出错: http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, Error querying headers: (12019) 要求操作句柄的状态错误, {
+	"store_id": 0,
+	"location_code": "2",
+	"location_name": "",
+	"location_area": "",
+	"function_type": 0,
+	"occupy_status": "1",
+	"room_type": "自有",
+	"from_store_id": 0,
+	"remark": "",
+	"status": "1"
+}
+ 
+18:46:09.783 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream
+18:51:48.594 [ERROR]上传数据出错: http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, Error querying headers: (12019) 要求操作句柄的状态错误, {
+	"store_id": 0,
+	"location_code": "2",
+	"location_name": "",
+	"location_area": "",
+	"function_type": 0,
+	"occupy_status": "1",
+	"room_type": "自有",
+	"from_store_id": 0,
+	"remark": "",
+	"status": "1"
+}
+ 
+18:51:51.989 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream
+19:07:37.767 [ERROR]上传数据出错: http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, Error querying headers: (12019) 要求操作句柄的状态错误, {
+	"store_id": 0,
+	"location_code": "2",
+	"location_name": "",
+	"location_area": "",
+	"function_type": 0,
+	"occupy_status": "1",
+	"room_type": "自有",
+	"from_store_id": 0,
+	"remark": "",
+	"status": "1"
+}
+ 
+19:07:39.946 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream
+19:09:07.339 [ERROR]上传数据出错: http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, Error querying headers: (12019) 要求操作句柄的状态错误, {
+	"store_id": 0,
+	"location_code": "2",
+	"location_name": "",
+	"location_area": "",
+	"function_type": 0,
+	"occupy_status": "1",
+	"room_type": "自有",
+	"from_store_id": 0,
+	"remark": "",
+	"status": "1"
+}
+ 
+19:09:09.163 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream
+19:09:13.037 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream, state(200), result({"msg":"DAO: 出错，\n### Error updating database.  Cause","success":false})
+19:09:13.037 [INFO ]上传数据失败: http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, DAO: 出错，
+### Error updating database.  Cause, {
+	"store_id": 0,
+	"location_code": "2",
+	"location_name": "",
+	"location_area": "",
+	"function_type": 0,
+	"occupy_status": "1",
+	"room_type": "自有",
+	"from_store_id": 0,
+	"remark": "",
+	"status": "1"
+}
+ 
+19:09:28.931 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream
+19:09:32.860 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream, state(200), result({"msg":"DAO: 出错，\n### Error updating database.  Cause","success":false})
+19:09:32.860 [INFO ]上传数据失败: http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, DAO: 出错，
+### Error updating database.  Cause, {
+	"store_id": 1,
+	"location_code": "2",
+	"location_name": "",
+	"location_area": "",
+	"function_type": 0,
+	"occupy_status": "1",
+	"room_type": "自有",
+	"from_store_id": 0,
+	"remark": "",
+	"status": "1"
+}
+ 
+19:10:31.315 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream
+19:10:31.399 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream, state(200), result({"code":null,"data":1,"msg":null,"success":true,"total":null})
+19:10:31.399 [INFO ]上传数据成功: http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, {
+	"store_id": 1,
+	"location_code": "2",
+	"location_name": "",
+	"location_area": "",
+	"function_type": 0,
+	"occupy_status": "1",
+	"room_type": "自有",
+	"from_store_id": 0,
+	"remark": "",
+	"status": "1"
+}
+ 
+19:15:08.214 [INFO ]start...
+19:15:12.260 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream
+19:15:12.423 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream, state(200), result({"code":null,"data":1,"msg":null,"success":true,"total":null})
+19:15:12.423 [INFO ]上传数据成功: http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, {
+	"store_id": 0,
+	"location_code": "1",
+	"location_name": "",
+	"location_area": "",
+	"function_type": 0,
+	"occupy_status": "1",
+	"room_type": "\u81EA\u6709",
+	"from_store_id": 0,
+	"remark": "",
+	"status": "1"
+}
+ 
+19:16:04.563 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream
+19:16:09.203 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream, state(200), result({"msg":"DAO: 出错，\n### Error updating database.  Cause","success":false})
+19:16:09.203 [INFO ]上传数据失败: http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, DAO: 出错，
+### Error updating database.  Cause, {
+	"store_id": 0,
+	"location_code": "1",
+	"location_name": "",
+	"location_area": "",
+	"function_type": 0,
+	"occupy_status": "1",
+	"room_type": "自有",
+	"from_store_id": 0,
+	"remark": "",
+	"status": "1"
+}
+ 
+19:16:56.305 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream
+19:16:56.403 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream, state(200), result({"code":null,"data":1,"msg":null,"success":true,"total":null})
+19:16:56.403 [INFO ]上传数据成功: http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, {
+	"store_id": 2,
+	"location_code": "1",
+	"location_name": "",
+	"location_area": "",
+	"function_type": 0,
+	"occupy_status": "1",
+	"room_type": "自有",
+	"from_store_id": 0,
+	"remark": "",
+	"status": "1"
+}
+ 
+19:16:57.833 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream
+19:17:02.755 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream, state(200), result({"msg":"DAO: 出错，\n### Error updating database.  Cause","success":false})
+19:17:02.755 [INFO ]上传数据失败: http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, DAO: 出错，
+### Error updating database.  Cause, {
+	"store_id": 2,
+	"location_code": "1",
+	"location_name": "",
+	"location_area": "",
+	"function_type": 0,
+	"occupy_status": "1",
+	"room_type": "自有",
+	"from_store_id": 0,
+	"remark": "",
+	"status": "1"
+}
+ 
+19:18:51.724 [INFO ]stop.
+19:18:51.724 [INFO ]
+19:27:42.586 [INFO ]start...
+19:35:14.353 [INFO ]stop.
+19:35:14.353 [INFO ]
+19:35:19.377 [INFO ]start...
+19:35:21.780 [INFO ]POST: begin, api/dms/imort/dms_repair_workhour/insert, POST, TStringStream->TStringStream
+19:35:24.800 [ERROR]POST: end, api/dms/imort/dms_repair_workhour/insert, POST, TStringStream->TStringStream, state(0), result()
+19:35:24.800 [INFO ]上传数据失败: api/dms/imort/dms_repair_workhour/insert, , {
+	"id": 13,
+	"store_id": 1,
+	"workhour_code": "88",
+	"workhour_name": "workhour_name",
+	"review_workhour": 1,
+	"review_price": 1,
+	"rated_workhour": 1,
+	"rated_price": 1,
+	"is_universal": "True",
+	"is_discount": "True",
+	"is_sheetmetal": "True",
+	"retrieval_code": "retrieval_code",
+	"state": "True",
+	"workhour_level": "C",
+	"creator": 1,
+	"create_time": "2019-08-07 19:32:12",
+	"is_wash_car": "True"
+}
+ 
+19:35:26.267 [INFO ]stop.
+19:35:26.267 [INFO ]
+19:35:51.440 [INFO ]start...
+19:35:53.384 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/imort/dms_repair_workhour/insert, POST, TStringStream->TStringStream
+19:35:58.454 [ERROR]上传数据出错: http://172.16.200.233:8082/api/dms/imort/dms_repair_workhour/insert, Error querying headers: (12019) 要求操作句柄的状态错误, {
+	"id": 13,
+	"store_id": 1,
+	"workhour_code": "88",
+	"workhour_name": "workhour_name",
+	"review_workhour": 1,
+	"review_price": 1,
+	"rated_workhour": 1,
+	"rated_price": 1,
+	"is_universal": "True",
+	"is_discount": "True",
+	"is_sheetmetal": "True",
+	"retrieval_code": "retrieval_code",
+	"state": "True",
+	"workhour_level": "C",
+	"creator": 1,
+	"create_time": "2019-08-07 19:32:12",
+	"is_wash_car": "True"
+}
+ 
+19:37:13.702 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/imort/dms_repair_workhour/insert, POST, TStringStream->TStringStream
+19:37:19.961 [ERROR]上传数据出错: http://172.16.200.233:8082/api/dms/imort/dms_repair_workhour/insert, Error querying headers: (12019) 要求操作句柄的状态错误, {
+	"id": 13,
+	"store_id": 1,
+	"workhour_code": "88",
+	"workhour_name": "workhour_name",
+	"review_workhour": 1,
+	"review_price": 1,
+	"rated_workhour": 1,
+	"rated_price": 1,
+	"is_universal": "True",
+	"is_discount": "True",
+	"is_sheetmetal": "True",
+	"retrieval_code": "retrieval_code",
+	"state": "True",
+	"workhour_level": "C",
+	"creator": 1,
+	"create_time": "2019-08-07 19:32:12",
+	"is_wash_car": "True"
+}
+ 
+19:37:27.821 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/imort/dms_repair_workhour/insert, POST, TStringStream->TStringStream
+19:37:31.337 [ERROR]上传数据出错: http://172.16.200.233:8082/api/dms/imort/dms_repair_workhour/insert, Error querying headers: (12019) 要求操作句柄的状态错误,  
+19:40:36.855 [INFO ]stop.
+19:40:36.855 [INFO ]
+19:40:48.849 [INFO ]start...
+19:41:07.973 [INFO ]stop.
+19:41:07.973 [INFO ]
+19:43:22.796 [INFO ]start...
+19:43:49.580 [INFO ]stop.
+19:43:49.580 [INFO ]
+19:46:09.266 [INFO ]start...
+19:46:16.098 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/imort/dms_repair_workhour/insert, POST, TStringStream->TStringStream
+19:46:20.267 [ERROR]上传数据出错: http://172.16.200.233:8082/api/dms/imort/dms_repair_workhour/insert, Error querying headers: (12019) 要求操作句柄的状态错误, {
+	"id": 13,
+	"store_id": 1,
+	"workhour_code": "88",
+	"workhour_name": "workhour_name",
+	"review_workhour": 1,
+	"review_price": 1,
+	"rated_workhour": 1,
+	"rated_price": 1,
+	"is_universal": "True",
+	"is_discount": "True",
+	"is_sheetmetal": "True",
+	"retrieval_code": "retrieval_code",
+	"state": "True",
+	"workhour_level": "C",
+	"creator": 1,
+	"create_time": "2019-08-07 19:32:12",
+	"is_wash_car": "True"
+}
+ 
+19:46:46.124 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/imort/dms_repair_workhour/insert, POST, TStringStream->TStringStream
+19:46:52.067 [ERROR]上传数据出错: http://172.16.200.233:8082/api/dms/imort/dms_repair_workhour/insert, Error querying headers: (12019) 要求操作句柄的状态错误,  {
+  "user": "jss",
+  "pwd": "123456"
+}
+ 
+19:46:54.382 [INFO ]stop.
+19:46:54.382 [INFO ]
+19:47:54.657 [INFO ]start...
+19:48:23.993 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/imort/dms_repair_workhour/insert, POST, TStringStream->TStringStream
+19:48:27.357 [ERROR]上传数据出错: http://172.16.200.233:8082/api/dms/imort/dms_repair_workhour/insert, Error querying headers: (12019) 要求操作句柄的状态错误, {
+	"id": 13,
+	"store_id": 1,
+	"workhour_code": "88",
+	"workhour_name": "workhour_name",
+	"review_workhour": 1,
+	"review_price": 1,
+	"rated_workhour": 1,
+	"rated_price": 1,
+	"is_universal": "True",
+	"is_discount": "True",
+	"is_sheetmetal": "True",
+	"retrieval_code": "retrieval_code",
+	"state": "True",
+	"workhour_level": "C",
+	"creator": 1,
+	"create_time": "2019-08-07 19:32:12",
+	"is_wash_car": "True"
+}
+ 
+19:50:40.669 [INFO ]start...
+19:50:51.417 [INFO ]stop.
+19:50:51.417 [INFO ]
+19:51:10.913 [INFO ]start...
+19:51:20.919 [INFO ]stop.
+19:51:20.919 [INFO ]
+19:52:00.797 [INFO ]start...
+19:52:06.945 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/imort/user/login, POST, TStringStream->TStringStream
+19:52:14.766 [ERROR]上传数据出错: http://172.16.200.233:8082/api/dms/imort/user/login, Error querying headers: (12019) 要求操作句柄的状态错误, {
+	"user": "jss",
+	"pwd": "123456"
+}
+ 
+19:53:02.712 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/imort/user/login, POST, TStringStream->TStringStream
+19:53:07.296 [ERROR]上传数据出错: http://172.16.200.233:8082/api/dms/imort/user/login, Error querying headers: (12019) 要求操作句柄的状态错误, {
+"user":"jss",
+"pwd":"123456"
+} 
+19:53:13.829 [INFO ]stop.
+19:53:13.829 [INFO ]
+19:53:40.446 [INFO ]start...
+19:53:47.482 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/imort/user/login, POST, TStringStream->TStringStream
+19:53:51.492 [ERROR]上传数据出错: http://172.16.200.233:8082/api/dms/imort/user/login, Error querying headers: (12019) 要求操作句柄的状态错误, {
+	"user": "jss",
+	"pwd": "123456"
+}
+ 
+19:54:08.752 [INFO ]stop.
+19:54:08.752 [INFO ]
+19:56:21.350 [INFO ]start...
+19:56:36.592 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/imort/user/login, POST, TStringStream->TStringStream
+19:56:40.592 [ERROR]上传数据出错: http://172.16.200.233:8082/api/dms/imort/user/login, Error querying headers: (12019) 要求操作句柄的状态错误, {
+	"user": "jss",
+	"pwd": "123456"
+}
+ 
+19:56:50.720 [INFO ]stop.
+19:56:50.720 [INFO ]
+19:57:33.696 [INFO ]start...
+19:57:53.547 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/imort/user/login, POST, TStringStream->TStringStream
+19:57:57.072 [ERROR]上传数据出错: http://172.16.200.233:8082/api/dms/imort/user/login, Error querying headers: (12019) 要求操作句柄的状态错误, {
+	"user": "jss",
+	"pwd": "123456"
+}
+ 
+19:58:02.218 [INFO ]stop.
+19:58:02.218 [INFO ]
+19:59:19.902 [INFO ]start...
+19:59:30.553 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/imort/user/login, POST, TStringStream->TStringStream
+19:59:38.470 [ERROR]上传数据出错: http://172.16.200.233:8082/api/dms/imort/user/login, Error querying headers: (12019) 要求操作句柄的状态错误, {
+"user": "jss",
+"pwd": "123456"
+}
+ 
+19:59:49.284 [INFO ]stop.
+19:59:49.284 [INFO ]
+20:02:14.252 [INFO ]start...
+20:02:21.596 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/user/login, POST, TStringStream->TStringStream
+20:02:26.122 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/user/login, POST, TStringStream->TStringStream, state(200), result({"code":null,"data":"ok","msg":null,"success":true,"total":null})
+20:02:26.122 [INFO ]上传数据成功: http://172.16.200.233:8082/api/dms/import/user/login, {
+"user": "jss",
+"pwd": "123456"
+}
+ 
+20:02:40.521 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream
+20:02:46.644 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream, state(200), result({"msg":"请求参数不能为空","success":false})
+20:02:46.644 [INFO ]上传数据失败: http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, 请求参数不能为空, {
+	"id": 46,
+	"store_id": 0,
+	"location_code": "1",
+	"location_name": "",
+	"location_area": "",
+	"function_type": 0,
+	"occupy_status": "False",
+	"room_type": "\u81EA\u6709",
+	"from_store_id": 0,
+	"remark": "",
+	"status": "1"
+}
+ 
+20:03:06.850 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream
+20:03:12.380 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream, state(200), result({"msg":"DAO: 出错，\n### Error updating database.  Cause","success":false})
+20:03:12.380 [INFO ]上传数据失败: http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, DAO: 出错，
+### Error updating database.  Cause, {
+	"id": 46,
+	"store_id": 0,
+	"location_code": "1",
+	"location_name": "",
+	"location_area": "",
+	"function_type": 0,
+	"occupy_status": "0",
+	"room_type": "\u81EA\u6709",
+	"from_store_id": 0,
+	"remark": "",
+	"status": "1"
+}
+ 
+20:03:21.015 [INFO ]stop.
+20:03:21.015 [INFO ]
+20:04:58.705 [INFO ]start...
+20:05:02.376 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/user/login, POST, TStringStream->TStringStream
+20:05:02.480 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/user/login, POST, TStringStream->TStringStream, state(200), result({"code":null,"data":"ok","msg":null,"success":true,"total":null})
+20:05:02.480 [INFO ]上传数据成功: http://172.16.200.233:8082/api/dms/import/user/login, {
+"user": "jss",
+"pwd": "123456"
+}
+ 
+20:05:05.513 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream
+20:05:05.631 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream, state(200), result({"msg":"DAO: 出错，\n### Error updating database.  Cause","success":false})
+20:05:05.631 [INFO ]上传数据失败: http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, DAO: 出错，
+### Error updating database.  Cause, {
+	"id": 46,
+	"store_id": 0,
+	"location_code": "1",
+	"location_name": "",
+	"location_area": "",
+	"function_type": 0,
+	"occupy_status": "0",
+	"room_type": "自有",
+	"from_store_id": 0,
+	"remark": "",
+	"status": "1"
+}
+ 
+20:05:23.065 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream
+20:05:23.160 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream, state(200), result({"code":null,"data":1,"msg":null,"success":true,"total":null})
+20:05:23.161 [INFO ]上传数据成功: http://172.16.200.233:8082/api/dms/import/dms_storeroom_shelflocation/insert, {
+	"id": 46,
+	"store_id": 1,
+	"location_code": "1",
+	"location_name": "",
+	"location_area": "",
+	"function_type": 0,
+	"occupy_status": "0",
+	"room_type": "自有",
+	"from_store_id": 0,
+	"remark": "",
+	"status": "1"
+}
+ 
+20:05:28.913 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/dms_repair_workhour/insert, POST, TStringStream->TStringStream
+20:05:28.944 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/dms_repair_workhour/insert, POST, TStringStream->TStringStream, state(200), result({"msg":"请求参数不能为空","success":false})
+20:05:28.944 [INFO ]上传数据失败: http://172.16.200.233:8082/api/dms/import/dms_repair_workhour/insert, 请求参数不能为空, {
+	"id": 13,
+	"store_id": 1,
+	"workhour_code": "88",
+	"workhour_name": "workhour_name",
+	"review_workhour": 1,
+	"review_price": 1,
+	"rated_workhour": 1,
+	"rated_price": 1,
+	"is_universal": "True",
+	"is_discount": "True",
+	"is_sheetmetal": "True",
+	"retrieval_code": "retrieval_code",
+	"state": "True",
+	"workhour_level": "C",
+	"creator": 1,
+	"create_time": "2019-08-07 19:32:12",
+	"is_wash_car": "True"
+}
+ 
+20:05:34.429 [INFO ]stop.
+20:05:34.429 [INFO ]
+20:05:55.811 [INFO ]start...
+20:06:02.041 [INFO ]stop.
+20:06:02.041 [INFO ]

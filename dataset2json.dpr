@@ -14,8 +14,12 @@ uses
   uLog4me in 'src\utils\uLog4me.pas',
   uUploadDTO in 'src\utils\uUploadDTO.pas',
   uJsonSUtils in 'src\utils\uJsonSUtils.pas',
-  uUploadPost in 'src\utils\uUploadPost.pas',
-  uFrmUrlParam in 'src\frame\uFrmUrlParam.pas' {frameUrlParam: TFrame};
+  uHttpPostData in 'src\utils\uHttpPostData.pas',
+  uCharSplit in '..\delphiutils\src\utils\uCharSplit.pas',
+  uFrmLogin in 'src\frame\uFrmLogin.pas' {frameLogin: TFrame},
+  uFrameUrlResult in 'src\frame\uFrameUrlResult.pas' {frameUrlResult: TFrame},
+  uframe_storeroom_shelflocation in 'src\frame\uframe_storeroom_shelflocation.pas' {frame_dms_storeroom_shelflocation: TFrame},
+  uframe_dms_repair_workhour in 'src\frame\uframe_dms_repair_workhour.pas' {frame_dms_repair_workhour: TFrame};
 
 {$R *.res}
 

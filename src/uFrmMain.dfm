@@ -23,7 +23,7 @@ object frmMain: TfrmMain
     Width = 944
     Height = 19
     ButtonHeight = 19
-    ButtonWidth = 67
+    ButtonWidth = 62
     Caption = 'ToolBar1'
     List = True
     ShowCaptions = True
@@ -32,12 +32,12 @@ object frmMain: TfrmMain
       AlignWithMargins = True
       Left = 0
       Top = 0
-      Caption = '    query     '
+      Caption = '  query   '
       ImageIndex = 0
       OnClick = ToolButton1Click
     end
     object ToolButton3: TToolButton
-      Left = 67
+      Left = 62
       Top = 0
       Width = 8
       Caption = 'ToolButton3'
@@ -46,14 +46,14 @@ object frmMain: TfrmMain
     end
     object ToolButton2: TToolButton
       AlignWithMargins = True
-      Left = 75
+      Left = 70
       Top = 0
       Caption = '   toJson   '
       ImageIndex = 1
       OnClick = ToolButton2Click
     end
     object ToolButton4: TToolButton
-      Left = 142
+      Left = 132
       Top = 0
       Width = 8
       Caption = 'ToolButton4'
@@ -61,7 +61,7 @@ object frmMain: TfrmMain
       Style = tbsSeparator
     end
     object cbxResultDTO: TCheckBox
-      Left = 150
+      Left = 140
       Top = 0
       Width = 83
       Height = 19
@@ -69,7 +69,7 @@ object frmMain: TfrmMain
       TabOrder = 0
     end
     object ToolButton5: TToolButton
-      Left = 233
+      Left = 223
       Top = 0
       Width = 8
       Caption = 'ToolButton5'
@@ -77,14 +77,14 @@ object frmMain: TfrmMain
       Style = tbsSeparator
     end
     object ToolButton7: TToolButton
-      Left = 241
+      Left = 231
       Top = 0
       Caption = '      toSql  '
       ImageIndex = 4
       OnClick = ToolButton7Click
     end
     object ToolButton6: TToolButton
-      Left = 308
+      Left = 293
       Top = 0
       Width = 8
       Caption = 'ToolButton6'
@@ -92,14 +92,45 @@ object frmMain: TfrmMain
       Style = tbsSeparator
     end
     object cbxBatchSql: TCheckBox
-      Left = 316
+      Left = 301
       Top = 0
-      Width = 83
+      Width = 45
       Height = 19
       Caption = 'batch'
       Checked = True
       State = cbChecked
       TabOrder = 1
+    end
+    object ToolButton8: TToolButton
+      Left = 346
+      Top = 0
+      Width = 8
+      Caption = 'ToolButton8'
+      ImageIndex = 5
+      Style = tbsSeparator
+    end
+    object edtURL: TEdit
+      Left = 354
+      Top = 0
+      Width = 160
+      Height = 19
+      TabOrder = 2
+      Text = 'http://172.16.200.233:8082/'
+    end
+    object ToolButton10: TToolButton
+      Left = 514
+      Top = 0
+      Width = 8
+      Caption = 'ToolButton10'
+      ImageIndex = 6
+      Style = tbsSeparator
+    end
+    object ToolButton9: TToolButton
+      Left = 522
+      Top = 0
+      Caption = 'update'
+      ImageIndex = 5
+      OnClick = ToolButton9Click
     end
   end
   object PageControl1: TPageControl
@@ -107,12 +138,11 @@ object frmMain: TfrmMain
     Top = 25
     Width = 950
     Height = 597
-    ActivePage = TabSheet1
+    ActivePage = TabSheet5
     Align = alTop
     TabOrder = 1
     object TabSheet1: TTabSheet
       Caption = #25968#25454#24211#36830#25509
-      ExplicitHeight = 187
       object GroupBox1: TGroupBox
         Left = 0
         Top = 0
@@ -121,8 +151,6 @@ object frmMain: TfrmMain
         Align = alTop
         Caption = 'DB '#36830#25509#23646#24615
         TabOrder = 0
-        ExplicitTop = 29
-        ExplicitWidth = 950
         object Label9: TLabel
           Left = 23
           Top = 154
@@ -279,8 +307,6 @@ object frmMain: TfrmMain
     object TabSheet2: TTabSheet
       Caption = 'SQL'#26597#35810
       ImageIndex = 1
-      ExplicitWidth = 807
-      ExplicitHeight = 310
       object Splitter1: TSplitter
         Left = 0
         Top = 185
@@ -350,50 +376,112 @@ object frmMain: TfrmMain
         ScrollBars = ssBoth
         TabOrder = 2
         WordWrap = False
-        ExplicitTop = -223
-        ExplicitHeight = 400
       end
     end
     object TabSheet3: TTabSheet
-      Caption = 'HTTP POST'
+      Caption = 'Http user login'
       ImageIndex = 2
-      ExplicitHeight = 177
-      object Splitter3: TSplitter
-        Left = 0
-        Top = 298
-        Width = 942
-        Height = 4
-        Cursor = crVSplit
-        Align = alTop
-      end
-      inline frameUrlParam1: TframeUrlParam
+      inline frameLogin1: TframeLogin
         Left = 0
         Top = 0
         Width = 942
-        Height = 298
-        Align = alTop
+        Height = 569
+        Align = alClient
         TabOrder = 0
         ExplicitWidth = 942
+        ExplicitHeight = 569
+        inherited Splitter1: TSplitter
+          Width = 942
+          ExplicitWidth = 942
+        end
+        inherited memoResult: TMemo
+          Width = 942
+          Height = 281
+          ExplicitWidth = 942
+          ExplicitHeight = 271
+        end
+        inherited GroupBox1: TGroupBox
+          Width = 942
+          ExplicitWidth = 942
+        end
       end
-      object FDGUIxFormsMemo2: TFDGUIxFormsMemo
+    end
+    object TabSheet4: TTabSheet
+      Caption = 'dms_storeroom'
+      ImageIndex = 3
+      inline frame_dms_storeroom_shelflocation1: Tframe_dms_storeroom_shelflocation
         Left = 0
-        Top = 302
+        Top = 0
         Width = 942
-        Height = 267
+        Height = 569
         Align = alClient
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -11
-        Font.Name = 'Courier New'
-        Font.Style = []
-        Lines.Strings = (
-          'Result')
-        ParentFont = False
-        ScrollBars = ssBoth
-        TabOrder = 1
-        WordWrap = False
-        ExplicitTop = -223
-        ExplicitHeight = 400
+        TabOrder = 0
+        ExplicitWidth = 942
+        ExplicitHeight = 569
+        inherited Splitter1: TSplitter
+          Width = 942
+          ExplicitWidth = 942
+        end
+        inherited memoResult: TMemo
+          Width = 942
+          Height = 281
+          ExplicitWidth = 942
+          ExplicitHeight = 271
+        end
+        inherited GroupBox1: TGroupBox
+          Width = 942
+          ExplicitWidth = 942
+        end
+      end
+    end
+    object TabSheet5: TTabSheet
+      Caption = 'dms_repair_workhour'
+      ImageIndex = 4
+      inline frame_dms_repair_workhour1: Tframe_dms_repair_workhour
+        Left = 0
+        Top = 0
+        Width = 942
+        Height = 569
+        Align = alClient
+        TabOrder = 0
+        ExplicitTop = 622
+        ExplicitWidth = 950
+        ExplicitHeight = 8
+        inherited Splitter1: TSplitter
+          Width = 942
+        end
+        inherited memoResult: TMemo
+          Width = 942
+          Height = 281
+          ExplicitWidth = 950
+          ExplicitHeight = 212
+        end
+        inherited GroupBox1: TGroupBox
+          Width = 942
+          ExplicitWidth = 942
+          inherited memoCtx: TMemo
+            Lines.Strings = (
+              '{'
+              #9'"id": 13,'
+              #9'"store_id": 1,'
+              #9'"workhour_code": "88",'
+              #9'"workhour_name": "workhour_name",'
+              #9'"review_workhour": 1,'
+              #9'"review_price": 1,'
+              #9'"rated_workhour": 1,'
+              #9'"rated_price": 1,'
+              #9'"is_universal": "True",'
+              #9'"is_discount": "True",'
+              #9'"is_sheetmetal": "True",'
+              #9'"retrieval_code": "retrieval_code",'
+              #9'"state": "True",'
+              #9'"workhour_level": "C",'
+              #9'"creator": 1,'
+              #9'"create_time": "2019-08-07 19:32:12",'
+              #9'"is_wash_car": "True"'
+              '}')
+          end
+        end
       end
     end
   end

@@ -6,7 +6,8 @@ uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ComCtrls, Vcl.ToolWin, Data.DB,
   Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.Grids, Vcl.DBGrids, FireDAC.VCLUI.Memo, uDbConfig,
-  uFrmUrlParam;
+  uFrameUrlResult, uFrmLogin, uframe_storeroom_shelflocation,
+  uframe_dms_repair_workhour;
 
 type
   TfrmMain = class(TForm)
@@ -46,10 +47,16 @@ type
     PageControl1: TPageControl;
     TabSheet1: TTabSheet;
     TabSheet2: TTabSheet;
-    frameUrlParam1: TframeUrlParam;
     TabSheet3: TTabSheet;
-    Splitter3: TSplitter;
-    FDGUIxFormsMemo2: TFDGUIxFormsMemo;
+    ToolButton8: TToolButton;
+    edtURL: TEdit;
+    ToolButton9: TToolButton;
+    ToolButton10: TToolButton;
+    frameLogin1: TframeLogin;
+    TabSheet4: TTabSheet;
+    frame_dms_storeroom_shelflocation1: Tframe_dms_storeroom_shelflocation;
+    TabSheet5: TTabSheet;
+    frame_dms_repair_workhour1: Tframe_dms_repair_workhour;
     procedure ToolButton1Click(Sender: TObject);
     procedure ToolButton2Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
@@ -57,6 +64,7 @@ type
     procedure btnTestDbInfoClick(Sender: TObject);
     procedure ToolButton7Click(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
+    procedure ToolButton9Click(Sender: TObject);
   private
     { Private declarations }
     procedure dbInfoToCtrls(const u: TDbConfig);
@@ -65,6 +73,7 @@ type
     procedure dbTestOrSaveCfg(const bSave: boolean=false);
     function getPath: string;
     procedure DbInfoDoAfter(const S: string);
+    procedure setHttpUrl();
   public
     { Public declarations }
   end;
@@ -160,6 +169,17 @@ begin
   end;
 end;
 
+procedure TfrmMain.setHttpUrl();
+  procedure setFrames(const S: string);
+  begin
+    self.frameLogin1.server(S);
+    self.frame_dms_storeroom_shelflocation1.server(S);
+    self.frame_dms_repair_workhour1.server(S);
+  end;
+begin
+  setFrames(self.edtURL.Text);
+end;
+
 procedure TfrmMain.FormCreate(Sender: TObject);
 begin
   if FileExists(self.getPath() + 'my.sql') then begin
@@ -167,6 +187,8 @@ begin
   end else begin
   end;
   dbInfoToCtrls_auto();
+  //
+  setHttpUrl();
 end;
 
 procedure TfrmMain.FormDestroy(Sender: TObject);
@@ -187,6 +209,11 @@ end;
 procedure TfrmMain.ToolButton7Click(Sender: TObject);
 begin
   self.FDGUIxFormsMemoResult.Text := TDataSetConvertSql.convert(DmCarGoods.FDQuery1, self.cbxBatchSql.Checked);
+end;
+
+procedure TfrmMain.ToolButton9Click(Sender: TObject);
+begin
+  setHttpUrl();
 end;
 
 end.

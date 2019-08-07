@@ -112,9 +112,25 @@
         <DCCReference Include="src\utils\uLog4me.pas"/>
         <DCCReference Include="src\utils\uUploadDTO.pas"/>
         <DCCReference Include="src\utils\uJsonSUtils.pas"/>
-        <DCCReference Include="src\utils\uUploadPost.pas"/>
-        <DCCReference Include="src\frame\uFrmUrlParam.pas">
-            <Form>frameUrlParam</Form>
+        <DCCReference Include="src\utils\uHttpPostData.pas"/>
+        <DCCReference Include="..\delphiutils\src\utils\uCharSplit.pas"/>
+        <DCCReference Include="src\frame\uFrmLogin.pas">
+            <Form>frameLogin</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="src\frame\uFrameUrlResult.pas">
+            <Form>frameUrlResult</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="src\frame\uframe_storeroom_shelflocation.pas">
+            <Form>frame_dms_storeroom_shelflocation</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="src\frame\uframe_dms_repair_workhour.pas">
+            <Form>frame_dms_repair_workhour</Form>
             <FormType>dfm</FormType>
             <DesignClass>TFrame</DesignClass>
         </DCCReference>
@@ -146,6 +162,7 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
+                <DeployFile LocalName="Win32\Debug\dataset2json.exe" Configuration="Debug" Class="ProjectOutput"/>
                 <DeployClass Name="AdditionalDebugSymbols">
                     <Platform Name="iOSSimulator">
                         <Operation>1</Operation>
