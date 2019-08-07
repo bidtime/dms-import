@@ -138,7 +138,7 @@ object frmMain: TfrmMain
     Top = 25
     Width = 950
     Height = 597
-    ActivePage = TabSheet5
+    ActivePage = TabSheet8
     Align = alTop
     TabOrder = 1
     object TabSheet1: TTabSheet
@@ -396,9 +396,9 @@ object frmMain: TfrmMain
         end
         inherited memoResult: TMemo
           Width = 942
-          Height = 281
+          Height = 213
           ExplicitWidth = 942
-          ExplicitHeight = 271
+          ExplicitHeight = 213
         end
         inherited GroupBox1: TGroupBox
           Width = 942
@@ -424,9 +424,9 @@ object frmMain: TfrmMain
         end
         inherited memoResult: TMemo
           Width = 942
-          Height = 281
+          Height = 213
           ExplicitWidth = 942
-          ExplicitHeight = 271
+          ExplicitHeight = 213
         end
         inherited GroupBox1: TGroupBox
           Width = 942
@@ -444,6 +444,88 @@ object frmMain: TfrmMain
         Height = 569
         Align = alClient
         TabOrder = 0
+        ExplicitWidth = 942
+        ExplicitHeight = 569
+        inherited Splitter1: TSplitter
+          Width = 942
+          ExplicitWidth = 942
+        end
+        inherited memoResult: TMemo
+          Width = 942
+          Height = 213
+          ExplicitWidth = 942
+          ExplicitHeight = 213
+        end
+        inherited GroupBox1: TGroupBox
+          Width = 942
+          ExplicitWidth = 942
+        end
+      end
+    end
+    object TabSheet6: TTabSheet
+      Caption = 'dms_his_repair_order'
+      ImageIndex = 5
+      inline frame_dms_his_repair_order1: Tframe_dms_his_repair_order
+        Left = 0
+        Top = 0
+        Width = 942
+        Height = 569
+        Align = alClient
+        TabOrder = 0
+        ExplicitWidth = 942
+        inherited Splitter1: TSplitter
+          Width = 942
+          ExplicitWidth = 942
+        end
+        inherited memoResult: TMemo
+          Width = 942
+          ExplicitWidth = 942
+          ExplicitHeight = 213
+        end
+        inherited GroupBox1: TGroupBox
+          Width = 942
+          ExplicitWidth = 942
+        end
+      end
+    end
+    object TabSheet7: TTabSheet
+      Caption = 'dms_his_repair_order_product'
+      ImageIndex = 6
+      inline frame_dms_his_repair_order_product1: Tframe_dms_his_repair_order_product
+        Left = 0
+        Top = 0
+        Width = 942
+        Height = 569
+        Align = alClient
+        TabOrder = 0
+        ExplicitWidth = 942
+        ExplicitHeight = 569
+        inherited Splitter1: TSplitter
+          Width = 942
+          ExplicitWidth = 942
+        end
+        inherited memoResult: TMemo
+          Width = 942
+          Height = 213
+          ExplicitWidth = 942
+          ExplicitHeight = 213
+        end
+        inherited GroupBox1: TGroupBox
+          Width = 942
+          ExplicitWidth = 942
+        end
+      end
+    end
+    object TabSheet8: TTabSheet
+      Caption = 'dms_his_repair_order_workhours'
+      ImageIndex = 7
+      inline frame_dms_his_repair_order_workhours1: Tframe_dms_his_repair_order_workhours
+        Left = 0
+        Top = 0
+        Width = 942
+        Height = 569
+        Align = alClient
+        TabOrder = 0
         ExplicitTop = 622
         ExplicitWidth = 950
         ExplicitHeight = 8
@@ -452,35 +534,12 @@ object frmMain: TfrmMain
         end
         inherited memoResult: TMemo
           Width = 942
-          Height = 281
           ExplicitWidth = 950
-          ExplicitHeight = 212
+          ExplicitHeight = 213
         end
         inherited GroupBox1: TGroupBox
           Width = 942
-          ExplicitWidth = 942
-          inherited memoCtx: TMemo
-            Lines.Strings = (
-              '{'
-              #9'"id": 13,'
-              #9'"store_id": 1,'
-              #9'"workhour_code": "88",'
-              #9'"workhour_name": "workhour_name",'
-              #9'"review_workhour": 1,'
-              #9'"review_price": 1,'
-              #9'"rated_workhour": 1,'
-              #9'"rated_price": 1,'
-              #9'"is_universal": "True",'
-              #9'"is_discount": "True",'
-              #9'"is_sheetmetal": "True",'
-              #9'"retrieval_code": "retrieval_code",'
-              #9'"state": "True",'
-              #9'"workhour_level": "C",'
-              #9'"creator": 1,'
-              #9'"create_time": "2019-08-07 19:32:12",'
-              #9'"is_wash_car": "True"'
-              '}')
-          end
+          ExplicitWidth = 950
         end
       end
     end

@@ -7,7 +7,8 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ComCtrls, Vcl.ToolWin, Data.DB,
   Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.Grids, Vcl.DBGrids, FireDAC.VCLUI.Memo, uDbConfig,
   uFrameUrlResult, uFrmLogin, uframe_storeroom_shelflocation,
-  uframe_dms_repair_workhour;
+  uframe_dms_repair_workhour, uframe_dms_his_repair_order,
+  uframe_dms_his_repair_order_product, uframe_dms_his_repair_order_workhours;
 
 type
   TfrmMain = class(TForm)
@@ -57,6 +58,12 @@ type
     frame_dms_storeroom_shelflocation1: Tframe_dms_storeroom_shelflocation;
     TabSheet5: TTabSheet;
     frame_dms_repair_workhour1: Tframe_dms_repair_workhour;
+    TabSheet6: TTabSheet;
+    frame_dms_his_repair_order1: Tframe_dms_his_repair_order;
+    TabSheet7: TTabSheet;
+    frame_dms_his_repair_order_product1: Tframe_dms_his_repair_order_product;
+    TabSheet8: TTabSheet;
+    frame_dms_his_repair_order_workhours1: Tframe_dms_his_repair_order_workhours;
     procedure ToolButton1Click(Sender: TObject);
     procedure ToolButton2Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
@@ -175,6 +182,11 @@ procedure TfrmMain.setHttpUrl();
     self.frameLogin1.server(S);
     self.frame_dms_storeroom_shelflocation1.server(S);
     self.frame_dms_repair_workhour1.server(S);
+    self.frame_dms_his_repair_order1.server(S);
+    self.frame_dms_his_repair_order_product1.server(S);
+    //
+    self.frame_dms_his_repair_order_workhours1.server(S);
+    //self.frame_dms_his_repair_order_product1.server(S);
   end;
 begin
   setFrames(self.edtURL.Text);

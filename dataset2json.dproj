@@ -134,6 +134,21 @@
             <FormType>dfm</FormType>
             <DesignClass>TFrame</DesignClass>
         </DCCReference>
+        <DCCReference Include="src\frame\uframe_dms_his_repair_order.pas">
+            <Form>frame_dms_his_repair_order</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="src\frame\uframe_dms_his_repair_order_product.pas">
+            <Form>frame_dms_his_repair_order_product</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="src\frame\uframe_dms_his_repair_order_workhours.pas">
+            <Form>frame_dms_his_repair_order_workhours</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

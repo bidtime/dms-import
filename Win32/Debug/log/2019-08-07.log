@@ -769,3 +769,376 @@ n_type":0,"occupy_status":"False","room_type":"自有","from_store_id":0,"remark":
 20:05:55.811 [INFO ]start...
 20:06:02.041 [INFO ]stop.
 20:06:02.041 [INFO ]
+20:28:26.907 [INFO ]start...
+20:28:37.083 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/dms_repair_workhour/insert, POST, TStringStream->TStringStream
+20:28:37.178 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/dms_repair_workhour/insert, POST, TStringStream->TStringStream, state(200), result({"msg":"请求参数不能为空","success":false})
+20:28:37.178 [INFO ]上传数据失败: http://172.16.200.233:8082/api/dms/import/dms_repair_workhour/insert, 请求参数不能为空, {
+	"id": 13,
+	"store_id": 1,
+	"workhour_code": "88",
+	"workhour_name": "workhour_name",
+	"review_workhour": 1,
+	"review_price": 1,
+	"rated_workhour": 1,
+	"rated_price": 1,
+	"is_universal": "True",
+	"is_discount": "True",
+	"is_sheetmetal": "True",
+	"retrieval_code": "retrieval_code",
+	"state": "True",
+	"workhour_level": "C",
+	"creator": 1,
+	"create_time": "2019-08-07 19:32:12",
+	"is_wash_car": "True"
+}
+ 
+20:28:48.173 [INFO ]stop.
+20:28:48.173 [INFO ]
+20:29:22.843 [INFO ]start...
+20:29:35.699 [INFO ]stop.
+20:29:35.700 [INFO ]
+20:30:54.190 [INFO ]start...
+20:30:56.697 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/dms_repair_workhour/insert, POST, TStringStream->TStringStream
+20:31:03.297 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/dms_repair_workhour/insert, POST, TStringStream->TStringStream, state(200), result({"code":null,"data":1,"msg":null,"success":true,"total":null})
+20:31:03.297 [INFO ]上传数据成功: http://172.16.200.233:8082/api/dms/import/dms_repair_workhour/insert, {
+	"id": 13,
+	"store_id": 1,
+	"workhour_code": "88",
+	"workhour_name": "workhour_name",
+	"review_workhour": 1,
+	"review_price": 1,
+	"rated_workhour": 1,
+	"rated_price": 1,
+	"is_universal": "0",
+	"is_discount": "0",
+	"is_sheetmetal": "0",
+	"retrieval_code": "retrieval_code",
+	"state": "0",
+	"workhour_level": "C",
+	"creator": 1,
+	"create_time": "2019-08-07 19:32:12",
+	"is_wash_car": "0"
+}
+ 
+20:31:19.451 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/dms_repair_workhour/insert, POST, TStringStream->TStringStream
+20:31:24.647 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/dms_repair_workhour/insert, POST, TStringStream->TStringStream, state(200), result({"msg":"DAO: 出错，\n### Error updating database.  Cause","success":false})
+20:31:24.647 [INFO ]上传数据失败: http://172.16.200.233:8082/api/dms/import/dms_repair_workhour/insert, DAO: 出错，
+### Error updating database.  Cause, {
+	"id": 13,
+	"store_id": 1,
+	"workhour_code": "88",
+	"workhour_name": "workhour_name",
+	"review_workhour": 1,
+	"review_price": 1,
+	"rated_workhour": 1,
+	"rated_price": 1,
+	"is_universal": "0",
+	"is_discount": "0",
+	"is_sheetmetal": "0",
+	"retrieval_code": "retrieval_code",
+	"state": "0",
+	"workhour_level": "C",
+	"creator": 1,
+	"create_time": "2019-08-07 19:32:12",
+	"is_wash_car": "0"
+}
+ 
+20:31:54.328 [INFO ]stop.
+20:31:54.328 [INFO ]
+20:34:54.260 [INFO ]start...
+20:36:43.565 [INFO ]POST: begin, api/dms/import/dms_his_repair_order/insert, POST, TStringStream->TStringStream
+20:36:49.312 [ERROR]POST: end, api/dms/import/dms_his_repair_order/insert, POST, TStringStream->TStringStream, state(0), result()
+20:36:49.312 [INFO ]上传数据失败: api/dms/import/dms_his_repair_order/insert, , {
+	"id": 22,
+	"store_id": 1,
+	"order_no": "order_no",
+	"repair_type": "repair_type",
+	"custom_name": "custom_name",
+	"custom_mobile": "custom_mobile",
+	"repair_time": "2019-08-07 00:00:00",
+	"plate_no": "plate_no",
+	"model_name": "model_name",
+	"mileage": 1,
+	"consultant_name": "consultant_name",
+	"product_money": 1,
+	"workhour_money": 1,
+	"package_money": 1,
+	"additional_money": 1,
+	"total_discount": 1,
+	"predict_date": "2019-08-07 00:00:00",
+	"create_time": "2019-08-07 00:00:00"
+} 
+20:36:54.575 [INFO ]stop.
+20:36:54.575 [INFO ]
+20:39:13.560 [INFO ]start...
+20:39:20.273 [INFO ]POST: begin, api/dms/import/dms_his_repair_order/insert, POST, TStringStream->TStringStream
+20:39:23.661 [ERROR]POST: end, api/dms/import/dms_his_repair_order/insert, POST, TStringStream->TStringStream, state(0), result()
+20:39:23.661 [INFO ]上传数据失败: api/dms/import/dms_his_repair_order/insert, , {
+	"id": 22,
+	"store_id": 1,
+	"order_no": "order_no",
+	"repair_type": "repair_type",
+	"custom_name": "custom_name",
+	"custom_mobile": "custom_mobile",
+	"repair_time": "2019-08-07 00:00:00",
+	"plate_no": "plate_no",
+	"model_name": "model_name",
+	"mileage": 1,
+	"consultant_name": "consultant_name",
+	"product_money": 1,
+	"workhour_money": 1,
+	"package_money": 1,
+	"additional_money": 1,
+	"total_discount": 1,
+	"predict_date": "2019-08-07 00:00:00",
+	"create_time": "2019-08-07 00:00:00"
+}
+ 
+20:39:25.297 [INFO ]stop.
+20:39:25.297 [INFO ]
+20:39:44.133 [INFO ]start...
+20:39:46.948 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/dms_his_repair_order/insert, POST, TStringStream->TStringStream
+20:39:47.115 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/dms_his_repair_order/insert, POST, TStringStream->TStringStream, state(200), result({"msg":"DAO: 出错，\n### Error updating database.  Cause","success":false})
+20:39:47.115 [INFO ]上传数据失败: http://172.16.200.233:8082/api/dms/import/dms_his_repair_order/insert, DAO: 出错，
+### Error updating database.  Cause, {
+	"id": 22,
+	"store_id": 1,
+	"order_no": "order_no",
+	"repair_type": "repair_type",
+	"custom_name": "custom_name",
+	"custom_mobile": "custom_mobile",
+	"repair_time": "2019-08-07 00:00:00",
+	"plate_no": "plate_no",
+	"model_name": "model_name",
+	"mileage": 1,
+	"consultant_name": "consultant_name",
+	"product_money": 1,
+	"workhour_money": 1,
+	"package_money": 1,
+	"additional_money": 1,
+	"total_discount": 1,
+	"predict_date": "2019-08-07 00:00:00",
+	"create_time": "2019-08-07 00:00:00"
+}
+ 
+20:39:56.450 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/dms_his_repair_order/insert, POST, TStringStream->TStringStream
+20:39:56.527 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/dms_his_repair_order/insert, POST, TStringStream->TStringStream, state(200), result({"msg":"DAO: 出错，\n### Error updating database.  Cause","success":false})
+20:39:56.527 [INFO ]上传数据失败: http://172.16.200.233:8082/api/dms/import/dms_his_repair_order/insert, DAO: 出错，
+### Error updating database.  Cause, {
+	"id": 22,
+	"store_id": 2,
+	"order_no": "order_no",
+	"repair_type": "repair_type",
+	"custom_name": "custom_name",
+	"custom_mobile": "custom_mobile",
+	"repair_time": "2019-08-07 00:00:00",
+	"plate_no": "plate_no",
+	"model_name": "model_name",
+	"mileage": 1,
+	"consultant_name": "consultant_name",
+	"product_money": 1,
+	"workhour_money": 1,
+	"package_money": 1,
+	"additional_money": 1,
+	"total_discount": 1,
+	"predict_date": "2019-08-07 00:00:00",
+	"create_time": "2019-08-07 00:00:00"
+}
+ 
+20:40:08.122 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/dms_his_repair_order/insert, POST, TStringStream->TStringStream
+20:40:08.164 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/dms_his_repair_order/insert, POST, TStringStream->TStringStream, state(200), result({"msg":"DAO: 出错，\n### Error updating database.  Cause","success":false})
+20:40:08.164 [INFO ]上传数据失败: http://172.16.200.233:8082/api/dms/import/dms_his_repair_order/insert, DAO: 出错，
+### Error updating database.  Cause, {
+	"id": 22,
+	"store_id": 2,
+	"order_no": "order_n1",
+	"repair_type": "repair_type",
+	"custom_name": "custom_name",
+	"custom_mobile": "custom_mobile",
+	"repair_time": "2019-08-07 00:00:00",
+	"plate_no": "plate_no",
+	"model_name": "model_name",
+	"mileage": 1,
+	"consultant_name": "consultant_name",
+	"product_money": 1,
+	"workhour_money": 1,
+	"package_money": 1,
+	"additional_money": 1,
+	"total_discount": 1,
+	"predict_date": "2019-08-07 00:00:00",
+	"create_time": "2019-08-07 00:00:00"
+}
+ 
+20:40:10.635 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/dms_his_repair_order/insert, POST, TStringStream->TStringStream
+20:40:10.683 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/dms_his_repair_order/insert, POST, TStringStream->TStringStream, state(200), result({"msg":"DAO: 出错，\n### Error updating database.  Cause","success":false})
+20:40:10.683 [INFO ]上传数据失败: http://172.16.200.233:8082/api/dms/import/dms_his_repair_order/insert, DAO: 出错，
+### Error updating database.  Cause, {
+	"id": 22,
+	"store_id": 2,
+	"order_no": "order_n1",
+	"repair_type": "repair_type",
+	"custom_name": "custom_name",
+	"custom_mobile": "custom_mobile",
+	"repair_time": "2019-08-07 00:00:00",
+	"plate_no": "plate_no",
+	"model_name": "model_name",
+	"mileage": 1,
+	"consultant_name": "consultant_name",
+	"product_money": 1,
+	"workhour_money": 1,
+	"package_money": 1,
+	"additional_money": 1,
+	"total_discount": 1,
+	"predict_date": "2019-08-07 00:00:00",
+	"create_time": "2019-08-07 00:00:00"
+}
+ 
+20:40:27.914 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/dms_his_repair_order/insert, POST, TStringStream->TStringStream
+20:40:27.967 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/dms_his_repair_order/insert, POST, TStringStream->TStringStream, state(200), result({"msg":"DAO: 出错，\n### Error updating database.  Cause","success":false})
+20:40:27.967 [INFO ]上传数据失败: http://172.16.200.233:8082/api/dms/import/dms_his_repair_order/insert, DAO: 出错，
+### Error updating database.  Cause, {
+	"id": 22,
+	"store_id": 2,
+	"order_no": "order_n1",
+	"repair_type": "repair_type",
+	"custom_name": "custom_name",
+	"custom_mobile": "custom_mobile",
+	"repair_time": "2019-08-07 00:00:00",
+	"plate_no": "plate_no",
+	"model_name": "model_name",
+	"mileage": 1,
+	"consultant_name": "consultant_name",
+	"product_money": 1,
+	"workhour_money": 1,
+	"package_money": 1,
+	"additional_money": 1,
+	"total_discount": 1,
+	"predict_date": "2019-08-07 00:00:00",
+	"create_time": "2019-08-07 00:00:00"
+}
+ 
+20:43:18.154 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/dms_his_repair_order/insert, POST, TStringStream->TStringStream
+20:43:18.604 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/dms_his_repair_order/insert, POST, TStringStream->TStringStream, state(200), result({"code":null,"data":1,"msg":null,"success":true,"total":null})
+20:43:18.604 [INFO ]上传数据成功: http://172.16.200.233:8082/api/dms/import/dms_his_repair_order/insert, {
+	"id": 22,
+	"store_id": 2,
+	"order_no": "order_n1",
+	"repair_type": "repair_type",
+	"custom_name": "custom_name",
+	"custom_mobile": "custom_mobile",
+	"repair_time": "2019-08-07 00:00:00",
+	"plate_no": "plate_no",
+	"model_name": "model_name",
+	"mileage": 1,
+	"consultant_name": "consultant_name",
+	"product_money": 1,
+	"workhour_money": 1,
+	"package_money": 1,
+	"additional_money": 1,
+	"total_discount": 1,
+	"predict_date": "2019-08-07 00:00:00",
+	"create_time": "2019-08-07 00:00:00"
+}
+ 
+20:44:15.698 [INFO ]stop.
+20:44:15.698 [INFO ]
+20:47:10.313 [INFO ]start...
+20:48:29.168 [INFO ]stop.
+20:48:29.168 [INFO ]
+20:49:02.601 [INFO ]start...
+20:49:05.701 [INFO ]POST: begin, api/dms/import/dms_his_repair_order_product/insert, POST, TStringStream->TStringStream
+20:49:07.865 [ERROR]POST: end, api/dms/import/dms_his_repair_order_product/insert, POST, TStringStream->TStringStream, state(0), result()
+20:49:07.865 [INFO ]上传数据失败: api/dms/import/dms_his_repair_order_product/insert, , {
+	"id": 3,
+	"store_id": 1,
+	"order_no": "802",
+	"product_code": "product_code",
+	"product_name": "product_name",
+	"product_model": "product_model",
+	"product_price": 1,
+	"product_amount": 1,
+	"worker_name": "worker_name",
+	"dispatcher": 1,
+	"oper_time": "2019-08-07 20:46:07",
+	"create_time": "2019-08-07 20:46:07"
+}
+ 
+20:49:09.386 [INFO ]stop.
+20:49:09.386 [INFO ]
+20:52:10.393 [INFO ]start...
+20:52:12.585 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/dms_his_repair_order_product/insert, POST, TStringStream->TStringStream
+20:52:12.887 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/dms_his_repair_order_product/insert, POST, TStringStream->TStringStream, state(200), result({"msg":"DAO: 出错，\n### Error updating database.  Cause","success":false})
+20:52:12.888 [INFO ]上传数据失败: http://172.16.200.233:8082/api/dms/import/dms_his_repair_order_product/insert, DAO: 出错，
+### Error updating database.  Cause, {
+	"id": 3,
+	"store_id": 1,
+	"order_no": "802",
+	"product_code": "product_code",
+	"product_name": "product_name",
+	"product_model": "product_model",
+	"product_price": 1,
+	"product_amount": 1,
+	"worker_name": "worker_name",
+	"dispatcher": 1,
+	"oper_time": "2019-08-07 20:46:07",
+	"create_time": "2019-08-07 20:46:07"
+}
+ 
+20:52:19.960 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/dms_his_repair_order_product/insert, POST, TStringStream->TStringStream
+20:52:20.050 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/dms_his_repair_order_product/insert, POST, TStringStream->TStringStream, state(200), result({"code":null,"data":1,"msg":null,"success":true,"total":null})
+20:52:20.050 [INFO ]上传数据成功: http://172.16.200.233:8082/api/dms/import/dms_his_repair_order_product/insert, {
+	"id": 3,
+	"store_id": 2,
+	"order_no": "802",
+	"product_code": "product_code",
+	"product_name": "product_name",
+	"product_model": "product_model",
+	"product_price": 1,
+	"product_amount": 1,
+	"worker_name": "worker_name",
+	"dispatcher": 1,
+	"oper_time": "2019-08-07 20:46:07",
+	"create_time": "2019-08-07 20:46:07"
+}
+ 
+20:52:23.795 [INFO ]stop.
+20:52:23.795 [INFO ]
+20:57:14.780 [INFO ]start...
+20:58:11.231 [INFO ]stop.
+20:58:11.231 [INFO ]
+20:58:56.639 [INFO ]start...
+20:58:59.483 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/dms_his_repair_order_workhours/insert, POST, TStringStream->TStringStream
+20:58:59.709 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/dms_his_repair_order_workhours/insert, POST, TStringStream->TStringStream, state(200), result({"msg":"DAO: 出错，\n### Error updating database.  Cause","success":false})
+20:58:59.710 [INFO ]上传数据失败: http://172.16.200.233:8082/api/dms/import/dms_his_repair_order_workhours/insert, DAO: 出错，
+### Error updating database.  Cause, {
+	"id": 2,
+	"store_id": 1,
+	"order_no": "8",
+	"workhour_code": "workhour_code",
+	"workhour_name": "workhour_name",
+	"rated_workhour": 1,
+	"work_price": 1,
+	"worker_name": "worker_name",
+	"dispatcher": 1,
+	"oper_time": "2019-08-07 20:55:53",
+	"create_time": "2019-08-07 20:55:53"
+}
+ 
+20:59:06.375 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/dms_his_repair_order_workhours/insert, POST, TStringStream->TStringStream
+20:59:06.488 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/dms_his_repair_order_workhours/insert, POST, TStringStream->TStringStream, state(200), result({"code":null,"data":1,"msg":null,"success":true,"total":null})
+20:59:06.488 [INFO ]上传数据成功: http://172.16.200.233:8082/api/dms/import/dms_his_repair_order_workhours/insert, {
+	"id": 2,
+	"store_id": 2,
+	"order_no": "8",
+	"workhour_code": "workhour_code",
+	"workhour_name": "workhour_name",
+	"rated_workhour": 1,
+	"work_price": 1,
+	"worker_name": "worker_name",
+	"dispatcher": 1,
+	"oper_time": "2019-08-07 20:55:53",
+	"create_time": "2019-08-07 20:55:53"
+}
+ 
+21:00:29.597 [INFO ]stop.
+21:00:29.597 [INFO ]

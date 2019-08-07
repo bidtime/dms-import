@@ -1,2 +1,2 @@
 ﻿select *
- from dms_repair_workhour
+ from dms_his_repair_order_workhours
