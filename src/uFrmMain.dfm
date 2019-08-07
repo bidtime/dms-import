@@ -138,7 +138,7 @@ object frmMain: TfrmMain
     Top = 25
     Width = 950
     Height = 597
-    ActivePage = TabSheet8
+    ActivePage = TabSheet9
     Align = alTop
     TabOrder = 1
     object TabSheet1: TTabSheet
@@ -526,6 +526,33 @@ object frmMain: TfrmMain
         Height = 569
         Align = alClient
         TabOrder = 0
+        ExplicitWidth = 942
+        ExplicitHeight = 569
+        inherited Splitter1: TSplitter
+          Width = 942
+          ExplicitWidth = 942
+        end
+        inherited memoResult: TMemo
+          Width = 942
+          Height = 213
+          ExplicitWidth = 942
+        end
+        inherited GroupBox1: TGroupBox
+          Width = 942
+          ExplicitWidth = 942
+        end
+      end
+    end
+    object TabSheet9: TTabSheet
+      Caption = 'dms_finance_client'
+      ImageIndex = 8
+      inline frame_dms_finance_client1: Tframe_dms_finance_client
+        Left = 0
+        Top = 0
+        Width = 942
+        Height = 569
+        Align = alClient
+        TabOrder = 0
         ExplicitTop = 622
         ExplicitWidth = 950
         ExplicitHeight = 8
@@ -534,8 +561,9 @@ object frmMain: TfrmMain
         end
         inherited memoResult: TMemo
           Width = 942
+          Height = 213
           ExplicitWidth = 950
-          ExplicitHeight = 213
+          ExplicitHeight = 96
         end
         inherited GroupBox1: TGroupBox
           Width = 942

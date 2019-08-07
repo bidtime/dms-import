@@ -17,6 +17,8 @@ type
 
 implementation
 
+uses variants;
+
 class function TDataSetConvertJson.toJson(const dataSet: TDataSet;
   logs: TStrings): string;
 
@@ -45,7 +47,9 @@ class function TDataSetConvertJson.toJson(const dataSet: TDataSet;
   begin
     fieldName := fld.FieldName;
     dt := fld.DataType;
-    if dt in [ftString, ftMemo, ftFmtMemo, ftFixedChar, ftWideString,
+    if (fld.Value = null) then begin
+      Result := TJSONNull.Create;
+    end else if dt in [ftString, ftMemo, ftFmtMemo, ftFixedChar, ftWideString,
       ftFixedWideChar, ftWideMemo] then begin
       Result := TJSONString.Create(fld.value);
     end else if dt in [ftSmallint, ftInteger, ftWord,
@@ -55,6 +59,12 @@ class function TDataSetConvertJson.toJson(const dataSet: TDataSet;
     end else if dt in [ftFloat, ftCurrency, ftBCD, ftADT,
         ftSingle] then begin
       Result := TJSONNumber.Create(fld.value);
+    end else if dt in [ftBoolean] then begin
+      if fld.AsBoolean then begin
+        Result := TJSONNumber.Create(1);
+      end else begin
+        Result := TJSONNumber.Create(0);
+      end;
     end else if dt in [ftDate, ftTime, ftDateTime, ftTimeStamp] then begin
       Result := TJSONString.Create(
         formatDateTime('yyyy-mm-dd hh:nn:ss', fld.value));
