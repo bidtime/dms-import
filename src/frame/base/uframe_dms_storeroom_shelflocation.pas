@@ -1,4 +1,4 @@
-unit uframe_storeroom_shelflocation;
+unit uframe_dms_storeroom_shelflocation;
 
 interface
 
@@ -14,9 +14,6 @@ type
   public
     { Public declarations }
   end;
-
-var
-  frame_dms_storeroom_shelflocation: Tframe_dms_storeroom_shelflocation;
 
 implementation
 

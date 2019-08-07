@@ -9,35 +9,37 @@ type
   TDataSetConvertJson = class
   private
     { Private declarations }
-    class function toJson(const dataSet: TDataSet; logs: TStrings = nil ): string; overload;
+    class function toJson(const dataSet: TDataSet; const all: boolean=false; logs: TStrings = nil ): string; overload;
   public
     { Public declarations }
-    class function convert(const dataSet: TDataSet; const useData: boolean; logs: TStrings = nil ): string; overload;
+    //class function convert(const dataSet: TDataSet; const all: boolean=false; logs: TStrings = nil ): string; overload;
+    class function row_json(const dataSet: TDataSet; logs: TStrings = nil ): string;
+    class function rows_json(const dataSet: TDataSet; logs: TStrings = nil ): string;
   end;
 
 implementation
 
 uses variants;
 
-class function TDataSetConvertJson.toJson(const dataSet: TDataSet;
+class function TDataSetConvertJson.rows_json(const dataSet: TDataSet;
   logs: TStrings): string;
+begin
+  Result := toJson(dataSet, true, logs);
+end;
 
-  {ftUnknown, ftString, ftSmallint, ftInteger, ftWord, // 0..4
-  ftBoolean, ftFloat, ftCurrency, ftBCD, ftDate, ftTime, ftDateTime, // 5..11
-  ftBytes, ftVarBytes, ftAutoInc, ftBlob, ftMemo, ftGraphic, ftFmtMemo, // 12..18
-  ftParadoxOle, ftDBaseOle, ftTypedBinary, ftCursor, ftFixedChar, ftWideString, // 19..24
-  ftLargeint, ftADT, ftArray, ftReference, ftDataSet, ftOraBlob, ftOraClob, // 25..31
-  ftVariant, ftInterface, ftIDispatch, ftGuid, ftTimeStamp, ftFMTBcd, // 32..37
-  ftFixedWideChar, ftWideMemo, ftOraTimeStamp, ftOraInterval, // 38..41
-  ftLongWord, ftShortint, ftByte, ftExtended, ftConnection, ftParams, ftStream, //42..48
-  ftTimeStampOffset, ftObject, ftSingle}
+class function TDataSetConvertJson.row_json(const dataSet: TDataSet;
+  logs: TStrings): string;
+begin
+  Result := toJson(dataSet, false, logs);
+end;
 
+class function TDataSetConvertJson.toJson(const dataSet: TDataSet; const all: boolean;
+  logs: TStrings): string;
   //0: string, 1:number, 2: datetime;
   {function isNumber(const ft: TFieldType): TJSONValue;
   begin
     if ft in [ftString] then begin
     end else if ft in [] then begin
-
     end;
   end;}
 
@@ -78,7 +80,6 @@ class function TDataSetConvertJson.toJson(const dataSet: TDataSet;
     fld: TField;
   begin
     for J := 0 to dataSet.FieldCount - 1 do begin
-      //jsonVal.AddPair()
       fld := dataSet.Fields[J];
       if assigned(logs) then begin
         logs.Add(fld.FieldName + ': ' + IntToStr( Integer(fld.DataType) ) );
@@ -91,7 +92,7 @@ class function TDataSetConvertJson.toJson(const dataSet: TDataSet;
     end;
   end;
 
-  function rowsToJson(): string;
+  function rowsAllToJson(): string;
   var jsonArr: TJSONArray;
     jo: TJSONObject;
   begin
@@ -122,7 +123,7 @@ class function TDataSetConvertJson.toJson(const dataSet: TDataSet;
     end;
   end;
 
-  function tox(const S: string): string;
+  {function tox(const S: string): string;
   var ss: TStringStream;
   begin
     ss := TStringStream.Create(S, TEncoding.UTF8);
@@ -132,18 +133,18 @@ class function TDataSetConvertJson.toJson(const dataSet: TDataSet;
     finally
       ss.Free;
     end;
-  end;
+  end;}
 var str: string;
 begin
-  if dataSet.RecordCount=1 then begin
+  if not all then begin
     str := rjson();
   end else begin
-    str := rowsToJson();
+    str := rowsAllToJson();
   end;
-  Result := tox(str);
+  Result := str;
 end;
 
-class function TDataSetConvertJson.convert(const dataSet: TDataSet; const useData: boolean; logs: TStrings): string;
+{class function TDataSetConvertJson.convert(const dataSet: TDataSet; const useData: boolean; logs: TStrings): string;
 
   function getData(const jsonData: TJSONObject):  TJSONObject;
   var
@@ -156,22 +157,11 @@ class function TDataSetConvertJson.convert(const dataSet: TDataSet; const useDat
     Result := jsonObj;
   end;
 
-//var jsonObj: TJSONObject;
 begin
   if dataSet.Active = false then begin
     exit;
   end;
-  //jsonObj := TJSONObject.Create;
-  try
-    Result := toJson(dataSet, logs);
-//    if useData then begin
-//      Result := getData(jsonObj).ToString;
-//    end else begin
-//      Result := jsonObj.ToString;
-//    end;
-  finally
-    //jsonObj.Free;
-  end;
-end;
+  Result := toJson(dataSet, all, logs);
+end;}
 
 end.

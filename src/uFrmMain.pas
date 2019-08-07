@@ -6,10 +6,12 @@ uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ComCtrls, Vcl.ToolWin, Data.DB,
   Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.Grids, Vcl.DBGrids, FireDAC.VCLUI.Memo, uDbConfig,
-  uFrameUrlResult, uFrmLogin, uframe_storeroom_shelflocation,
+  uFrameUrlResult, uFrmLogin,
   uframe_dms_repair_workhour, uframe_dms_his_repair_order,
   uframe_dms_his_repair_order_product, uframe_dms_his_repair_order_workhours,
-  uframe_dms_finance_client;
+  uframe_dms_finance_client, uframe_crm_base_product,
+  uframe_dms_storeroom_shelflocation, uframe_crm_base_supplier, uframe_dms_buy,
+  uframe_dms_buy_detail;
 
 type
   TfrmMain = class(TForm)
@@ -56,17 +58,25 @@ type
     ToolButton10: TToolButton;
     frameLogin1: TframeLogin;
     TabSheet4: TTabSheet;
-    frame_dms_storeroom_shelflocation1: Tframe_dms_storeroom_shelflocation;
     TabSheet5: TTabSheet;
-    frame_dms_repair_workhour1: Tframe_dms_repair_workhour;
     TabSheet6: TTabSheet;
-    frame_dms_his_repair_order1: Tframe_dms_his_repair_order;
     TabSheet7: TTabSheet;
-    frame_dms_his_repair_order_product1: Tframe_dms_his_repair_order_product;
     TabSheet8: TTabSheet;
-    frame_dms_his_repair_order_workhours1: Tframe_dms_his_repair_order_workhours;
     TabSheet9: TTabSheet;
+    TabSheet10: TTabSheet;
+    TabSheet11: TTabSheet;
+    TabSheet12: TTabSheet;
+    TabSheet13: TTabSheet;
+    frame_dms_repair_workhour1: Tframe_dms_repair_workhour;
+    frame_dms_his_repair_order1: Tframe_dms_his_repair_order;
+    frame_dms_his_repair_order_product1: Tframe_dms_his_repair_order_product;
+    frame_dms_his_repair_order_workhours1: Tframe_dms_his_repair_order_workhours;
     frame_dms_finance_client1: Tframe_dms_finance_client;
+    frame_dms_storeroom_shelflocation1: Tframe_dms_storeroom_shelflocation;
+    frame_crm_base_product1: Tframe_crm_base_product;
+    frame_crm_base_supplier1: Tframe_crm_base_supplier;
+    frame_dms_buy1: Tframe_dms_buy;
+    frame_dms_buy_detail1: Tframe_dms_buy_detail;
     procedure ToolButton1Click(Sender: TObject);
     procedure ToolButton2Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
@@ -192,8 +202,12 @@ procedure TfrmMain.setHttpUrl();
     //
     self.frame_dms_finance_client1.server(S);
     //
-    //self.frame_dms_finance_client1.server(S);
-    //self.frame_dms_finance_client1.server(S);
+    frame_dms_storeroom_shelflocation1.server(S);
+    frame_crm_base_product1.server(S);
+    frame_crm_base_supplier1.server(S);
+    //
+    frame_dms_buy1.server(S);
+    frame_dms_buy_detail1.server(S);
   end;
 begin
   setFrames(self.edtURL.Text);
@@ -222,7 +236,7 @@ end;
 
 procedure TfrmMain.ToolButton2Click(Sender: TObject);
 begin
-  self.FDGUIxFormsMemoResult.Text := TDataSetConvertJson.convert(DmCarGoods.FDQuery1, cbxResultDTO.Checked);
+  self.FDGUIxFormsMemoResult.Text := TDataSetConvertJson.row_json(DmCarGoods.FDQuery1);
 end;
 
 procedure TfrmMain.ToolButton7Click(Sender: TObject);

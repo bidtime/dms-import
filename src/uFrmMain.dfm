@@ -3,7 +3,7 @@ object frmMain: TfrmMain
   Top = 0
   Caption = #25968#25454#29983#25104#24037#20855' ver1.2  2017-10-19 by riverbo'
   ClientHeight = 630
-  ClientWidth = 950
+  ClientWidth = 1090
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -20,7 +20,7 @@ object frmMain: TfrmMain
     AlignWithMargins = True
     Left = 3
     Top = 3
-    Width = 944
+    Width = 1084
     Height = 19
     ButtonHeight = 19
     ButtonWidth = 62
@@ -136,9 +136,9 @@ object frmMain: TfrmMain
   object PageControl1: TPageControl
     Left = 0
     Top = 25
-    Width = 950
+    Width = 1090
     Height = 597
-    ActivePage = TabSheet9
+    ActivePage = TabSheet11
     Align = alTop
     TabOrder = 1
     object TabSheet1: TTabSheet
@@ -146,7 +146,7 @@ object frmMain: TfrmMain
       object GroupBox1: TGroupBox
         Left = 0
         Top = 0
-        Width = 942
+        Width = 1082
         Height = 179
         Align = alTop
         Caption = 'DB '#36830#25509#23646#24615
@@ -310,17 +310,18 @@ object frmMain: TfrmMain
       object Splitter1: TSplitter
         Left = 0
         Top = 185
-        Width = 942
+        Width = 1082
         Height = 4
         Cursor = crVSplit
         Align = alTop
         ExplicitLeft = 3
         ExplicitTop = 89
+        ExplicitWidth = 942
       end
       object Splitter2: TSplitter
         Left = 0
         Top = 337
-        Width = 942
+        Width = 1082
         Height = 4
         Cursor = crVSplit
         Align = alTop
@@ -330,7 +331,7 @@ object frmMain: TfrmMain
       object DBGrid1: TDBGrid
         Left = 0
         Top = 189
-        Width = 942
+        Width = 1082
         Height = 148
         Align = alTop
         DataSource = dmCarGoods.DataSource1
@@ -344,7 +345,7 @@ object frmMain: TfrmMain
       object FDGUIxFormsMemoSql: TFDGUIxFormsMemo
         Left = 0
         Top = 0
-        Width = 942
+        Width = 1082
         Height = 185
         Align = alTop
         Font.Charset = DEFAULT_CHARSET
@@ -362,7 +363,7 @@ object frmMain: TfrmMain
       object FDGUIxFormsMemoResult: TFDGUIxFormsMemo
         Left = 0
         Top = 341
-        Width = 942
+        Width = 1082
         Height = 228
         Align = alClient
         Font.Charset = DEFAULT_CHARSET
@@ -384,25 +385,25 @@ object frmMain: TfrmMain
       inline frameLogin1: TframeLogin
         Left = 0
         Top = 0
-        Width = 942
+        Width = 1082
         Height = 569
         Align = alClient
         TabOrder = 0
-        ExplicitWidth = 942
+        ExplicitWidth = 1082
         ExplicitHeight = 569
         inherited Splitter1: TSplitter
-          Width = 942
+          Width = 1082
           ExplicitWidth = 942
         end
         inherited memoResult: TMemo
-          Width = 942
+          Width = 1082
           Height = 213
-          ExplicitWidth = 942
+          ExplicitWidth = 1082
           ExplicitHeight = 213
         end
         inherited GroupBox1: TGroupBox
-          Width = 942
-          ExplicitWidth = 942
+          Width = 1082
+          ExplicitWidth = 1082
         end
       end
     end
@@ -412,25 +413,25 @@ object frmMain: TfrmMain
       inline frame_dms_storeroom_shelflocation1: Tframe_dms_storeroom_shelflocation
         Left = 0
         Top = 0
-        Width = 942
+        Width = 1082
         Height = 569
         Align = alClient
         TabOrder = 0
-        ExplicitWidth = 942
+        ExplicitWidth = 1082
         ExplicitHeight = 569
         inherited Splitter1: TSplitter
-          Width = 942
+          Width = 1082
           ExplicitWidth = 942
         end
         inherited memoResult: TMemo
-          Width = 942
+          Width = 1082
           Height = 213
-          ExplicitWidth = 942
+          ExplicitWidth = 1082
           ExplicitHeight = 213
         end
         inherited GroupBox1: TGroupBox
-          Width = 942
-          ExplicitWidth = 942
+          Width = 1082
+          ExplicitWidth = 1082
         end
       end
     end
@@ -440,25 +441,25 @@ object frmMain: TfrmMain
       inline frame_dms_repair_workhour1: Tframe_dms_repair_workhour
         Left = 0
         Top = 0
-        Width = 942
+        Width = 1082
         Height = 569
         Align = alClient
         TabOrder = 0
-        ExplicitWidth = 942
+        ExplicitWidth = 1082
         ExplicitHeight = 569
         inherited Splitter1: TSplitter
-          Width = 942
+          Width = 1082
           ExplicitWidth = 942
         end
         inherited memoResult: TMemo
-          Width = 942
+          Width = 1082
           Height = 213
-          ExplicitWidth = 942
+          ExplicitWidth = 1082
           ExplicitHeight = 213
         end
         inherited GroupBox1: TGroupBox
-          Width = 942
-          ExplicitWidth = 942
+          Width = 1082
+          ExplicitWidth = 1082
         end
       end
     end
@@ -468,23 +469,23 @@ object frmMain: TfrmMain
       inline frame_dms_his_repair_order1: Tframe_dms_his_repair_order
         Left = 0
         Top = 0
-        Width = 942
+        Width = 1082
         Height = 569
         Align = alClient
         TabOrder = 0
-        ExplicitWidth = 942
+        ExplicitWidth = 1082
         inherited Splitter1: TSplitter
-          Width = 942
+          Width = 1082
           ExplicitWidth = 942
         end
         inherited memoResult: TMemo
-          Width = 942
-          ExplicitWidth = 942
+          Width = 1082
+          ExplicitWidth = 1082
           ExplicitHeight = 213
         end
         inherited GroupBox1: TGroupBox
-          Width = 942
-          ExplicitWidth = 942
+          Width = 1082
+          ExplicitWidth = 1082
         end
       end
     end
@@ -494,25 +495,25 @@ object frmMain: TfrmMain
       inline frame_dms_his_repair_order_product1: Tframe_dms_his_repair_order_product
         Left = 0
         Top = 0
-        Width = 942
+        Width = 1082
         Height = 569
         Align = alClient
         TabOrder = 0
-        ExplicitWidth = 942
+        ExplicitWidth = 1082
         ExplicitHeight = 569
         inherited Splitter1: TSplitter
-          Width = 942
+          Width = 1082
           ExplicitWidth = 942
         end
         inherited memoResult: TMemo
-          Width = 942
+          Width = 1082
           Height = 213
-          ExplicitWidth = 942
+          ExplicitWidth = 1082
           ExplicitHeight = 213
         end
         inherited GroupBox1: TGroupBox
-          Width = 942
-          ExplicitWidth = 942
+          Width = 1082
+          ExplicitWidth = 1082
         end
       end
     end
@@ -522,24 +523,24 @@ object frmMain: TfrmMain
       inline frame_dms_his_repair_order_workhours1: Tframe_dms_his_repair_order_workhours
         Left = 0
         Top = 0
-        Width = 942
+        Width = 1082
         Height = 569
         Align = alClient
         TabOrder = 0
-        ExplicitWidth = 942
+        ExplicitWidth = 1082
         ExplicitHeight = 569
         inherited Splitter1: TSplitter
-          Width = 942
+          Width = 1082
           ExplicitWidth = 942
         end
         inherited memoResult: TMemo
-          Width = 942
+          Width = 1082
           Height = 213
-          ExplicitWidth = 942
+          ExplicitWidth = 1082
         end
         inherited GroupBox1: TGroupBox
-          Width = 942
-          ExplicitWidth = 942
+          Width = 1082
+          ExplicitWidth = 1082
         end
       end
     end
@@ -549,25 +550,137 @@ object frmMain: TfrmMain
       inline frame_dms_finance_client1: Tframe_dms_finance_client
         Left = 0
         Top = 0
-        Width = 942
+        Width = 1082
         Height = 569
         Align = alClient
         TabOrder = 0
-        ExplicitTop = 622
-        ExplicitWidth = 950
-        ExplicitHeight = 8
+        ExplicitWidth = 1082
+        ExplicitHeight = 569
         inherited Splitter1: TSplitter
-          Width = 942
+          Width = 1082
+          ExplicitWidth = 942
         end
         inherited memoResult: TMemo
-          Width = 942
+          Width = 1082
           Height = 213
-          ExplicitWidth = 950
-          ExplicitHeight = 96
+          ExplicitWidth = 1082
+          ExplicitHeight = 213
         end
         inherited GroupBox1: TGroupBox
-          Width = 942
-          ExplicitWidth = 950
+          Width = 1082
+          ExplicitWidth = 1082
+        end
+      end
+    end
+    object TabSheet10: TTabSheet
+      Caption = 'crm_base_product'
+      ImageIndex = 9
+      inline frame_crm_base_product1: Tframe_crm_base_product
+        Left = 0
+        Top = 0
+        Width = 1082
+        Height = 569
+        Align = alClient
+        TabOrder = 0
+        ExplicitWidth = 1082
+        ExplicitHeight = 569
+        inherited Splitter1: TSplitter
+          Width = 1082
+          ExplicitWidth = 942
+        end
+        inherited memoResult: TMemo
+          Width = 1082
+          Height = 213
+          ExplicitWidth = 1082
+          ExplicitHeight = 213
+        end
+        inherited GroupBox1: TGroupBox
+          Width = 1082
+          ExplicitWidth = 1082
+        end
+      end
+    end
+    object TabSheet11: TTabSheet
+      Caption = 'crm_base_supplier'
+      ImageIndex = 10
+      inline frame_crm_base_supplier1: Tframe_crm_base_supplier
+        Left = 0
+        Top = 0
+        Width = 1082
+        Height = 569
+        Align = alClient
+        TabOrder = 0
+        ExplicitWidth = 1082
+        ExplicitHeight = 569
+        inherited Splitter1: TSplitter
+          Width = 1082
+          ExplicitWidth = 1082
+        end
+        inherited memoResult: TMemo
+          Width = 1082
+          Height = 213
+          ExplicitWidth = 1082
+          ExplicitHeight = 213
+        end
+        inherited GroupBox1: TGroupBox
+          Width = 1082
+          ExplicitWidth = 1082
+        end
+      end
+    end
+    object TabSheet12: TTabSheet
+      Caption = 'dms_buy'
+      ImageIndex = 11
+      inline frame_dms_buy1: Tframe_dms_buy
+        Left = 0
+        Top = 0
+        Width = 1082
+        Height = 569
+        Align = alClient
+        TabOrder = 0
+        ExplicitWidth = 1082
+        ExplicitHeight = 569
+        inherited Splitter1: TSplitter
+          Width = 1082
+          ExplicitWidth = 1082
+        end
+        inherited memoResult: TMemo
+          Width = 1082
+          Height = 213
+          ExplicitWidth = 1082
+          ExplicitHeight = 213
+        end
+        inherited GroupBox1: TGroupBox
+          Width = 1082
+          ExplicitWidth = 1082
+        end
+      end
+    end
+    object TabSheet13: TTabSheet
+      Caption = 'dms_buy_detail'
+      ImageIndex = 12
+      inline frame_dms_buy_detail1: Tframe_dms_buy_detail
+        Left = 0
+        Top = 0
+        Width = 1082
+        Height = 569
+        Align = alClient
+        TabOrder = 0
+        ExplicitWidth = 1082
+        ExplicitHeight = 569
+        inherited Splitter1: TSplitter
+          Width = 1082
+          ExplicitWidth = 1082
+        end
+        inherited memoResult: TMemo
+          Width = 1082
+          Height = 213
+          ExplicitWidth = 1082
+          ExplicitHeight = 213
+        end
+        inherited GroupBox1: TGroupBox
+          Width = 1082
+          ExplicitWidth = 1082
         end
       end
     end
