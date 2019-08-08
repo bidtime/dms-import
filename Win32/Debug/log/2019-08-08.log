@@ -1,0 +1,335 @@
+00:10:27.833 [INFO ]start...
+00:10:35.725 [INFO ]stop.
+00:10:35.725 [INFO ]
+00:23:57.214 [INFO ]start...
+00:24:16.439 [INFO ]stop.
+00:24:16.439 [INFO ]
+00:28:46.742 [INFO ]start...
+00:28:52.173 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/dms_finance_client/insert, POST, TStringStream->TStringStream
+00:28:52.386 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/dms_finance_client/insert, POST, TStringStream->TStringStream, state(200), result({"msg":"DAO: 出错，\n### Error updating database.  Cause","success":false})
+00:28:52.386 [INFO ]上传数据失败: http://172.16.200.233:8082/api/dms/import/dms_finance_client/insert, DAO: 出错，
+### Error updating database.  Cause, {
+	"id": 53,
+	"store_id": 1,
+	"client_code": "501",
+	"client_name": "client_name",
+	"short_name": "short_name",
+	"retrieval_code": "501",
+	"address": "address",
+	"postcode": "postcode",
+	"prov": 1,
+	"city": 1,
+	"phone": "phone",
+	"fax": "fax",
+	"register_address": "register_address",
+	"work_address": "work_address",
+	"business_register": "business_register",
+	"tax_register": "tax_register",
+	"finance_name": "finance_name",
+	"finance_phone": "finance_phone",
+	"main_name": "main_name",
+	"main_phone": "main_phone",
+	"main_duty": "main_duty",
+	"reserve_name": "reserve_name",
+	"reserve_phone": "reserve_phone",
+	"reserve_duty": "reserve_duty",
+	"account_period": "account_period",
+	"temp_period": "temp_period",
+	"max_debt": 1,
+	"temp_debt": 1,
+	"receivable": 1,
+	"acc_receivable": 1,
+	"acc_receipt": 1,
+	"status": 1,
+	"creator": 1,
+	"create_time": "2019-08-07 23:26:11",
+	"account_opener": "account_opener",
+	"account_name": "account_name",
+	"account_num": "account_num"
+}
+ 
+00:28:58.565 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/dms_finance_client/insert, POST, TStringStream->TStringStream
+00:28:58.669 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/dms_finance_client/insert, POST, TStringStream->TStringStream, state(200), result({"code":null,"data":1,"msg":null,"success":true,"total":null})
+00:28:58.669 [INFO ]上传数据成功: http://172.16.200.233:8082/api/dms/import/dms_finance_client/insert, {
+	"id": 53,
+	"store_id": 3,
+	"client_code": "501",
+	"client_name": "client_name",
+	"short_name": "short_name",
+	"retrieval_code": "501",
+	"address": "address",
+	"postcode": "postcode",
+	"prov": 1,
+	"city": 1,
+	"phone": "phone",
+	"fax": "fax",
+	"register_address": "register_address",
+	"work_address": "work_address",
+	"business_register": "business_register",
+	"tax_register": "tax_register",
+	"finance_name": "finance_name",
+	"finance_phone": "finance_phone",
+	"main_name": "main_name",
+	"main_phone": "main_phone",
+	"main_duty": "main_duty",
+	"reserve_name": "reserve_name",
+	"reserve_phone": "reserve_phone",
+	"reserve_duty": "reserve_duty",
+	"account_period": "account_period",
+	"temp_period": "temp_period",
+	"max_debt": 1,
+	"temp_debt": 1,
+	"receivable": 1,
+	"acc_receivable": 1,
+	"acc_receipt": 1,
+	"status": 1,
+	"creator": 1,
+	"create_time": "2019-08-07 23:26:11",
+	"account_opener": "account_opener",
+	"account_name": "account_name",
+	"account_num": "account_num"
+}
+ 
+00:34:17.133 [INFO ]stop.
+00:34:17.133 [INFO ]
+00:54:44.556 [INFO ]start...
+00:55:25.306 [INFO ]stop.
+00:55:25.306 [INFO ]
+00:55:28.808 [INFO ]start...
+00:55:32.668 [INFO ]stop.
+00:55:32.668 [INFO ]
+00:56:01.015 [INFO ]start...
+01:16:46.750 [INFO ]stop.
+01:16:46.750 [INFO ]
+01:30:13.732 [INFO ]start...
+01:31:12.906 [INFO ]POST: begin, api/dms/import/dms_buy/insert, POST, TStringStream->TStringStream
+01:31:14.976 [ERROR]POST: end, api/dms/import/dms_buy/insert, POST, TStringStream->TStringStream, state(0), result()
+01:31:14.976 [INFO ]上传数据失败: api/dms/import/dms_buy/insert, , {
+	"id": 76,
+	"buy_number": "201934060003",
+	"store_id": 1,
+	"contact_name": "contact_name",
+	"contact_phone": "contact_phone",
+	"buy_type_id": 1,
+	"supplier_id": 1,
+	"require_reach_date": "require_reach_date",
+	"act_type": 1,
+	"is_sale_proxy": 1,
+	"act_name": "act_name",
+	"creator": 1,
+	"c_time": "2019-08-06 16:34:40",
+	"buyer_id": 1,
+	"buy_time": "2019-08-06 16:34:40",
+	"executor": 1,
+	"exec_time": "2019-08-06 16:34:40",
+	"cashier": 1,
+	"cashier_time": "2019-08-06 16:34:40",
+	"receipts_no": "receipts_no",
+	"status": 1,
+	"desc": null,
+	"app_number": "app_number",
+	"generate_from": "generate_from",
+	"original_number": "original_number",
+	"delivery_address": "delivery_address",
+	"delivery_way_id": 1,
+	"recipient_name": "recipient_name",
+	"recipient_mobile": "recipient_mobile"
+}
+ 
+01:33:44.915 [INFO ]stop.
+01:33:44.915 [INFO ]
+01:36:35.844 [INFO ]start...
+01:37:09.322 [INFO ]POST: begin, api/dms/import/dms_buy/insert, POST, TStringStream->TStringStream
+01:37:12.204 [ERROR]POST: end, api/dms/import/dms_buy/insert, POST, TStringStream->TStringStream, state(0), result()
+01:37:12.204 [INFO ]上传数据失败: api/dms/import/dms_buy/insert, , {
+	"id": 76,
+	"buy_number": "201934060003",
+	"store_id": 1,
+	"contact_name": "contact_name",
+	"contact_phone": "contact_phone",
+	"buy_type_id": 1,
+	"supplier_id": 1,
+	"require_reach_date": "require_reach_date",
+	"act_type": 1,
+	"is_sale_proxy": 1,
+	"act_name": "act_name",
+	"creator": 1,
+	"c_time": "2019-08-06 16:34:40",
+	"buyer_id": 1,
+	"buy_time": "2019-08-06 16:34:40",
+	"executor": 1,
+	"exec_time": "2019-08-06 16:34:40",
+	"cashier": 1,
+	"cashier_time": "2019-08-06 16:34:40",
+	"receipts_no": "receipts_no",
+	"status": 1,
+	"desc": null,
+	"app_number": "app_number",
+	"generate_from": "generate_from",
+	"original_number": "original_number",
+	"delivery_address": "delivery_address",
+	"delivery_way_id": 1,
+	"recipient_name": "recipient_name",
+	"recipient_mobile": "recipient_mobile"
+}
+ 
+01:37:13.791 [INFO ]stop.
+01:37:13.791 [INFO ]
+01:40:37.875 [INFO ]start...
+01:40:45.917 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream
+01:40:46.761 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream, state(200), result({"msg":"DAO: 出错，\n### Error updating database.  Cause","success":false})
+01:40:46.761 [INFO ]上传数据失败: http://172.16.200.233:8082/api/dms/import/crm_base_supplier/insert, DAO: 出错，
+### Error updating database.  Cause, {
+	"id": 191,
+	"store_id": 1,
+	"supplier_store_id": 1,
+	"name": "name",
+	"code": "653",
+	"tel": "tel",
+	"mobile": "mobile",
+	"fax": "fax",
+	"mail": "mail",
+	"cdate": "2019-08-08 00:00:00",
+	"postcode": "postcode",
+	"website": "website",
+	"linkman": "linkman",
+	"business_id": 1,
+	"business_num": "business_num",
+	"boss": "boss",
+	"province": 1,
+	"city": 1,
+	"address": "address",
+	"bank": "bank",
+	"account": "account",
+	"open_date": "2019-08-08 00:00:00",
+	"business_scope": "business_scope",
+	"payable": 1,
+	"acc_payable": 1,
+	"acc_payment": 1,
+	"remark": "",
+	"status": 1,
+	"is_del": 1,
+	"type": 1
+}
+ 
+01:41:26.980 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream
+01:41:27.113 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream, state(200), result({"code":null,"data":1,"msg":null,"success":true,"total":null})
+01:41:27.113 [INFO ]上传数据成功: http://172.16.200.233:8082/api/dms/import/crm_base_supplier/insert, {
+	"id": 191,
+	"store_id": 2,
+	"supplier_store_id": 1,
+	"name": "name",
+	"code": "653",
+	"tel": "tel",
+	"mobile": "mobile",
+	"fax": "fax",
+	"mail": "mail",
+	"cdate": "2019-08-08 00:00:00",
+	"postcode": "postcode",
+	"website": "website",
+	"linkman": "linkman",
+	"business_id": 1,
+	"business_num": "business_num",
+	"boss": "boss",
+	"province": 1,
+	"city": 1,
+	"address": "address",
+	"bank": "bank",
+	"account": "account",
+	"open_date": "2019-08-08 00:00:00",
+	"business_scope": "business_scope",
+	"payable": 1,
+	"acc_payable": 1,
+	"acc_payment": 1,
+	"remark": "",
+	"status": 1,
+	"is_del": 1,
+	"type": 1
+}
+ 
+01:42:42.916 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/dms_buy/insert, POST, TStringStream->TStringStream
+01:42:52.000 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/dms_buy/insert, POST, TStringStream->TStringStream, state(200), result({"code":null,"data":"201941080006","msg":null,"success":true,"total":null})
+01:42:52.000 [INFO ]上传数据成功: http://172.16.200.233:8082/api/dms/import/dms_buy/insert, {
+	"id": 76,
+	"buy_number": "201934060003",
+	"store_id": 1,
+	"contact_name": "contact_name",
+	"contact_phone": "contact_phone",
+	"buy_type_id": 1,
+	"supplier_id": 1,
+	"require_reach_date": "require_reach_date",
+	"act_type": 1,
+	"is_sale_proxy": 1,
+	"act_name": "act_name",
+	"creator": 1,
+	"c_time": "2019-08-06 16:34:40",
+	"buyer_id": 1,
+	"buy_time": "2019-08-06 16:34:40",
+	"executor": 1,
+	"exec_time": "2019-08-06 16:34:40",
+	"cashier": 1,
+	"cashier_time": "2019-08-06 16:34:40",
+	"receipts_no": "receipts_no",
+	"status": 1,
+	"desc": null,
+	"app_number": "app_number",
+	"generate_from": "generate_from",
+	"original_number": "original_number",
+	"delivery_address": "delivery_address",
+	"delivery_way_id": 1,
+	"recipient_name": "recipient_name",
+	"recipient_mobile": "recipient_mobile"
+}
+ 
+01:43:20.204 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/dms_buy_detail/insert, POST, TStringStream->TStringStream
+01:43:20.329 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/dms_buy_detail/insert, POST, TStringStream->TStringStream, state(200), result({"code":null,"data":1,"msg":null,"success":true,"total":null})
+01:43:20.329 [INFO ]上传数据成功: http://172.16.200.233:8082/api/dms/import/dms_buy_detail/insert, {
+	"id": 142,
+	"store_id": 1,
+	"buy_number": "201928080006",
+	"product_id": 1,
+	"cost_price": "1",
+	"cost_price_notax": "1",
+	"buy_count": 1,
+	"add_rate": 1,
+	"amount": "1",
+	"amount_notax": "1",
+	"location_id": 1,
+	"location_name": "location_name",
+	"desc": null,
+	"c_time": "2019-08-08 01:28:07",
+	"status": 1
+}
+ 
+01:48:18.397 [INFO ]stop.
+01:48:18.397 [INFO ]
+10:09:36.581 [INFO ]start...
+10:09:39.161 [INFO ]stop.
+10:09:39.161 [INFO ]
+10:10:30.165 [INFO ]start...
+10:10:39.479 [INFO ]POST: begin, http://101.200.157.7:8083/api/dms/import/user/login, POST, TStringStream->TStringStream
+10:10:41.218 [INFO ]POST: end, http://101.200.157.7:8083/api/dms/import/user/login, POST, TStringStream->TStringStream, state(200), result({"code":null,"data":"ok","msg":null,"success":true,"total":null})
+10:10:41.218 [INFO ]上传数据成功: http://101.200.157.7:8083/api/dms/import/user/login, {
+"user": "jss",
+"pwd": "123456"
+}
+ 
+10:10:46.890 [INFO ]POST: begin, http://101.200.157.7:8083/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream
+10:10:48.167 [INFO ]POST: end, http://101.200.157.7:8083/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream, state(200), result({"msg":"DAO: 出错，\n### Error updating database.  Cause","success":false})
+10:10:48.167 [INFO ]上传数据失败: http://101.200.157.7:8083/api/dms/import/dms_storeroom_shelflocation/insert, DAO: 出错，
+### Error updating database.  Cause, {
+	"id": 46,
+	"store_id": 0,
+	"location_code": "1",
+	"location_name": "",
+	"location_area": "",
+	"function_type": 0,
+	"occupy_status": "0",
+	"room_type": "自有",
+	"from_store_id": 0,
+	"remark": "",
+	"status": "1"
+}
+ 
+10:11:00.002 [INFO ]stop.
+10:11:00.002 [INFO ]

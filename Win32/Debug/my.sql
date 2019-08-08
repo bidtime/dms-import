@@ -1,2 +1,2 @@
 ﻿select *
- from dms_finance_client
+ from dms_buy_detail

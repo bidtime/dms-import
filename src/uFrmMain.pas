@@ -94,6 +94,7 @@ type
     function getPath: string;
     procedure DbInfoDoAfter(const S: string);
     procedure setHttpUrl();
+    function readWriteIni(const bWrite: boolean): boolean;
   public
     { Public declarations }
   end;
@@ -103,7 +104,7 @@ var
 
 implementation
 
-uses uDmCarGoods, uDmBase, uDataSetConvertSql, uDataSetConvertJson;
+uses uDmCarGoods, uDmBase, uDataSetConvertSql, uDataSetConvertJson, IniFiles;
 
 {$R *.dfm}
 
@@ -220,13 +221,45 @@ begin
   end else begin
   end;
   dbInfoToCtrls_auto();
+  readWriteIni(false);
   //
   setHttpUrl();
 end;
 
+function TfrmMain.readWriteIni(const bWrite: boolean): boolean;
+var fileName: string;
+  iniFile: TIniFile;
+begin
+  fileName := ExtractFilePath(ParamStr(0)) + '\' + 'sys.ini';
+  iniFile := Tinifile.Create(filename);
+  try
+    if not bWrite then begin
+      {top := iniFile.ReadInteger('mainform', 'top', top);
+      left := iniFile.ReadInteger('mainform', 'left', left);
+      height := iniFile.ReadInteger('mainform', 'height', height);
+      width := iniFile.ReadInteger('mainform', 'width', width);}
+      // http://101.200.157.7:8083
+      // http://172.16.200.233:8082/
+      edtUrl.text := iniFile.readString('mainForm', 'weburl', 'http://101.200.157.7:8083/');
+      //
+      Result := true;
+    end else begin
+      // rec param
+      iniFile.writeString('mainForm', 'weburl', edtUrl.text);
+      {iniFile.WriteInteger('mainform', 'top', top);
+      iniFile.WriteInteger('mainform', 'left', left);
+      iniFile.WriteInteger('mainform', 'height', height);
+      iniFile.WriteInteger('mainform', 'width', width);}
+      Result := true;
+    end;
+  finally
+    iniFile.Free;
+  end;
+end;
 procedure TfrmMain.FormDestroy(Sender: TObject);
 begin
   self.FDGUIxFormsMemoSql.Lines.SaveToFile(self.getPath() + 'my.sql', TEncoding.UTF8);
+  readWriteIni(true);
 end;
 
 procedure TfrmMain.ToolButton1Click(Sender: TObject);

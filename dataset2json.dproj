@@ -119,38 +119,50 @@
             <FormType>dfm</FormType>
             <DesignClass>TFrame</DesignClass>
         </DCCReference>
-        <DCCReference Include="src\frame\uFrameUrlResult.pas">
+        <DCCReference Include="src\frame\base\uFrameUrlResult.pas">
             <Form>frameUrlResult</Form>
-            <FormType>dfm</FormType>
-            <DesignClass>TFrame</DesignClass>
-        </DCCReference>
-        <DCCReference Include="src\frame\uframe_storeroom_shelflocation.pas">
-            <Form>frame_dms_storeroom_shelflocation</Form>
-            <FormType>dfm</FormType>
             <DesignClass>TFrame</DesignClass>
         </DCCReference>
         <DCCReference Include="src\frame\uframe_dms_repair_workhour.pas">
             <Form>frame_dms_repair_workhour</Form>
-            <FormType>dfm</FormType>
             <DesignClass>TFrame</DesignClass>
         </DCCReference>
-        <DCCReference Include="src\frame\uframe_dms_his_repair_order.pas">
+        <DCCReference Include="src\frame\his\uframe_dms_his_repair_order.pas">
             <Form>frame_dms_his_repair_order</Form>
-            <FormType>dfm</FormType>
             <DesignClass>TFrame</DesignClass>
         </DCCReference>
-        <DCCReference Include="src\frame\uframe_dms_his_repair_order_product.pas">
+        <DCCReference Include="src\frame\his\uframe_dms_his_repair_order_product.pas">
             <Form>frame_dms_his_repair_order_product</Form>
-            <FormType>dfm</FormType>
             <DesignClass>TFrame</DesignClass>
         </DCCReference>
-        <DCCReference Include="src\frame\uframe_dms_his_repair_order_workhours.pas">
+        <DCCReference Include="src\frame\his\uframe_dms_his_repair_order_workhours.pas">
             <Form>frame_dms_his_repair_order_workhours</Form>
-            <FormType>dfm</FormType>
             <DesignClass>TFrame</DesignClass>
         </DCCReference>
         <DCCReference Include="src\frame\uframe_dms_finance_client.pas">
             <Form>frame_dms_finance_client</Form>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="src\frame\base\uframe_crm_base_product.pas">
+            <Form>frame_crm_base_product</Form>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="src\frame\base\uframe_dms_storeroom_shelflocation.pas">
+            <Form>frame_dms_storeroom_shelflocation</Form>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="src\frame\buy\uframe_dms_buy.pas">
+            <Form>frame_dms_buy</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="src\frame\buy\uframe_dms_buy_detail.pas">
+            <Form>frame_dms_buy_detail</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="src\frame\base\uframe_crm_base_supplier.pas">
+            <Form>frame_crm_base_supplier</Form>
             <FormType>dfm</FormType>
             <DesignClass>TFrame</DesignClass>
         </DCCReference>
