@@ -32,7 +32,8 @@ uses
   uInvoke_dms_storeroom_shelflocation in 'src\invoke\uInvoke_dms_storeroom_shelflocation.pas',
   uInvoke_crm_base_supplier in 'src\invoke\uInvoke_crm_base_supplier.pas',
   uInvoke_crm_base_product in 'src\invoke\uInvoke_crm_base_product.pas',
-  uExcelReadUtils in 'src\utils\uExcelReadUtils.pas';
+  uExcelReadUtils in 'src\utils\uExcelReadUtils.pas',
+  uInvoke_dms_buy_detail in 'src\invoke\uInvoke_dms_buy_detail.pas';
 
 {$R *.res}
 

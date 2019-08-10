@@ -171,6 +171,7 @@
         <DCCReference Include="src\invoke\uInvoke_crm_base_supplier.pas"/>
         <DCCReference Include="src\invoke\uInvoke_crm_base_product.pas"/>
         <DCCReference Include="src\utils\uExcelReadUtils.pas"/>
+        <DCCReference Include="src\invoke\uInvoke_dms_buy_detail.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

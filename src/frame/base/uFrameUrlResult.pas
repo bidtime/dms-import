@@ -64,6 +64,7 @@ procedure TframeUrlResult.btnPostClick(Sender: TObject);
   var msg: string;
     json: string;
   begin
+    // convert remove reson field
     Result := postDataSet(TDataSetConvertJson.row_json(dataset), msg);
     if not Result then begin
       // msg, reson, ÁõÃ÷, 2019-08-11
@@ -109,19 +110,6 @@ class function TframeUrlResult.Deserialize<T>(const S: string): T;
 begin
   Result := TJsonSUtils.Deserialize<T>(S);
 end;
-
-{var msg, data: string;
-  b: boolean;
-begin
-  //b := THttpPostData.post(self.edtUrl.Text, self.memoCtx.Text, 5000, 20000, msg, data);
-//  self.memoResult.Lines.Add('url:' + self.edtUrl.Text);
-//  self.memoResult.Lines.Add('ctx:' + self.memoCtx.Text);
-  self.memoResult.Lines.Add('  ----  ');
-  self.memoResult.Lines.Add('  rst:' + BoolToStr(b, true));
-  self.memoResult.Lines.Add('  msg:' + msg);
-  self.memoResult.Lines.Add('  data:' + data);
-  self.memoResult.Lines.Add('  ----  ');
-end;}
 
 procedure TframeUrlResult.postB(const msg, data: string);
 //var msg, data: string;
