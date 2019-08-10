@@ -6,16 +6,32 @@ uses
   Classes;
 
 type
-  TReturnData = class
+  TReturnData = record
   private
     { Private declarations }
   public
     { Public declarations }
   end;
 
-  TReturnDTO<T> = class
+  TReturnString = record
   private
-    procedure FreeD(var Obj);
+    { Private declarations }
+  public
+    { Public declarations }
+    data: string;
+  end;
+
+  TReturnInteger = record
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    //data: integer;
+  end;
+
+  TReturnDTO<T> = record
+  private
+    //procedure FreeD(var Obj);
     { Private declarations }
   public
     { Public declarations }
@@ -23,8 +39,8 @@ type
     msg: string;
     success: boolean;
     total: longint;
-    constructor create();
-    destructor Destroy(); override;
+    //constructor create();
+    //destructor Destroy(); override;
   end;
 
   //'{"code":null,"data":"254622411540963328","msg":null,"success":true,"total":null}'
@@ -37,6 +53,7 @@ type
     //class function success(const S: string): boolean; static;
     class function success(const S: string; var msg: string): boolean; overload;
     class function success(const S: string; var msg, data: string): boolean; overload;
+    //class function success(const S: string; var msg, data: string): boolean; overload;
     class function trySuccess(const S: string): boolean; static;
   end;
 
@@ -49,7 +66,7 @@ uses System.JSON.Serializers, SysUtils, System.json;
 class function TReturnDTOUtils.DeSerialize<T>(const s: string): TReturnDTO<T>;
 var Serializer: TJsonSerializer;
 begin
-  Result := nil;
+  //Result := nil;
   Serializer := TJsonSerializer.Create;
   try
     Result := Serializer.DeSerialize<TReturnDTO<T>>(S);
@@ -61,7 +78,7 @@ end;
 class function TReturnDTOUtils.tryDeSerialize<T>(const s: string): TReturnDTO<T>;
 var Serializer: TJsonSerializer;
 begin
-  Result := nil;
+  //Result := nil;
   Serializer := TJsonSerializer.Create;
   try
     try
@@ -80,7 +97,7 @@ var
   u: TReturnDTO<TReturnData>;
 begin
   Result := false;
-  u := nil;
+  //u := nil;
   try
     try
       u := TReturnDTOUtils.DeSerialize<TReturnData>(S);
@@ -88,13 +105,13 @@ begin
       on e: Exception do begin
       end;
     end;
-    if Assigned(u) then begin
+    //if Assigned(u) then begin
       Result := u.success;
-    end;
+    //end;
   finally
-    if Assigned(u) then begin
-      u.free;
-    end;
+    //if Assigned(u) then begin
+      //u.free;
+    //end;
   end;
 end;
 
@@ -136,29 +153,48 @@ begin
   end;
 end;
 
+{class function TReturnDTOUtils.success(const S: string; var msg, data: string): boolean;
+var
+  jsonObj: TJSONObject;
+begin
+  Result := false;
+  jsonObj := TJSONObject.ParseJSONValue(S) as TJSONObject;
+  try
+    if Assigned(jsonObj) then begin
+      Result := (jsonObj.GetValue('success') as TJSONBool).AsBoolean;
+      if not Result then begin
+        msg := (jsonObj.GetValue('msg') as TJSONString).value;
+      end else begin
+        jsonObj.TryGetValue('data', data);
+      end;
+    end;
+  finally
+    jsonObj.Free;
+  end;
+end;}
+
 { TReturnDTO<T> }
 
-constructor TReturnDTO<T>.create;
+{constructor TReturnDTO<T>.create;
 begin
   inherited;
 end;
 
 procedure TReturnDTO<T>.FreeD(var Obj);
-var
-  Temp: TObject;
+//var Temp: TObject;
 begin
-  Temp := TObject(Obj);
-  if Assigned(Temp) then begin
-    Pointer(Obj) := nil;
-    Temp.Free;
-  end;
+//  Temp := TObject(Obj);
+//  if Assigned(Temp) then begin
+//    Pointer(Obj) := nil;
+//    Temp.Free;
+//  end;
 end;
 
 destructor TReturnDTO<T>.Destroy;
 begin
-  FreeD(data);
+  //FreeD(data);
   inherited;
-end;
+end;}
 
 end.
 

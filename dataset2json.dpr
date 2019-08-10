@@ -27,7 +27,9 @@ uses
   uframe_dms_storeroom_shelflocation in 'src\frame\base\uframe_dms_storeroom_shelflocation.pas' {frame_dms_storeroom_shelflocation: TFrame},
   uframe_dms_buy in 'src\frame\buy\uframe_dms_buy.pas' {frame_dms_buy: TFrame},
   uframe_dms_buy_detail in 'src\frame\buy\uframe_dms_buy_detail.pas' {frame_dms_buy_detail: TFrame},
-  uframe_crm_base_supplier in 'src\frame\base\uframe_crm_base_supplier.pas' {frame_crm_base_supplier: TFrame};
+  uframe_crm_base_supplier in 'src\frame\base\uframe_crm_base_supplier.pas' {frame_crm_base_supplier: TFrame},
+  uInvokeBase in 'src\invoke\uInvokeBase.pas',
+  uInvoke_dms_storeroom_shelflocation in 'src\invoke\uInvoke_dms_storeroom_shelflocation.pas';
 
 {$R *.res}
 

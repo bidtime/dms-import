@@ -104,7 +104,7 @@ var
 
 implementation
 
-uses uDmCarGoods, uDmBase, uDataSetConvertSql, uDataSetConvertJson, IniFiles;
+uses uDmCarGoods, uDmBase, uDataSetConvertSql, uDataSetConvertJson, IniFiles, uInvokeBase;
 
 {$R *.dfm}
 
@@ -209,6 +209,8 @@ procedure TfrmMain.setHttpUrl();
     //
     frame_dms_buy1.server(S);
     frame_dms_buy_detail1.server(S);
+    //
+    TInvokeBase.G_WEBURL := S;
   end;
 begin
   setFrames(self.edtURL.Text);

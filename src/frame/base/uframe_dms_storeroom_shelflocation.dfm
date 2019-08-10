@@ -1,18 +1,12 @@
 inherited frame_dms_storeroom_shelflocation: Tframe_dms_storeroom_shelflocation
-  ExplicitWidth = 704
-  ExplicitHeight = 504
   inherited Splitter1: TSplitter
-    Width = 451
     ExplicitWidth = 753
   end
   inherited memoResult: TMemo
-    Width = 451
-    Height = 224
-    ExplicitWidth = 704
-    ExplicitHeight = 224
+    Height = 76
+    ExplicitHeight = 76
   end
   inherited GroupBox1: TGroupBox
-    Width = 451
     inherited edtUrl: TEdit
       Text = 'api/dms/import/dms_storeroom_shelflocation/insert'
     end

@@ -9,6 +9,7 @@ uses
 
 type
   Tframe_dms_storeroom_shelflocation = class(TframeUrlResult)
+    procedure Button2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -16,6 +17,8 @@ type
   end;
 
 implementation
+
+uses uInvoke_dms_storeroom_shelflocation, uUploadDTO;
 
 {$R *.dfm}
 
@@ -34,5 +37,13 @@ implementation
 	"remark": "",
 	"status": "1"
 }
+
+procedure Tframe_dms_storeroom_shelflocation.Button2Click(Sender: TObject);
+var dto: TReturnDTO<TReturnInteger>;
+begin
+  inherited;
+  dto := TInvoke_dms_storeroom_shelflocation.insert<TReturnInteger>(self.memoCtx.Text);
+  postA(dto);
+end;
 
 end.

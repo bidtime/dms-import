@@ -143,6 +143,10 @@ object frmMain: TfrmMain
     TabOrder = 1
     object TabSheet1: TTabSheet
       Caption = #25968#25454#24211#36830#25509
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object GroupBox1: TGroupBox
         Left = 0
         Top = 0
@@ -307,6 +311,10 @@ object frmMain: TfrmMain
     object TabSheet2: TTabSheet
       Caption = 'SQL'#26597#35810
       ImageIndex = 1
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object Splitter1: TSplitter
         Left = 0
         Top = 185
@@ -382,6 +390,7 @@ object frmMain: TfrmMain
     object TabSheet3: TTabSheet
       Caption = 'Http user login'
       ImageIndex = 2
+      ExplicitWidth = 296
       inline frameLogin1: TframeLogin
         Left = 0
         Top = 0
@@ -389,7 +398,7 @@ object frmMain: TfrmMain
         Height = 569
         Align = alClient
         TabOrder = 0
-        ExplicitWidth = 1082
+        ExplicitWidth = 296
         ExplicitHeight = 569
         inherited Splitter1: TSplitter
           Width = 1082
@@ -403,13 +412,14 @@ object frmMain: TfrmMain
         end
         inherited GroupBox1: TGroupBox
           Width = 1082
-          ExplicitWidth = 1082
+          ExplicitWidth = 296
         end
       end
     end
     object TabSheet4: TTabSheet
       Caption = 'dms_storeroom'
       ImageIndex = 3
+      ExplicitWidth = 296
       inline frame_dms_storeroom_shelflocation1: Tframe_dms_storeroom_shelflocation
         Left = 0
         Top = 0
@@ -417,7 +427,7 @@ object frmMain: TfrmMain
         Height = 569
         Align = alClient
         TabOrder = 0
-        ExplicitWidth = 1082
+        ExplicitWidth = 296
         ExplicitHeight = 569
         inherited Splitter1: TSplitter
           Width = 1082
@@ -431,13 +441,14 @@ object frmMain: TfrmMain
         end
         inherited GroupBox1: TGroupBox
           Width = 1082
-          ExplicitWidth = 1082
+          ExplicitWidth = 296
         end
       end
     end
     object TabSheet5: TTabSheet
       Caption = 'dms_repair_workhour'
       ImageIndex = 4
+      ExplicitWidth = 296
       inline frame_dms_repair_workhour1: Tframe_dms_repair_workhour
         Left = 0
         Top = 0
@@ -445,7 +456,7 @@ object frmMain: TfrmMain
         Height = 569
         Align = alClient
         TabOrder = 0
-        ExplicitWidth = 1082
+        ExplicitWidth = 296
         ExplicitHeight = 569
         inherited Splitter1: TSplitter
           Width = 1082
@@ -459,13 +470,14 @@ object frmMain: TfrmMain
         end
         inherited GroupBox1: TGroupBox
           Width = 1082
-          ExplicitWidth = 1082
+          ExplicitWidth = 296
         end
       end
     end
     object TabSheet6: TTabSheet
       Caption = 'dms_his_repair_order'
       ImageIndex = 5
+      ExplicitWidth = 296
       inline frame_dms_his_repair_order1: Tframe_dms_his_repair_order
         Left = 0
         Top = 0
@@ -473,7 +485,7 @@ object frmMain: TfrmMain
         Height = 569
         Align = alClient
         TabOrder = 0
-        ExplicitWidth = 1082
+        ExplicitWidth = 296
         inherited Splitter1: TSplitter
           Width = 1082
           ExplicitWidth = 942
@@ -485,13 +497,14 @@ object frmMain: TfrmMain
         end
         inherited GroupBox1: TGroupBox
           Width = 1082
-          ExplicitWidth = 1082
+          ExplicitWidth = 296
         end
       end
     end
     object TabSheet7: TTabSheet
       Caption = 'dms_his_repair_order_product'
       ImageIndex = 6
+      ExplicitWidth = 296
       inline frame_dms_his_repair_order_product1: Tframe_dms_his_repair_order_product
         Left = 0
         Top = 0
@@ -499,7 +512,7 @@ object frmMain: TfrmMain
         Height = 569
         Align = alClient
         TabOrder = 0
-        ExplicitWidth = 1082
+        ExplicitWidth = 296
         ExplicitHeight = 569
         inherited Splitter1: TSplitter
           Width = 1082
@@ -513,13 +526,14 @@ object frmMain: TfrmMain
         end
         inherited GroupBox1: TGroupBox
           Width = 1082
-          ExplicitWidth = 1082
+          ExplicitWidth = 296
         end
       end
     end
     object TabSheet8: TTabSheet
       Caption = 'dms_his_repair_order_workhours'
       ImageIndex = 7
+      ExplicitWidth = 296
       inline frame_dms_his_repair_order_workhours1: Tframe_dms_his_repair_order_workhours
         Left = 0
         Top = 0
@@ -527,7 +541,7 @@ object frmMain: TfrmMain
         Height = 569
         Align = alClient
         TabOrder = 0
-        ExplicitWidth = 1082
+        ExplicitWidth = 296
         ExplicitHeight = 569
         inherited Splitter1: TSplitter
           Width = 1082
@@ -540,13 +554,14 @@ object frmMain: TfrmMain
         end
         inherited GroupBox1: TGroupBox
           Width = 1082
-          ExplicitWidth = 1082
+          ExplicitWidth = 296
         end
       end
     end
     object TabSheet9: TTabSheet
       Caption = 'dms_finance_client'
       ImageIndex = 8
+      ExplicitWidth = 296
       inline frame_dms_finance_client1: Tframe_dms_finance_client
         Left = 0
         Top = 0
@@ -554,7 +569,7 @@ object frmMain: TfrmMain
         Height = 569
         Align = alClient
         TabOrder = 0
-        ExplicitWidth = 1082
+        ExplicitWidth = 296
         ExplicitHeight = 569
         inherited Splitter1: TSplitter
           Width = 1082
@@ -568,13 +583,14 @@ object frmMain: TfrmMain
         end
         inherited GroupBox1: TGroupBox
           Width = 1082
-          ExplicitWidth = 1082
+          ExplicitWidth = 296
         end
       end
     end
     object TabSheet10: TTabSheet
       Caption = 'crm_base_product'
       ImageIndex = 9
+      ExplicitWidth = 296
       inline frame_crm_base_product1: Tframe_crm_base_product
         Left = 0
         Top = 0
@@ -582,7 +598,7 @@ object frmMain: TfrmMain
         Height = 569
         Align = alClient
         TabOrder = 0
-        ExplicitWidth = 1082
+        ExplicitWidth = 296
         ExplicitHeight = 569
         inherited Splitter1: TSplitter
           Width = 1082
@@ -596,7 +612,7 @@ object frmMain: TfrmMain
         end
         inherited GroupBox1: TGroupBox
           Width = 1082
-          ExplicitWidth = 1082
+          ExplicitWidth = 296
         end
       end
     end
@@ -631,6 +647,7 @@ object frmMain: TfrmMain
     object TabSheet12: TTabSheet
       Caption = 'dms_buy'
       ImageIndex = 11
+      ExplicitWidth = 296
       inline frame_dms_buy1: Tframe_dms_buy
         Left = 0
         Top = 0
@@ -638,7 +655,7 @@ object frmMain: TfrmMain
         Height = 569
         Align = alClient
         TabOrder = 0
-        ExplicitWidth = 1082
+        ExplicitWidth = 296
         ExplicitHeight = 569
         inherited Splitter1: TSplitter
           Width = 1082
@@ -652,13 +669,14 @@ object frmMain: TfrmMain
         end
         inherited GroupBox1: TGroupBox
           Width = 1082
-          ExplicitWidth = 1082
+          ExplicitWidth = 296
         end
       end
     end
     object TabSheet13: TTabSheet
       Caption = 'dms_buy_detail'
       ImageIndex = 12
+      ExplicitWidth = 296
       inline frame_dms_buy_detail1: Tframe_dms_buy_detail
         Left = 0
         Top = 0
@@ -666,7 +684,7 @@ object frmMain: TfrmMain
         Height = 569
         Align = alClient
         TabOrder = 0
-        ExplicitWidth = 1082
+        ExplicitWidth = 296
         ExplicitHeight = 569
         inherited Splitter1: TSplitter
           Width = 1082
@@ -680,7 +698,7 @@ object frmMain: TfrmMain
         end
         inherited GroupBox1: TGroupBox
           Width = 1082
-          ExplicitWidth = 1082
+          ExplicitWidth = 296
         end
       end
     end

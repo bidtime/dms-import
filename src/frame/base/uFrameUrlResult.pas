@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes,
   Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls,
-  FireDAC.VCLUI.Memo, Vcl.ExtCtrls;
+  FireDAC.VCLUI.Memo, Vcl.ExtCtrls, uUploadDTO;
 
 type
   TframeUrlResult = class(TFrame)
@@ -23,25 +23,44 @@ type
   public
     { Public declarations }
     procedure server(const srvPort: string);
+    procedure postA<K>(const rst: K);
   end;
 
 implementation
 
-uses uCharSplit, uHttpPostData;
+uses uCharSplit, uHttpPostData, uJsonSUtils;
 
 {$R *.dfm}
 
 procedure TframeUrlResult.Button2Click(Sender: TObject);
-var msg, data: string;
+begin
+
+end;
+{var msg, data: string;
   b: boolean;
 begin
-  b := THttpPostData.post(self.edtUrl.Text, self.memoCtx.Text, 5000, 20000, msg, data);
-  self.memoResult.Lines.Add('url:' + self.edtUrl.Text);
-  self.memoResult.Lines.Add('ctx:' + self.memoCtx.Text);
+  //b := THttpPostData.post(self.edtUrl.Text, self.memoCtx.Text, 5000, 20000, msg, data);
+//  self.memoResult.Lines.Add('url:' + self.edtUrl.Text);
+//  self.memoResult.Lines.Add('ctx:' + self.memoCtx.Text);
   self.memoResult.Lines.Add('  ----  ');
   self.memoResult.Lines.Add('  rst:' + BoolToStr(b, true));
   self.memoResult.Lines.Add('  msg:' + msg);
   self.memoResult.Lines.Add('  data:' + data);
+  self.memoResult.Lines.Add('  ----  ');
+end;}
+
+procedure TframeUrlResult.postA<K>(const rst: K);
+//var msg, data: string;
+  //b: boolean;
+begin
+  //b := rst.success;
+  //self.memoResult.Lines.Add('url:' + self.edtUrl.Text);
+  //self.memoResult.Lines.Add('ctx:' + self.memoCtx.Text);
+  self.memoResult.Lines.Add('  ----  ');
+  //self.memoResult.Lines.Add('  rst:' + BoolToStr(rst.success, true));
+  //self.memoResult.Lines.Add('  msg:' + rst.msg);
+  //self.memoResult.Lines.Add('  data:' + rst.data);
+  self.memoResult.Lines.Add('  ' + TJsonSUtils.Serialize(rst));
   self.memoResult.Lines.Add('  ----  ');
 end;
 
