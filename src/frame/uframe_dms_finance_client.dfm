@@ -1,17 +1,19 @@
 inherited frame_dms_finance_client: Tframe_dms_finance_client
-  Width = 650
-  Height = 452
+  Width = 443
+  Height = 293
+  ExplicitHeight = 510
   inherited Splitter1: TSplitter
-    Width = 650
+    Width = 443
     ExplicitWidth = 753
   end
   inherited memoResult: TMemo
-    Width = 650
-    Height = 96
+    Width = 443
+    ExplicitWidth = 650
     ExplicitHeight = 150
   end
   inherited GroupBox1: TGroupBox
-    Width = 650
+    Width = 443
+    ExplicitWidth = 650
     inherited edtUrl: TEdit
       Text = 'api/dms/import/dms_finance_client/insert'
     end
@@ -56,6 +58,9 @@ inherited frame_dms_finance_client: Tframe_dms_finance_client
         #9'"account_name": "account_name",'
         #9'"account_num": "account_num"'
         '}')
+    end
+    inherited DBGrid1: TDBGrid
+      Width = 439
     end
   end
 end

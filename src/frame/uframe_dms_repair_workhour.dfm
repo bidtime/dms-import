@@ -1,20 +1,17 @@
 inherited frame_dms_repair_workhour: Tframe_dms_repair_workhour
-  Width = 611
-  Height = 523
+  Width = 443
+  Height = 293
+  ExplicitHeight = 510
   inherited Splitter1: TSplitter
-    Width = 611
+    Width = 443
     ExplicitWidth = 711
   end
   inherited memoResult: TMemo
-    Width = 611
-    Height = 167
-    ExplicitTop = 356
-    ExplicitWidth = 451
+    Width = 443
     ExplicitHeight = 222
   end
   inherited GroupBox1: TGroupBox
-    Width = 611
-    ExplicitWidth = 451
+    Width = 443
     inherited edtUrl: TEdit
       Text = 'api/dms/import/dms_repair_workhour/insert'
     end
@@ -39,6 +36,9 @@ inherited frame_dms_repair_workhour: Tframe_dms_repair_workhour
         #9'"create_time": "2019-08-07 19:32:12",'
         #9'"is_wash_car": "0"'
         '}')
+    end
+    inherited DBGrid1: TDBGrid
+      Width = 439
     end
   end
 end

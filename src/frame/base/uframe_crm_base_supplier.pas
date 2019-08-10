@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, uFrameUrlResult, Vcl.StdCtrls,
-  Vcl.ExtCtrls;
+  Vcl.ExtCtrls, Data.DB, Vcl.Grids, Vcl.DBGrids, Datasnap.DBClient;
 
 type
   Tframe_crm_base_supplier = class(TframeUrlResult)
@@ -13,9 +13,12 @@ type
     { Private declarations }
   public
     { Public declarations }
+    function postDataSet(const json: string; var msg:string): boolean; override;
   end;
 
 implementation
+
+uses uUploadDTO, uInvoke_crm_base_supplier;
 
 {$R *.dfm}
 
@@ -53,5 +56,11 @@ implementation
 	"is_del": 1,
 	"type": 1
 }
+
+function Tframe_crm_base_supplier.postDataSet(const json: string;
+  var msg: string): boolean;
+begin
+  Result := TInvoke_crm_base_supplier.insert(json, msg);
+end;
 
 end.

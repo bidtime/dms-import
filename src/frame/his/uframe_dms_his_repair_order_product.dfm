@@ -1,16 +1,18 @@
 inherited frame_dms_his_repair_order_product: Tframe_dms_his_repair_order_product
-  Width = 790
-  Height = 558
+  Width = 443
+  Height = 293
+  ExplicitHeight = 510
   inherited Splitter1: TSplitter
-    Width = 790
+    Width = 443
+    ExplicitWidth = 790
   end
   inherited memoResult: TMemo
-    Width = 790
-    Height = 202
-    ExplicitHeight = 178
+    Width = 443
+    ExplicitWidth = 790
   end
   inherited GroupBox1: TGroupBox
-    Width = 790
+    Width = 443
+    ExplicitWidth = 790
     inherited edtUrl: TEdit
       Text = 'api/dms/import/dms_his_repair_order_product/insert'
     end
@@ -30,6 +32,9 @@ inherited frame_dms_his_repair_order_product: Tframe_dms_his_repair_order_produc
         #9'"oper_time": "2019-08-07 20:46:07",'
         #9'"create_time": "2019-08-07 20:46:07"'
         '}')
+    end
+    inherited DBGrid1: TDBGrid
+      Width = 439
     end
   end
 end

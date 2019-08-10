@@ -1,15 +1,20 @@
 inherited frame_crm_base_supplier: Tframe_crm_base_supplier
+  Width = 753
+  Height = 495
   inherited Splitter1: TSplitter
-    Width = 451
+    Width = 753
     ExplicitWidth = 753
   end
   inherited memoResult: TMemo
-    Width = 451
-    Height = 224
+    Width = 753
+    Height = 139
     ExplicitHeight = 224
   end
   inherited GroupBox1: TGroupBox
-    Width = 451
+    Width = 753
+    inherited btnPost: TButton
+      OnClick = nil
+    end
     inherited edtUrl: TEdit
       Text = 'api/dms/import/crm_base_supplier/insert'
     end
@@ -47,6 +52,9 @@ inherited frame_crm_base_supplier: Tframe_crm_base_supplier
         #9'"is_del": 1,'
         #9'"type": 1'
         '}')
+    end
+    inherited DBGrid1: TDBGrid
+      Width = 639
     end
   end
 end

@@ -13,22 +13,6 @@ type
     { Public declarations }
   end;
 
-  TReturnString = record
-  private
-    { Private declarations }
-  public
-    { Public declarations }
-    data: string;
-  end;
-
-  TReturnInteger = record
-  private
-    { Private declarations }
-  public
-    { Public declarations }
-    //data: integer;
-  end;
-
   TReturnDTO<T> = record
   private
     //procedure FreeD(var Obj);

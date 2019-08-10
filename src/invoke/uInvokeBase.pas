@@ -8,24 +8,29 @@ type
   TInvokeBase = class(TObject)
   private
     class function getWeb(const api: string): string; static;
-//  public
-//    Server: string;
-//    Port: string;
   public
     class var G_WEBURL: string;
     class constructor Create;
     constructor Create;
     destructor Destroy; override;
     //
-    //class function post<K>(const url: string; const json: string;
-    //  const tmConn: integer=2000; const tmUpdate: integer=20000): TReturnDTO<K>; overload;
-    class function post<K>(const url: string; const json: string;
-      const tmConn: integer=2000; const tmUpdate: integer=20000): TReturnDTO<K>; overload;
+    class function post(const url, json: string; var msg: string;
+      const tmConn: integer=2000; const tmUpdate: integer=20000): boolean; overload; static;
+    class function post(const url, json: string; var msg, data: string;
+      const tmConn: integer=2000; const tmUpdate: integer=20000): boolean; overload; static;
+//    class function post<K>(const url: string; const json: string;
+//      const tmConn: integer=2000; const tmUpdate: integer=20000): TReturnDTO<K>; overload;
+//    class function post<K>(const url: string; const json: string;
+//      const tmConn: integer=2000; const tmUpdate: integer=20000): TReturnDTO<K>; overload;
+//    class function post<K>(const url: string; const data: TDataSet;
+//      const tmConn: integer=2000; const tmUpdate: integer=20000): TReturnDTO<K>; overload;
+//    class function post(const url: string; const data: TDataSet;
+//      const tmConn: integer; const tmUpdate: integer; var msg: string): boolean; overload;
   end;
 
 implementation
 
-uses SysUtils, uHttpPostData, uCharSplit;
+uses SysUtils, uHttpPostData, uCharSplit, uDataSetConvertJson, db;
 
 { TCarType }
 
@@ -40,6 +45,21 @@ end;
 destructor TInvokeBase.Destroy;
 begin
 
+end;
+
+class function TInvokeBase.post(const url, json: string; var msg: string;
+  const tmConn, tmUpdate: integer): boolean;
+var data: string;
+begin
+  Result := THttpPostData.post(url, json, tmConn, tmUpdate, msg, data);
+end;
+
+class function TInvokeBase.post(const url, json: string; var msg, data: string;
+  const tmConn, tmUpdate: integer): boolean;
+var full: string;
+begin
+  full := getWeb(url);
+  Result := THttpPostData.post(full, json, tmConn, tmUpdate, msg, data);
 end;
 
 class function TInvokeBase.getWeb(const api: string): string;
@@ -68,13 +88,29 @@ begin
   Result := getUrl(api, G_WEBURL);
 end;
 
+//class function TInvokeBase.post(const url: string; const data: TDataSet;
+//  const tmConn, tmUpdate: integer; var msg: string): boolean;
+//var json:string;
+//begin
+//  json := TDataSetConvertJson.row_json(data);
+//  Result := THttpPostData.post(url, json, tmConn, tmUpdate);
+//end;
+
+{class function TInvokeBase.post<K>(const url: string; const data: TDataSet;
+  const tmConn, tmUpdate: integer): TReturnDTO<K>;
+var json:string;
+begin
+  json := TDataSetConvertJson.row_json(data);
+  Result := post<K>(url, json, tmConn, tmUpdate);
+end;
+
 class function TInvokeBase.post<K>(const url, json: string; const tmConn,
   tmUpdate: integer): TReturnDTO<K>;
 var full: string;
 begin
   full := getWeb(url);
   Result := THttpPostData.post<K>(full, json, tmConn, tmUpdate);
-end;
+end;}
 
 end.
 

@@ -1,17 +1,19 @@
 inherited frame_dms_his_repair_order_workhours: Tframe_dms_his_repair_order_workhours
-  Width = 705
-  Height = 516
+  Width = 443
+  Height = 293
+  ExplicitHeight = 510
   inherited Splitter1: TSplitter
-    Width = 705
+    Width = 443
     ExplicitWidth = 738
   end
   inherited memoResult: TMemo
-    Width = 705
-    Height = 160
+    Width = 443
+    ExplicitWidth = 705
     ExplicitHeight = 213
   end
   inherited GroupBox1: TGroupBox
-    Width = 705
+    Width = 443
+    ExplicitWidth = 705
     inherited edtUrl: TEdit
       Text = 'api/dms/import/dms_his_repair_order_workhours/insert'
     end
@@ -30,6 +32,9 @@ inherited frame_dms_his_repair_order_workhours: Tframe_dms_his_repair_order_work
         #9'"oper_time": "2019-08-07 20:55:53",'
         #9'"create_time": "2019-08-07 20:55:53"'
         '}')
+    end
+    inherited DBGrid1: TDBGrid
+      Width = 439
     end
   end
 end

@@ -1,14 +1,16 @@
 object frameUrlResult: TframeUrlResult
   Left = 0
   Top = 0
-  Width = 451
-  Height = 305
+  Width = 968
+  Height = 510
   Align = alClient
   TabOrder = 0
+  ExplicitWidth = 443
+  ExplicitHeight = 293
   object Splitter1: TSplitter
     Left = 0
     Top = 353
-    Width = 451
+    Width = 968
     Height = 3
     Cursor = crVSplit
     Align = alTop
@@ -18,19 +20,22 @@ object frameUrlResult: TframeUrlResult
   object memoResult: TMemo
     Left = 0
     Top = 356
-    Width = 451
-    Height = 178
+    Width = 968
+    Height = 154
     Align = alClient
     ScrollBars = ssBoth
     TabOrder = 0
+    ExplicitWidth = 443
+    ExplicitHeight = 178
   end
   object GroupBox1: TGroupBox
     Left = 0
     Top = 0
-    Width = 451
+    Width = 968
     Height = 353
     Align = alTop
     TabOrder = 1
+    ExplicitWidth = 443
     object Label11: TLabel
       Left = 6
       Top = 9
@@ -45,14 +50,14 @@ object frameUrlResult: TframeUrlResult
       Height = 13
       Caption = 'param'
     end
-    object Button2: TButton
-      Left = 511
+    object btnPost: TButton
+      Left = 520
       Top = 6
       Width = 75
       Height = 25
       Caption = 'post'
       TabOrder = 0
-      OnClick = Button2Click
+      OnClick = btnPostClick
     end
     object edtUrl: TEdit
       Left = 56
@@ -70,5 +75,52 @@ object frameUrlResult: TframeUrlResult
       ScrollBars = ssBoth
       TabOrder = 2
     end
+    object DBGrid1: TDBGrid
+      Left = 520
+      Top = 30
+      Width = 433
+      Height = 317
+      DataSource = DataSource1
+      TabOrder = 3
+      TitleFont.Charset = DEFAULT_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'Tahoma'
+      TitleFont.Style = []
+    end
+    object btnImport: TButton
+      Left = 665
+      Top = 6
+      Width = 75
+      Height = 25
+      Caption = #23548#20837'(O)'
+      TabOrder = 4
+      OnClick = btnImportClick
+    end
+    object cbxRows: TCheckBox
+      Left = 601
+      Top = 11
+      Width = 48
+      Height = 17
+      Caption = #25152#26377
+      Checked = True
+      State = cbChecked
+      TabOrder = 5
+    end
+  end
+  object DataSource1: TDataSource
+    DataSet = dataset
+    Left = 656
+    Top = 144
+  end
+  object dataset: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    Left = 576
+    Top = 144
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 576
+    Top = 104
   end
 end

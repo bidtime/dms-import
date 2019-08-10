@@ -1,0 +1,100 @@
+10:58:01.515 [INFO ]start...
+10:58:22.842 [INFO ]POST: begin, http://101.200.157.7:8083/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream
+10:58:24.033 [INFO ]POST: end, http://101.200.157.7:8083/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream, state(200), result({"msg":"DAO: 出错，\n### Error updating database.  Cause","success":false})
+10:58:31.845 [INFO ]POST: begin, http://101.200.157.7:8083/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream
+10:58:31.923 [INFO ]POST: end, http://101.200.157.7:8083/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream, state(200), result({"code":null,"data":1,"msg":null,"success":true,"total":null})
+10:58:57.327 [INFO ]stop.
+10:58:57.327 [INFO ]
+11:12:13.653 [INFO ]start...
+11:13:03.681 [INFO ]POST: begin, http://101.200.157.7:8083/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream
+11:13:04.103 [INFO ]POST: end, http://101.200.157.7:8083/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream, state(200), result({"msg":"DAO: 出错，\n### Error updating database.  Cause","success":false})
+11:13:17.781 [INFO ]POST: begin, http://101.200.157.7:8083/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream
+11:13:17.844 [INFO ]POST: end, http://101.200.157.7:8083/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream, state(200), result({"code":null,"data":1,"msg":null,"success":true,"total":null})
+11:13:40.692 [INFO ]stop.
+11:13:40.692 [INFO ]
+11:15:02.101 [INFO ]start...
+11:15:09.731 [INFO ]POST: begin, http://101.200.157.7:8083/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream
+11:15:09.886 [INFO ]POST: end, http://101.200.157.7:8083/api/dms/import/dms_storeroom_shelflocation/insert, POST, TStringStream->TStringStream, state(200), result({"code":null,"data":1,"msg":null,"success":true,"total":null})
+11:15:23.725 [INFO ]stop.
+11:15:23.725 [INFO ]
+11:40:08.692 [INFO ]start...
+11:40:18.567 [INFO ]POST: begin, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream
+11:40:21.983 [INFO ]POST: end, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream, state(200), result({"code":null,"data":1,"msg":null,"success":true,"total":null})
+11:42:41.637 [INFO ]stop.
+11:42:41.637 [INFO ]
+11:48:47.237 [INFO ]start...
+11:55:14.979 [INFO ]stop.
+11:55:14.979 [INFO ]
+12:02:39.850 [INFO ]start...
+12:04:05.851 [INFO ]stop.
+12:04:05.851 [INFO ]
+12:05:49.407 [INFO ]start...
+12:06:09.620 [INFO ]stop.
+12:06:09.620 [INFO ]
+12:08:56.980 [INFO ]start...
+12:09:10.967 [INFO ]stop.
+12:09:10.967 [INFO ]
+12:09:23.417 [INFO ]start...
+12:09:31.597 [INFO ]stop.
+12:09:31.597 [INFO ]
+12:10:06.104 [INFO ]start...
+12:10:16.119 [INFO ]stop.
+12:10:16.119 [INFO ]
+12:14:06.269 [INFO ]start...
+12:14:24.547 [INFO ]POST: begin, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream
+12:14:24.843 [INFO ]POST: end, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream, state(200), result({"msg":"DAO: 出错，\n### Error updating database.  Cause","success":false})
+12:14:24.843 [INFO ]POST: begin, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream
+12:14:24.937 [INFO ]POST: end, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream, state(200), result({"msg":"DAO: 出错，\n### Error updating database.  Cause","success":false})
+12:20:33.125 [INFO ]stop.
+12:20:33.125 [INFO ]
+13:31:57.971 [INFO ]start...
+13:33:50.647 [INFO ]start...
+13:35:11.925 [INFO ]start...
+13:35:23.049 [INFO ]POST: begin, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream
+13:35:23.298 [INFO ]POST: end, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream, state(200), result({"msg":"DAO: 出错，\n### Error updating database.  Cause","success":false})
+13:35:29.055 [INFO ]POST: begin, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream
+13:35:29.367 [INFO ]POST: end, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream, state(200), result({"msg":"DAO: 出错，\n### Error updating database.  Cause","success":false})
+13:37:07.043 [INFO ]start...
+13:39:24.120 [INFO ]POST: begin, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream
+13:39:24.557 [INFO ]POST: end, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream, state(200), result({"msg":"DAO: 出错，\n### Error updating database.  Cause","success":false})
+13:40:30.702 [INFO ]POST: begin, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream
+13:40:30.796 [INFO ]POST: end, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream, state(200), result({"msg":"DAO: 出错，\n### Error updating database.  Cause","success":false})
+13:41:38.640 [INFO ]POST: begin, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream
+13:41:38.983 [INFO ]POST: end, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream, state(200), result({"msg":"DAO: 出错，\n### Error updating database.  Cause","success":false})
+13:42:17.558 [INFO ]stop.
+13:42:17.558 [INFO ]
+13:50:24.551 [INFO ]start...
+13:50:32.279 [INFO ]POST: begin, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream
+13:50:32.466 [INFO ]POST: end, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream, state(200), result({"code":null,"data":1,"msg":null,"success":true,"total":null})
+13:55:55.376 [INFO ]POST: begin, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream
+13:55:55.447 [INFO ]POST: end, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream, state(200), result({"msg":"DAO: 出错，\n### Error updating database.  Cause","success":false})
+13:55:55.455 [INFO ]POST: begin, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream
+13:55:55.584 [INFO ]POST: end, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream, state(200), result({"msg":"DAO: 出错，\n### Error updating database.  Cause","success":false})
+13:56:19.440 [INFO ]POST: begin, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream
+13:56:19.479 [INFO ]POST: end, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream, state(200), result({"msg":"DAO: 出错，\n### Error updating database.  Cause","success":false})
+13:56:19.484 [INFO ]POST: begin, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream
+13:56:19.516 [INFO ]POST: end, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream, state(200), result({"code":null,"data":1,"msg":null,"success":true,"total":null})
+13:57:16.958 [INFO ]POST: begin, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream
+13:57:17.006 [INFO ]POST: end, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream, state(200), result({"msg":"DAO: 出错，\n### Error updating database.  Cause","success":false})
+13:57:59.374 [INFO ]POST: begin, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream
+13:57:59.418 [INFO ]POST: end, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream, state(200), result({"msg":"DAO: 出错，\n### Error updating database.  Cause","success":false})
+13:58:16.790 [INFO ]POST: begin, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream
+13:58:16.964 [INFO ]POST: end, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream, state(200), result({"msg":"DAO: 出错，\n### Error updating database.  Cause","success":false})
+13:58:49.254 [INFO ]POST: begin, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream
+13:58:49.298 [INFO ]POST: end, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream, state(200), result({"code":null,"data":1,"msg":null,"success":true,"total":null})
+13:58:55.502 [INFO ]POST: begin, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream
+13:58:55.532 [INFO ]POST: end, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream, state(200), result({"code":null,"data":1,"msg":null,"success":true,"total":null})
+13:59:23.871 [INFO ]POST: begin, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream
+13:59:23.935 [INFO ]POST: end, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream, state(200), result({"code":null,"data":1,"msg":null,"success":true,"total":null})
+13:59:23.941 [INFO ]POST: begin, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream
+13:59:23.979 [INFO ]POST: end, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream, state(200), result({"code":null,"data":1,"msg":null,"success":true,"total":null})
+14:00:12.814 [INFO ]POST: begin, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream
+14:00:12.857 [INFO ]POST: end, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream, state(200), result({"code":null,"data":1,"msg":null,"success":true,"total":null})
+14:00:12.861 [INFO ]POST: begin, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream
+14:00:12.896 [INFO ]POST: end, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream, state(200), result({"code":null,"data":1,"msg":null,"success":true,"total":null})
+14:00:42.798 [INFO ]POST: begin, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream
+14:00:42.839 [INFO ]POST: end, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream, state(200), result({"code":null,"data":1,"msg":null,"success":true,"total":null})
+14:00:42.842 [INFO ]POST: begin, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream
+14:00:42.874 [INFO ]POST: end, http://101.200.157.7:8083/api/dms/import/crm_base_supplier/insert, POST, TStringStream->TStringStream, state(200), result({"code":null,"data":1,"msg":null,"success":true,"total":null})
+14:15:50.681 [INFO ]stop.
+14:15:50.681 [INFO ]

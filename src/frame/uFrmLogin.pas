@@ -5,7 +5,8 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, uFrameUrlResult,
-  Vcl.StdCtrls, FireDAC.VCLUI.Memo, Vcl.ExtCtrls;
+  Vcl.StdCtrls, FireDAC.VCLUI.Memo, Vcl.ExtCtrls, Data.DB, Vcl.Grids,
+  Vcl.DBGrids, Datasnap.DBClient;
 
 type
   TframeLogin = class(TframeUrlResult)

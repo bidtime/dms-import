@@ -1,20 +1,16 @@
 inherited frame_crm_base_product: Tframe_crm_base_product
-  Width = 704
-  Height = 512
-  ExplicitHeight = 504
+  Width = 443
+  Height = 293
   inherited Splitter1: TSplitter
-    Width = 704
+    Width = 443
     ExplicitWidth = 753
   end
   inherited memoResult: TMemo
-    Width = 704
-    Height = 224
-    ExplicitWidth = 704
-    ExplicitHeight = 224
+    Width = 443
+    ExplicitHeight = 154
   end
   inherited GroupBox1: TGroupBox
-    Width = 704
-    ExplicitWidth = 451
+    Width = 443
     inherited edtUrl: TEdit
       Text = 'api/dms/import/crm_base_product/insert'
     end
@@ -33,6 +29,9 @@ inherited frame_crm_base_product: Tframe_crm_base_product
         #9'"remark": "",'
         #9'"status": "1"'
         '}')
+    end
+    inherited DBGrid1: TDBGrid
+      Width = 439
     end
   end
 end

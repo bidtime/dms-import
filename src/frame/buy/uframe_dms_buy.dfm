@@ -1,15 +1,16 @@
 inherited frame_dms_buy: Tframe_dms_buy
+  Width = 443
+  Height = 293
   inherited Splitter1: TSplitter
-    Width = 451
+    Width = 443
     ExplicitWidth = 753
   end
   inherited memoResult: TMemo
-    Width = 451
-    Height = 224
+    Width = 443
     ExplicitHeight = 224
   end
   inherited GroupBox1: TGroupBox
-    Width = 451
+    Width = 443
     inherited edtUrl: TEdit
       Text = 'api/dms/import/dms_buy/insert'
     end
@@ -46,6 +47,9 @@ inherited frame_dms_buy: Tframe_dms_buy
         #9'"recipient_name": "recipient_name",'
         #9'"recipient_mobile": "recipient_mobile"'
         '}')
+    end
+    inherited DBGrid1: TDBGrid
+      Width = 439
     end
   end
 end

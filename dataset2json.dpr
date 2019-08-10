@@ -29,7 +29,10 @@ uses
   uframe_dms_buy_detail in 'src\frame\buy\uframe_dms_buy_detail.pas' {frame_dms_buy_detail: TFrame},
   uframe_crm_base_supplier in 'src\frame\base\uframe_crm_base_supplier.pas' {frame_crm_base_supplier: TFrame},
   uInvokeBase in 'src\invoke\uInvokeBase.pas',
-  uInvoke_dms_storeroom_shelflocation in 'src\invoke\uInvoke_dms_storeroom_shelflocation.pas';
+  uInvoke_dms_storeroom_shelflocation in 'src\invoke\uInvoke_dms_storeroom_shelflocation.pas',
+  uInvoke_crm_base_supplier in 'src\invoke\uInvoke_crm_base_supplier.pas',
+  uInvoke_crm_base_product in 'src\invoke\uInvoke_crm_base_product.pas',
+  uExcelReadUtils in 'src\utils\uExcelReadUtils.pas';
 
 {$R *.res}
 
