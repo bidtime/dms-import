@@ -11,7 +11,7 @@ uses
   uframe_dms_his_repair_order_product, uframe_dms_his_repair_order_workhours,
   uframe_dms_finance_client, uframe_crm_base_product,
   uframe_dms_storeroom_shelflocation, uframe_crm_base_supplier, uframe_dms_buy,
-  uframe_dms_buy_detail;
+  uframe_dms_buy_detail, uframe_crm_member_car;
 
 type
   TfrmMain = class(TForm)
@@ -77,6 +77,8 @@ type
     frame_crm_base_supplier1: Tframe_crm_base_supplier;
     frame_dms_buy1: Tframe_dms_buy;
     frame_dms_buy_detail1: Tframe_dms_buy_detail;
+    TabSheet14: TTabSheet;
+    frame_crm_member_car1: Tframe_crm_member_car;
     procedure ToolButton1Click(Sender: TObject);
     procedure ToolButton2Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
@@ -193,23 +195,6 @@ end;
 procedure TfrmMain.setHttpUrl();
   procedure setFrames(const S: string);
   begin
-    self.frameLogin1.server(S);
-    self.frame_dms_storeroom_shelflocation1.server(S);
-    self.frame_dms_repair_workhour1.server(S);
-    //
-    self.frame_dms_his_repair_order1.server(S);
-    self.frame_dms_his_repair_order_product1.server(S);
-    self.frame_dms_his_repair_order_workhours1.server(S);
-    //
-    self.frame_dms_finance_client1.server(S);
-    //
-    frame_dms_storeroom_shelflocation1.server(S);
-    frame_crm_base_product1.server(S);
-    frame_crm_base_supplier1.server(S);
-    //
-    frame_dms_buy1.server(S);
-    frame_dms_buy_detail1.server(S);
-    //
     TInvokeBase.G_WEBURL := S;
   end;
 begin

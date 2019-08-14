@@ -32,7 +32,7 @@ type
     { Public declarations }
     class function Serialize<T>(const u: T; const fm: TJsonFormatting=TJsonFormatting.None): string; static;
     class function Deserialize<T>(const S: string): T; static;
-    procedure server(const srvPort: string);
+    //procedure server(const srvPort: string);
     procedure postA<K>(const rst: K); overload;
     procedure addLog(const S: string);
     procedure postB(const msg, data: string); overload;
@@ -147,7 +147,7 @@ begin
   self.memoResult.Lines.Add('  ----  ');
 end;
 
-procedure TframeUrlResult.server(const srvPort: string);
+{procedure TframeUrlResult.server(const srvPort: string);
   function getUrl(S: string; srvPort: string): string;
   var tmp: string;
   begin
@@ -171,6 +171,6 @@ procedure TframeUrlResult.server(const srvPort: string);
   end;
 begin
   self.edtUrl.text := getUrl(self.edtUrl.Text, srvPort);
-end;
+end;}
 
 end.

@@ -138,15 +138,11 @@ object frmMain: TfrmMain
     Top = 25
     Width = 1090
     Height = 597
-    ActivePage = TabSheet3
+    ActivePage = TabSheet14
     Align = alTop
     TabOrder = 1
     object TabSheet1: TTabSheet
       Caption = #25968#25454#24211#36830#25509
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object GroupBox1: TGroupBox
         Left = 0
         Top = 0
@@ -311,10 +307,6 @@ object frmMain: TfrmMain
     object TabSheet2: TTabSheet
       Caption = 'SQL'#26597#35810
       ImageIndex = 1
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object Splitter1: TSplitter
         Left = 0
         Top = 185
@@ -405,9 +397,9 @@ object frmMain: TfrmMain
         end
         inherited memoResult: TMemo
           Width = 1082
-          Height = 213
+          Height = 253
           ExplicitWidth = 1082
-          ExplicitHeight = 213
+          ExplicitHeight = 253
         end
         inherited GroupBox1: TGroupBox
           Width = 1082
@@ -500,7 +492,7 @@ object frmMain: TfrmMain
           Width = 1082
           Height = 213
           ExplicitWidth = 1082
-          ExplicitHeight = 154
+          ExplicitHeight = 213
         end
         inherited GroupBox1: TGroupBox
           Width = 1082
@@ -562,6 +554,7 @@ object frmMain: TfrmMain
           Width = 1082
           Height = 213
           ExplicitWidth = 1082
+          ExplicitHeight = 213
         end
         inherited GroupBox1: TGroupBox
           Width = 1082
@@ -724,6 +717,33 @@ object frmMain: TfrmMain
           inherited DBGrid1: TDBGrid
             Width = 1078
           end
+        end
+      end
+    end
+    object TabSheet14: TTabSheet
+      Caption = 'crm_member_car'
+      ImageIndex = 13
+      inline frame_crm_member_car1: Tframe_crm_member_car
+        Left = 0
+        Top = 0
+        Width = 1082
+        Height = 569
+        Align = alClient
+        TabOrder = 0
+        ExplicitTop = 622
+        ExplicitWidth = 1090
+        ExplicitHeight = 8
+        inherited Splitter1: TSplitter
+          Width = 1082
+        end
+        inherited memoResult: TMemo
+          Width = 1082
+          Height = 213
+          ExplicitWidth = 1090
+        end
+        inherited GroupBox1: TGroupBox
+          Width = 1082
+          ExplicitWidth = 1090
         end
       end
     end
