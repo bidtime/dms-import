@@ -26,6 +26,8 @@ type
 //      const tmConn: integer=2000; const tmUpdate: integer=20000): TReturnDTO<K>; overload;
 //    class function post(const url: string; const data: TDataSet;
 //      const tmConn: integer; const tmUpdate: integer; var msg: string): boolean; overload;
+    class function get<K>(const url, params: string; const tmConn,
+      tmUpdate: integer): TReturnDTO<K>; static;
   end;
 
 implementation
@@ -51,7 +53,7 @@ class function TInvokeBase.post(const url, json: string; var msg: string;
   const tmConn, tmUpdate: integer): boolean;
 var data: string;
 begin
-  Result := THttpPostData.post(url, json, tmConn, tmUpdate, msg, data);
+  Result := TInvokeBase.post(url, json, msg, data, tmConn, tmUpdate);
 end;
 
 class function TInvokeBase.post(const url, json: string; var msg, data: string;
@@ -60,6 +62,14 @@ var full: string;
 begin
   full := getWeb(url);
   Result := THttpPostData.post(full, json, tmConn, tmUpdate, msg, data);
+end;
+
+class function TInvokeBase.get<K>(const url, params: string; const tmConn,
+  tmUpdate: integer): TReturnDTO<K>;
+var full: string;
+begin
+  full := getWeb(url);
+  Result := THttpPostData.get<K>(full, params, tmConn, tmUpdate);
 end;
 
 class function TInvokeBase.getWeb(const api: string): string;

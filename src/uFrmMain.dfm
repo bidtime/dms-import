@@ -138,11 +138,15 @@ object frmMain: TfrmMain
     Top = 25
     Width = 1090
     Height = 597
-    ActivePage = TabSheet11
+    ActivePage = TabSheet3
     Align = alTop
     TabOrder = 1
     object TabSheet1: TTabSheet
       Caption = #25968#25454#24211#36830#25509
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object GroupBox1: TGroupBox
         Left = 0
         Top = 0
@@ -307,6 +311,10 @@ object frmMain: TfrmMain
     object TabSheet2: TTabSheet
       Caption = 'SQL'#26597#35810
       ImageIndex = 1
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object Splitter1: TSplitter
         Left = 0
         Top = 185
@@ -483,6 +491,7 @@ object frmMain: TfrmMain
         Align = alClient
         TabOrder = 0
         ExplicitWidth = 1082
+        ExplicitHeight = 569
         inherited Splitter1: TSplitter
           Width = 1082
           ExplicitWidth = 942

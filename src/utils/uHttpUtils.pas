@@ -55,6 +55,8 @@ uses System.NetConsts, System.Net.URLClient, Forms, uLog4me;
 //  g_ShowMsgBase.ShowMsg(S);
 //end;
 
+var COOKIE_: string='';
+
 class procedure THttpUtils.addCookie(const cookie: string);
 begin
   THttpUtils.fCookie := cookie;
@@ -143,8 +145,7 @@ end;
 
 class function THttpUtils.postGet(const url: string; const method: string;
   const ob: TObject; const tmConn, tmRes: integer; const encode: TEncoding): string;
-var
-  lHttp: TMyHttpClient;
+var lHttp: TMyHttpClient;
 begin
   Result := '';
   lHttp := TMyHttpClient.create(nil);
@@ -210,7 +211,7 @@ function TMyHttpClient.postGet(const url, method: string; const ob: TObject;
 
 const FMT_BEGIN = '%s, %s, %s';
 const FMT_END = '%s, %s, %s, result(%s)';
-const FMT_END_ = '%s, %s, %s, state(%d), result(%s)';
+const FMT_END_ = '%s, %s, %s, state(%d), result(%s), cookie(%s)';
 
   function doResponse(ssRst: TStringStream): integer;
   var
@@ -243,11 +244,11 @@ const FMT_END_ = '%s, %s, %s, state(%d), result(%s)';
           if not Assigned(ob) then begin
             lResponse := self.get(Url, ssRst);
           end else begin
-            if ob is TStream then begin
+            //if ob is TStream then begin
               lResponse := self.get(Url, ssRst);
-            end else begin
-              raise Exception.Create('Error: ' + ob.ClassName + ' not support.');
-            end;
+            //end else begin
+            //  raise Exception.Create('Error: ' + ob.ClassName + ' not support.');
+            //end;
           end;
         end;
         while not FOK do begin
@@ -270,6 +271,7 @@ const FMT_END_ = '%s, %s, %s, state(%d), result(%s)';
 var
   ssRst: TStringStream;
   statusCode: integer;
+  cc: string;
 begin
   Result := '';
   //ShowSysLog(method + ': begin, ' + format(FMT_BEGIN, [url, method, getType()]));
@@ -281,19 +283,39 @@ begin
 //      //'ACCESS_TICKET="TGT-171-O42vP4LGehJ3z3VGOXPteuccJWdxBvSDTa1bUlSX1VT2miqnKM-cas.ecarpo.com"',
 //      THttpUtils.fCookie,
 //      url);
+    if (not COOKIE_.IsEmpty) then begin
+      self.CookieManager.AddServerCookie(COOKIE_, url);
+    end;
     statusCode := doResponse(ssRst);
     if ( statusCode = 200 ) then begin
       Result := ssRst.DataString;
-      //cookieS := lHttp.CookieManager.CookieHeaders(TURI.Create(url));
-      log4info(method + ': end, ' + format(FMT_END_, [url, method, getType(), statusCode, Result]));
+      cc := self.CookieManager.CookieHeaders(TURI.Create(url));
+      if (COOKIE_.IsEmpty) or (not cc.Equals(COOKIE_)) then begin
+        COOKIE_ := cc;
+      end;
+      log4info(method + ': end, ' +
+        format(FMT_END_, [url, method, getType(), statusCode, Result, COOKIE_]));
     end else begin
       //ShowSysLog(method + ': end, ' + format(FMT_END, [url, method, getType(), Result]));
-      log4error(method + ': end, ' + format(FMT_END_, [url, method, getType(), statusCode, Result]));
+      //if True then
+
+      log4error(method + ': end, ' +
+        format(FMT_END_, [url, method, getType(), statusCode, Result, COOKIE_]));
     end;
   finally
     ssRst.Free;
   end;
 end;
+
+// ----------- 类初始化 -------------//
+initialization
+  //lHttp := TMyHttpClient.create(nil);
+
+// ----------- 类销毁 -------------//
+finalization
+  //if Assigned(lHttp) then begin
+  //  lHttp.Free;
+  //end;
 
 end.
 

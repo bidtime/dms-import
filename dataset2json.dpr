@@ -33,7 +33,8 @@ uses
   uInvoke_crm_base_supplier in 'src\invoke\uInvoke_crm_base_supplier.pas',
   uInvoke_crm_base_product in 'src\invoke\uInvoke_crm_base_product.pas',
   uExcelReadUtils in 'src\utils\uExcelReadUtils.pas',
-  uInvoke_dms_buy_detail in 'src\invoke\uInvoke_dms_buy_detail.pas';
+  uInvoke_dms_buy_detail in 'src\invoke\uInvoke_dms_buy_detail.pas',
+  uInvokeUser in 'src\invoke\uInvokeUser.pas';
 
 {$R *.res}
 

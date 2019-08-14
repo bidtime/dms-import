@@ -1,18 +1,13 @@
 inherited frameLogin: TframeLogin
-  Width = 443
-  Height = 293
-  ExplicitHeight = 510
   inherited Splitter1: TSplitter
-    Width = 443
     ExplicitWidth = 724
   end
   inherited memoResult: TMemo
-    Width = 443
-    ExplicitWidth = 652
-    ExplicitHeight = 167
+    Height = 157
+    ExplicitWidth = 451
+    ExplicitHeight = 157
   end
   inherited GroupBox1: TGroupBox
-    Width = 443
     inherited edtUrl: TEdit
       Text = 'api/dms/import/user/login'
     end
@@ -25,6 +20,15 @@ inherited frameLogin: TframeLogin
     end
     inherited DBGrid1: TDBGrid
       Width = 439
+    end
+    object Button1: TButton
+      Left = 3
+      Top = 120
+      Width = 75
+      Height = 25
+      Caption = 'Button1'
+      TabOrder = 6
+      OnClick = Button1Click
     end
   end
 end
