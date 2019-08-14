@@ -13,9 +13,12 @@ type
     { Private declarations }
   public
     { Public declarations }
+    function postDataSet(const json: string; var msg:string): boolean; override;
   end;
 
 implementation
+
+uses uInvoke_dms_his_repair_order_workhours;
 
 {$R *.dfm}
 
@@ -34,5 +37,13 @@ implementation
 	"oper_time": "2019-08-07 20:55:53",
 	"create_time": "2019-08-07 20:55:53"
 }
+
+{ Tframe_dms_his_repair_order_workhours }
+
+function Tframe_dms_his_repair_order_workhours.postDataSet(const json: string;
+  var msg: string): boolean;
+begin
+  Result := TInvoke_dms_his_repair_order_workhours.insert(json, msg);
+end;
 
 end.

@@ -1,4 +1,4 @@
-unit uframe_dms_finance_client;
+unit uframe_crm_member_car;
 
 interface
 
@@ -8,7 +8,7 @@ uses
   Data.DB, Vcl.Grids, Vcl.DBGrids, Datasnap.DBClient;
 
 type
-  Tframe_dms_finance_client = class(TframeUrlResult)
+  Tframe_crm_member_car = class(TframeUrlResult)
   private
     { Private declarations }
   public
@@ -18,11 +18,11 @@ type
 
 implementation
 
-uses uInvoke_dms_finance_client;
+uses uInvoke_crm_member_car;
 
 {$R *.dfm}
 
-// api/dms/import/dms_finance_client/insert
+// api/dms/import/crm_member_car/insert
 
 {
 	"id": 53,
@@ -64,12 +64,12 @@ uses uInvoke_dms_finance_client;
 	"account_num": "account_num"
 }
 
-{ Tframe_dms_finance_client }
+{ Tframe_crm_member_car }
 
-function Tframe_dms_finance_client.postDataSet(const json: string;
+function Tframe_crm_member_car.postDataSet(const json: string;
   var msg: string): boolean;
 begin
-  Result := TInvoke_dms_finance_client.insert(json, msg);
+  Result := TInvoke_crm_member_car.insert(json, msg);
 end;
 
 end.

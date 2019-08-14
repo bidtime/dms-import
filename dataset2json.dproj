@@ -173,6 +173,18 @@
         <DCCReference Include="src\utils\uExcelReadUtils.pas"/>
         <DCCReference Include="src\invoke\uInvoke_dms_buy_detail.pas"/>
         <DCCReference Include="src\invoke\uInvokeUser.pas"/>
+        <DCCReference Include="src\invoke\uInvoke_dms_finance_client.pas"/>
+        <DCCReference Include="src\utils\uInvoke_dms_his_repair_order.pas"/>
+        <DCCReference Include="src\invoke\uInvoke_dms_his_repair_order_product.pas"/>
+        <DCCReference Include="src\invoke\uInvoke_dms_his_repair_order_workhours.pas"/>
+        <DCCReference Include="src\utils\uInvoke_dms_repair_workhour.pas"/>
+        <DCCReference Include="src\utils\uInvoke_dms_buy.pas"/>
+        <DCCReference Include="src\frame\uframe_crm_member_car.pas">
+            <Form>frame_crm_member_car</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="src\invoke\uInvoke_crm_member_car.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

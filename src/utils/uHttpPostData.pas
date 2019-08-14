@@ -74,11 +74,11 @@ begin
   try
     S := THttpUtils.postJson(url, json, tmConn, tmUpdate);
     Result := TReturnDTOUtils.tryDeSerialize<K>(S);
-    //if Result.success then begin
-    //  log4info(format('post data成功: %s, %s ', [url, json]));
-    //end else begin
-    //  log4info(format('post data失败: %s, %s, %s ', [url, Result.msg, json]));
-    //end;
+    if Result.success then begin
+      log4info(format('post data成功: %s, %s ', [url, json]));
+    end else begin
+      log4info(format('post data失败: %s, %s, %s ', [url, Result.msg, json]));
+    end;
   except
     on E: Exception do begin
       log4error(format('post data出错: %s, %s, %s ', [url, e.Message, json]));
@@ -93,14 +93,14 @@ begin
   try
     S := THttpUtils.get(url, params, tmConn, tmUpdate);
     Result := TReturnDTOUtils.tryDeSerialize<K>(S);
-    //if Result.success then begin
-    //  log4info(format('post data成功: %s, %s ', [url, json]));
-    //end else begin
-    //  log4info(format('post data失败: %s, %s, %s ', [url, Result.msg, json]));
-    //end;
+    if Result.success then begin
+      log4info(format('get data成功: %s, %s ', [url, params]));
+    end else begin
+      log4info(format('get data失败: %s, %s, %s ', [url, Result.msg, params]));
+    end;
   except
     on E: Exception do begin
-      log4error(format('post data出错: %s, %s, %s ', [url, e.Message, params]));
+      log4error(format('get data出错: %s, %s, %s ', [url, e.Message, params]));
     end;
   end;
 end;

@@ -13,9 +13,12 @@ type
     { Private declarations }
   public
     { Public declarations }
+    function postDataSet(const json: string; var msg:string): boolean; override;
   end;
 
 implementation
+
+uses uInvoke_dms_buy;
 
 {$R *.dfm}
 
@@ -52,5 +55,13 @@ implementation
 	"recipient_name": "recipient_name",
 	"recipient_mobile": "recipient_mobile"
 }
+
+{ Tframe_dms_buy }
+
+function Tframe_dms_buy.postDataSet(const json: string;
+  var msg: string): boolean;
+begin
+  Result := TInvoke_dms_buy.insert(json, msg);
+end;
 
 end.

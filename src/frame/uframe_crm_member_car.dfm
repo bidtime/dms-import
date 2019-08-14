@@ -1,4 +1,4 @@
-inherited frame_dms_finance_client: Tframe_dms_finance_client
+inherited frame_crm_member_car: Tframe_crm_member_car
   inherited Splitter1: TSplitter
     ExplicitWidth = 753
   end
@@ -9,7 +9,7 @@ inherited frame_dms_finance_client: Tframe_dms_finance_client
   inherited GroupBox1: TGroupBox
     ExplicitWidth = 451
     inherited edtUrl: TEdit
-      Text = 'api/dms/import/dms_finance_client/insert'
+      Text = 'api/dms/import/crm_member_car/insert'
     end
     inherited memoCtx: TMemo
       Lines.Strings = (

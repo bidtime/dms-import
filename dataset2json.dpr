@@ -34,7 +34,15 @@ uses
   uInvoke_crm_base_product in 'src\invoke\uInvoke_crm_base_product.pas',
   uExcelReadUtils in 'src\utils\uExcelReadUtils.pas',
   uInvoke_dms_buy_detail in 'src\invoke\uInvoke_dms_buy_detail.pas',
-  uInvokeUser in 'src\invoke\uInvokeUser.pas';
+  uInvokeUser in 'src\invoke\uInvokeUser.pas',
+  uInvoke_dms_finance_client in 'src\invoke\uInvoke_dms_finance_client.pas',
+  uInvoke_dms_his_repair_order in 'src\utils\uInvoke_dms_his_repair_order.pas',
+  uInvoke_dms_his_repair_order_product in 'src\invoke\uInvoke_dms_his_repair_order_product.pas',
+  uInvoke_dms_his_repair_order_workhours in 'src\invoke\uInvoke_dms_his_repair_order_workhours.pas',
+  uInvoke_dms_repair_workhour in 'src\utils\uInvoke_dms_repair_workhour.pas',
+  uInvoke_dms_buy in 'src\utils\uInvoke_dms_buy.pas',
+  uframe_crm_member_car in 'src\frame\uframe_crm_member_car.pas' {frame_crm_member_car: TFrame},
+  uInvoke_crm_member_car in 'src\invoke\uInvoke_crm_member_car.pas';
 
 {$R *.res}
 
