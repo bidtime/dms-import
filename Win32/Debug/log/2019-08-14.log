@@ -67,3 +67,18 @@
 13:59:22.897 [INFO ]GET: end, http://172.16.200.233:8082/api/dms/import/user/getStores, GET, TStringList->TStringList, state(200), result({"code":null,"data":null,"msg":null,"success":true,"total":null}), cookie(JSESSIONID=3d567b4d5a6a4e2997790a4e253aebb0)
 13:59:43.244 [INFO ]stop.
 13:59:43.245 [INFO ]
+15:40:43.713 [INFO ]start...
+15:40:51.303 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/user/login, POST, TStringStream->TStringStream
+15:40:51.879 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/user/login, POST, TStringStream->TStringStream, state(200), result({"code":null,"data":"ok","msg":null,"success":true,"total":null}), cookie(JSESSIONID=9f2893c090b947e38452e3d7556ef285)
+15:40:51.879 [INFO ]上传数据成功: http://172.16.200.233:8082/api/dms/import/user/login, {"user":"jss","pwd":"1234567"} 
+15:40:59.933 [INFO ]stop.
+15:40:59.933 [INFO ]
+15:41:55.681 [INFO ]start...
+15:41:57.816 [INFO ]POST: begin, http://172.16.200.233:8082/api/dms/import/user/login, POST, TStringStream->TStringStream
+15:41:57.951 [INFO ]POST: end, http://172.16.200.233:8082/api/dms/import/user/login, POST, TStringStream->TStringStream, state(200), result({"code":null,"data":"ok","msg":null,"success":true,"total":null}), cookie(JSESSIONID=90e49b6740bc413a954cc0901336598e)
+15:41:57.951 [INFO ]上传数据成功: http://172.16.200.233:8082/api/dms/import/user/login, {
+  "user": "jss",
+  "pwd": "123456"
+} 
+15:42:01.534 [INFO ]stop.
+15:42:01.534 [INFO ]

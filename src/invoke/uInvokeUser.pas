@@ -11,9 +11,17 @@ type
     name: string;
   end;
 
+  TUserPwd = record
+  public
+    user: string;
+    pwd: string;
+  end;
+
   TInvoke_user = class(TInvokeBase)
   private
   public
+    class function login(const user, pwd: string; var msg: string;
+      const tmConn: integer=2000; const tmUpdate: integer=20000): boolean; overload;
     class function login(const json: string; var msg: string;
       const tmConn: integer=2000; const tmUpdate: integer=20000): boolean; overload;
     class function getStores(const tmConn: integer=2000;
@@ -21,6 +29,8 @@ type
   end;
 
 implementation
+
+
 
 { TInvoke_crm_base_product }
 
@@ -37,6 +47,12 @@ begin
   dto := get<TStoresInfo>('api/dms/import/user/getStores',
     '', tmConn, tmUpdate);
   Result := dto;
+end;
+
+class function TInvoke_user.login(const user, pwd: string; var msg: string;
+  const tmConn, tmUpdate: integer): boolean;
+begin
+
 end;
 
 end.
