@@ -26,6 +26,7 @@ type
     cbxRows: TCheckBox;
     procedure btnImportClick(Sender: TObject);
     procedure btnPostClick(Sender: TObject);
+    procedure cbxExcelClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -34,8 +35,8 @@ type
     class function Deserialize<T>(const S: string): T; static;
     //procedure server(const srvPort: string);
     procedure postA<K>(const rst: K); overload;
-    procedure addLog(const S: string);
-    procedure postB(const msg, data: string); overload;
+    procedure addLog(const S: string); overload;
+    procedure addLog(const b: boolean; const msg, data: string); overload;
     function postDataSet(const json: string; var msg:string): boolean; virtual; abstract;
     class function row_json(const dataSet: TDataSet; logs: TStrings = nil ): string;
   end;
@@ -60,39 +61,62 @@ end;
 
 procedure TframeUrlResult.btnPostClick(Sender: TObject);
 
-  function doPostData(dataSet: TDataSet): boolean;
+  function doPostJson(const json: string): boolean;
   var msg: string;
-    json: string;
   begin
     // convert remove reson field
-    Result := postDataSet(TDataSetConvertJson.row_json(dataset), msg);
+    Result := postDataSet(json, msg);
+    self.addlog(Result, json, msg);
     if not Result then begin
       // msg, reson, 刘明, 2019-08-11
       //反写reson
     end;
   end;
 
-begin
-  if (not dataSet.Active) then begin
-    ShowMessage('请先导入excel数据');
-    Exit;
-  end;
-  if (dataSet.RecordCount<=0) then begin
-    ShowMessage('当前无数据');
-    Exit;
-  end;
-  //
-  if not self.cbxRows.Checked then begin
-    if not doPostData(dataSet) then begin
+  procedure postDataSetx();
+    function doPostData(dataSet: TDataSet): boolean;
+    var msg: string;
+      json: string;
+    begin
+      // convert remove reson field
+      json := TDataSetConvertJson.row_json(dataset);
+      self.memoCtx.Text := json;
+      Result := doPostJson(json);
     end;
-  end else begin
-    dataSet.First;
-    while not dataset.eof do begin
+
+  begin
+    if (not dataSet.Active) then begin
+      ShowMessage('请先导入excel数据');
+      Exit;
+    end;
+    if (dataSet.RecordCount<=0) then begin
+      ShowMessage('当前无数据');
+      Exit;
+    end;
+    //
+    if not self.cbxRows.Checked then begin
       if not doPostData(dataSet) then begin
       end;
-      dataset.Next;
+    end else begin
+      dataSet.First;
+      while not dataset.eof do begin
+        if not doPostData(dataSet) then begin
+        end;
+        dataset.Next;
+      end;
     end;
   end;
+begin
+  if self.btnImport.Enabled then begin
+    postDataSetx;
+  end else begin
+    doPostJson(self.memoCtx.Text);
+  end;
+end;
+
+procedure TframeUrlResult.cbxExcelClick(Sender: TObject);
+begin
+  self.btnImport.Enabled := TCheckBox(Sender).Checked;
 end;
 
 procedure TframeUrlResult.addLog(const S: string);
@@ -111,7 +135,7 @@ begin
   Result := TJsonSUtils.Deserialize<T>(S);
 end;
 
-procedure TframeUrlResult.postB(const msg, data: string);
+procedure TframeUrlResult.addlog(const b: boolean; const msg, data: string);
 //var msg, data: string;
   //b: boolean;
 begin
@@ -119,7 +143,7 @@ begin
   //self.memoResult.Lines.Add('url:' + self.edtUrl.Text);
   //self.memoResult.Lines.Add('ctx:' + self.memoCtx.Text);
   self.memoResult.Lines.Add('  ----  ');
-  //self.memoResult.Lines.Add('  rst:' + BoolToStr(rst.success, true));
+  self.memoResult.Lines.Add('  rst:' + BoolToStr(b, true));
   self.memoResult.Lines.Add('  msg:' + msg);
   self.memoResult.Lines.Add('  data:' + data);
   //self.memoResult.Lines.Add('  ' + TJsonSUtils.Serialize(rst));

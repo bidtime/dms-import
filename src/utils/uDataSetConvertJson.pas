@@ -84,6 +84,9 @@ class function TDataSetConvertJson.toJson(const dataSet: TDataSet; const all: bo
       if assigned(logs) then begin
         logs.Add(fld.FieldName + ': ' + IntToStr( Integer(fld.DataType) ) );
       end;
+      if fld.FieldName.Equals('reson') then begin
+        continue;
+      end;
       if fld.IsNull then begin
         jsonObj.AddPair(fld.FieldName, TJSONNull.Create);
         continue;

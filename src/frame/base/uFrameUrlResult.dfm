@@ -1,14 +1,16 @@
 object frameUrlResult: TframeUrlResult
   Left = 0
   Top = 0
-  Width = 451
-  Height = 305
+  Width = 784
+  Height = 518
   Align = alClient
   TabOrder = 0
+  ExplicitWidth = 451
+  ExplicitHeight = 305
   object Splitter1: TSplitter
     Left = 0
     Top = 353
-    Width = 451
+    Width = 784
     Height = 3
     Cursor = crVSplit
     Align = alTop
@@ -18,22 +20,22 @@ object frameUrlResult: TframeUrlResult
   object memoResult: TMemo
     Left = 0
     Top = 356
-    Width = 451
-    Height = 154
+    Width = 784
+    Height = 162
     Align = alClient
     ScrollBars = ssBoth
     TabOrder = 0
-    ExplicitWidth = 443
-    ExplicitHeight = 178
+    ExplicitWidth = 451
+    ExplicitHeight = 146
   end
   object GroupBox1: TGroupBox
     Left = 0
     Top = 0
-    Width = 451
+    Width = 784
     Height = 353
     Align = alTop
     TabOrder = 1
-    ExplicitWidth = 443
+    ExplicitWidth = 451
     object Label11: TLabel
       Left = 6
       Top = 9
@@ -87,7 +89,7 @@ object frameUrlResult: TframeUrlResult
       TitleFont.Style = []
     end
     object btnImport: TButton
-      Left = 665
+      Left = 725
       Top = 6
       Width = 75
       Height = 25

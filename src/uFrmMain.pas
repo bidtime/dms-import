@@ -79,6 +79,10 @@ type
     frame_dms_buy_detail1: Tframe_dms_buy_detail;
     TabSheet14: TTabSheet;
     frame_crm_member_car1: Tframe_crm_member_car;
+    cbxExcel: TCheckBox;
+    ToolButton11: TToolButton;
+    cbxRows: TCheckBox;
+    ToolButton12: TToolButton;
     procedure ToolButton1Click(Sender: TObject);
     procedure ToolButton2Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
@@ -87,6 +91,7 @@ type
     procedure ToolButton7Click(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
     procedure ToolButton9Click(Sender: TObject);
+    procedure cbxExcelClick(Sender: TObject);
   private
     { Private declarations }
     procedure dbInfoToCtrls(const u: TDbConfig);
@@ -178,6 +183,11 @@ begin
   end;
 end;
 
+procedure TfrmMain.cbxExcelClick(Sender: TObject);
+begin
+  setHttpUrl();
+end;
+
 procedure TfrmMain.ctrsToDbInfo(var u: TDbConfig);
 begin
   try
@@ -194,7 +204,17 @@ end;
 
 procedure TfrmMain.setHttpUrl();
   procedure setFrames(const S: string);
+  var
+    i:integer;
   begin
+    for i:= 0 to ComponentCount -1 do
+    begin
+      if (Components[i] is TframeUrlResult) then begin //and (TEdit(Components[i]).color = clred) then
+        TframeUrlResult(Components[i]).btnImport.Enabled := self.cbxExcel.Checked;
+        TframeUrlResult(Components[i]).cbxRows.Enabled := false;
+        TframeUrlResult(Components[i]).cbxRows.Checked := self.cbxRows.Checked;
+      end;
+    end;
     TInvokeBase.G_WEBURL := S;
   end;
 begin
@@ -228,11 +248,15 @@ begin
       // http://101.200.157.7:8083
       // http://172.16.200.233:8082/
       edtUrl.text := iniFile.readString('mainForm', 'weburl', 'http://101.200.157.7:8083/');
+      self.cbxExcel.Checked := iniFile.readBool('mainForm', 'cbxExcel', true);
+      self.cbxRows.Checked := iniFile.readBool('mainForm', 'cbxRows', true);
       //
       Result := true;
     end else begin
       // rec param
       iniFile.writeString('mainForm', 'weburl', edtUrl.text);
+      iniFile.writeBool('mainForm', 'cbxExcel', self.cbxExcel.Checked);
+      iniFile.writeBool('mainForm', 'cbxRows', self.cbxRows.Checked);
       {iniFile.WriteInteger('mainform', 'top', top);
       iniFile.WriteInteger('mainform', 'left', left);
       iniFile.WriteInteger('mainform', 'height', height);
