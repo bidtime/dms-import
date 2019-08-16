@@ -29,27 +29,21 @@ uses System.JSON.Serializers, SysUtils, uHttpUtils, StrUtils, uLog4me;
 
 class function THttpPostData.post(const url: string; const json: string;
   const tmConn: integer; const tmUpdate: integer; var msg: string): boolean;
-var S: string;
+var data: string;
 begin
-  Result := false;
-  try
-    S := THttpUtils.postJson(url, json, tmConn, tmUpdate);
-    Result := TReturnDTOUtils.success(S, msg);
-    if Result then begin
-      log4info(format('上传数据成功: %s, %s ', [url, json]));
-    end else begin
-      log4info(format('上传数据失败: %s, %s, %s ', [url, msg, json]));
-    end;
-  except
-    on E: Exception do begin
-      log4error(format('上传数据出错: %s, %s, %s ', [url, e.Message, json]));
-    end;
-  end;
+  Result := THttpPostData.post(url, json, tmConn, tmUpdate, msg, data);
 end;
 
 class function THttpPostData.post(const url: string; const json: string;
   const tmConn: integer; const tmUpdate: integer; var msg, data: string): boolean;
-var S: string;
+var dto: TReturnDTO<String>;
+begin
+  dto := THttpPostData.post<String>(url, json, tmConn, tmUpdate);
+  msg := dto.msg;
+  data := dto.data;
+  Result := dto.success;
+end;
+{var S: string;
 begin
   Result := false;
   try
@@ -65,7 +59,7 @@ begin
       log4error(format('上传数据出错: %s, %s, %s ', [url, e.Message, json]));
     end;
   end;
-end;
+end;}
 
 class function THttpPostData.post<K>(const url: string; const json: string;
   const tmConn: integer; const tmUpdate: integer): TReturnDTO<K>;
@@ -78,6 +72,9 @@ begin
       log4info(format('post data成功: %s, %s ', [url, json]));
     end else begin
       log4info(format('post data失败: %s, %s, %s ', [url, Result.msg, json]));
+      if Result.code<>0 then begin
+        raise Exception.Create(Result.msg);
+      end;
     end;
   except
     on E: Exception do begin
@@ -97,6 +94,9 @@ begin
       log4info(format('get data成功: %s, %s ', [url, params]));
     end else begin
       log4info(format('get data失败: %s, %s, %s ', [url, Result.msg, params]));
+      if Result.code<>0 then begin
+        raise Exception.Create(Result.msg);
+      end;
     end;
   except
     on E: Exception do begin

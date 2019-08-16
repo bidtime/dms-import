@@ -1,11 +1,16 @@
 inherited frame_dms_repair_workhour: Tframe_dms_repair_workhour
+  Width = 744
+  Height = 479
   inherited Splitter1: TSplitter
+    Width = 744
     ExplicitWidth = 711
   end
   inherited memoResult: TMemo
-    ExplicitHeight = 154
+    Width = 744
+    Height = 123
   end
   inherited GroupBox1: TGroupBox
+    Width = 744
     inherited edtUrl: TEdit
       Text = 'api/dms/import/dms_repair_workhour/insert'
     end

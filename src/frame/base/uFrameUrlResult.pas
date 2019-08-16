@@ -36,7 +36,7 @@ type
     //procedure server(const srvPort: string);
     procedure postA<K>(const rst: K); overload;
     procedure addLog(const S: string); overload;
-    procedure addLog(const b: boolean; const msg, data: string); overload;
+    procedure addLog(const b: boolean; const data, msg: string); overload;
     function postDataSet(const json: string; var msg:string): boolean; virtual; abstract;
     class function row_json(const dataSet: TDataSet; logs: TStrings = nil ): string;
   end;
@@ -135,7 +135,7 @@ begin
   Result := TJsonSUtils.Deserialize<T>(S);
 end;
 
-procedure TframeUrlResult.addlog(const b: boolean; const msg, data: string);
+procedure TframeUrlResult.addlog(const b: boolean; const data, msg: string);
 //var msg, data: string;
   //b: boolean;
 begin

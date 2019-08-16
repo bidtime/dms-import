@@ -9,6 +9,7 @@ uses
 
 type
   Tframe_crm_base_supplier = class(TframeUrlResult)
+    procedure btnPostClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -56,6 +57,12 @@ uses uUploadDTO, uInvoke_crm_base_supplier;
 	"is_del": 1,
 	"type": 1
 }
+
+procedure Tframe_crm_base_supplier.btnPostClick(Sender: TObject);
+begin
+  inherited;
+  //
+end;
 
 function Tframe_crm_base_supplier.postDataSet(const json: string;
   var msg: string): boolean;

@@ -23,6 +23,7 @@ type
     msg: string;
     success: boolean;
     total: longint;
+    code: integer;
     //constructor create();
     //destructor Destroy(); override;
   end;

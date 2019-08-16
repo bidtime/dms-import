@@ -176,15 +176,11 @@ object frmMain: TfrmMain
     Top = 25
     Width = 1090
     Height = 597
-    ActivePage = TabSheet14
+    ActivePage = TabSheet7
     Align = alTop
     TabOrder = 1
     object TabSheet1: TTabSheet
       Caption = #25968#25454#24211#36830#25509
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object GroupBox1: TGroupBox
         Left = 0
         Top = 0
@@ -349,10 +345,6 @@ object frmMain: TfrmMain
     object TabSheet2: TTabSheet
       Caption = 'SQL'#26597#35810
       ImageIndex = 1
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object Splitter1: TSplitter
         Left = 0
         Top = 185
@@ -449,7 +441,7 @@ object frmMain: TfrmMain
         end
         inherited GroupBox1: TGroupBox
           Width = 1082
-          ExplicitWidth = 296
+          ExplicitWidth = 1082
           inherited DBGrid1: TDBGrid
             Width = 1078
           end
@@ -480,7 +472,7 @@ object frmMain: TfrmMain
         end
         inherited GroupBox1: TGroupBox
           Width = 1082
-          ExplicitWidth = 296
+          ExplicitWidth = 1082
           inherited DBGrid1: TDBGrid
             Width = 1078
           end
@@ -511,7 +503,7 @@ object frmMain: TfrmMain
         end
         inherited GroupBox1: TGroupBox
           Width = 1082
-          ExplicitWidth = 296
+          ExplicitWidth = 1082
           inherited DBGrid1: TDBGrid
             Width = 1078
           end
@@ -542,7 +534,7 @@ object frmMain: TfrmMain
         end
         inherited GroupBox1: TGroupBox
           Width = 1082
-          ExplicitWidth = 296
+          ExplicitWidth = 1082
           inherited DBGrid1: TDBGrid
             Width = 1078
           end
@@ -573,7 +565,7 @@ object frmMain: TfrmMain
         end
         inherited GroupBox1: TGroupBox
           Width = 1082
-          ExplicitWidth = 296
+          ExplicitWidth = 1082
           inherited DBGrid1: TDBGrid
             Width = 1078
           end
@@ -604,7 +596,7 @@ object frmMain: TfrmMain
         end
         inherited GroupBox1: TGroupBox
           Width = 1082
-          ExplicitWidth = 296
+          ExplicitWidth = 1082
           inherited DBGrid1: TDBGrid
             Width = 1078
           end
@@ -635,7 +627,7 @@ object frmMain: TfrmMain
         end
         inherited GroupBox1: TGroupBox
           Width = 1082
-          ExplicitWidth = 296
+          ExplicitWidth = 1082
           inherited DBGrid1: TDBGrid
             Width = 1078
           end
@@ -666,7 +658,7 @@ object frmMain: TfrmMain
         end
         inherited GroupBox1: TGroupBox
           Width = 1082
-          ExplicitWidth = 296
+          ExplicitWidth = 1082
           inherited DBGrid1: TDBGrid
             Width = 1078
           end
@@ -697,7 +689,7 @@ object frmMain: TfrmMain
         end
         inherited GroupBox1: TGroupBox
           Width = 1082
-          ExplicitWidth = 296
+          ExplicitWidth = 1082
           inherited DBGrid1: TDBGrid
             Width = 1078
           end
@@ -728,7 +720,7 @@ object frmMain: TfrmMain
         end
         inherited GroupBox1: TGroupBox
           Width = 1082
-          ExplicitWidth = 296
+          ExplicitWidth = 1082
           inherited DBGrid1: TDBGrid
             Width = 1078
           end
@@ -759,7 +751,7 @@ object frmMain: TfrmMain
         end
         inherited GroupBox1: TGroupBox
           Width = 1082
-          ExplicitWidth = 296
+          ExplicitWidth = 1082
           inherited DBGrid1: TDBGrid
             Width = 1078
           end

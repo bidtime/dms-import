@@ -297,8 +297,6 @@ begin
         format(FMT_END_, [url, method, getType(), statusCode, Result, COOKIE_]));
     end else begin
       //ShowSysLog(method + ': end, ' + format(FMT_END, [url, method, getType(), Result]));
-      //if True then
-
       log4error(method + ': end, ' +
         format(FMT_END_, [url, method, getType(), statusCode, Result, COOKIE_]));
     end;
