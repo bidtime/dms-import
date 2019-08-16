@@ -3,9 +3,15 @@ unit uUploadDTO;
 interface
 
 uses
-  Classes;
+  Classes, SysUtils;
 
 type
+  TNoLoginException = class(Exception)
+  private
+  public
+    constructor Create(const Msg: string);
+  end;
+
   TReturnData = record
   private
     { Private declarations }

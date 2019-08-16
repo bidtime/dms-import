@@ -100,9 +100,16 @@ procedure TframeUrlResult.btnPostClick(Sender: TObject);
     end else begin
       dataSet.First;
       while not dataset.eof do begin
-        if not doPostData(dataSet) then begin
+        try
+          if not doPostData(dataSet) then begin
+          end;
+          dataset.Next;
+        except
+          on E: TNoLoginException do begin
+
+            break;
+          end;
         end;
-        dataset.Next;
       end;
     end;
   end;

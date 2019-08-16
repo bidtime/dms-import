@@ -73,7 +73,7 @@ begin
     end else begin
       log4info(format('post data ß∞‹: %s, %s, %s ', [url, Result.msg, json]));
       if Result.code<>0 then begin
-        raise Exception.Create(Result.msg);
+        raise TNoLoginException.Create(Result.msg);
       end;
     end;
   except
