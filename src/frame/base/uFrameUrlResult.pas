@@ -44,7 +44,7 @@ type
 implementation
 
 uses uCharSplit, uHttpPostData, uJsonSUtils, OleServer, Excel2000,
-  ADODB, Comobj, uDataSetConvertJson, uExcelReadUtils;
+  ADODB, Comobj, uDataSetConvertJson, uExcelReadUtils, uLog4me;
 
 {$R *.dfm}
 
