@@ -50,7 +50,7 @@ type
 
 implementation
 
-uses System.JSON.Serializers, SysUtils, System.json;
+uses System.JSON.Serializers, System.json;
 
 { TReturnDTOUtils<T> }
 
@@ -87,7 +87,6 @@ class function TReturnDTOUtils.trySuccess(const S: string): boolean;
 var
   u: TReturnDTO<TReturnData>;
 begin
-  Result := false;
   //u := nil;
   try
     try
@@ -186,6 +185,13 @@ begin
   //FreeD(data);
   inherited;
 end;}
+
+{ TNoLoginException }
+
+constructor TNoLoginException.Create(const Msg: string);
+begin
+  inherited Create(msg);
+end;
 
 end.
 

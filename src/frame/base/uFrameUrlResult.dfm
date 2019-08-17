@@ -1,14 +1,16 @@
 object frameUrlResult: TframeUrlResult
   Left = 0
   Top = 0
-  Width = 451
-  Height = 305
+  Width = 893
+  Height = 555
   Align = alClient
   TabOrder = 0
+  ExplicitWidth = 443
+  ExplicitHeight = 293
   object Splitter1: TSplitter
     Left = 0
     Top = 353
-    Width = 451
+    Width = 893
     Height = 3
     Cursor = crVSplit
     Align = alTop
@@ -18,19 +20,22 @@ object frameUrlResult: TframeUrlResult
   object memoResult: TMemo
     Left = 0
     Top = 356
-    Width = 451
-    Height = 162
+    Width = 893
+    Height = 199
     Align = alClient
     ScrollBars = ssBoth
     TabOrder = 0
+    ExplicitWidth = 443
+    ExplicitHeight = 162
   end
   object GroupBox1: TGroupBox
     Left = 0
     Top = 0
-    Width = 451
+    Width = 893
     Height = 353
     Align = alTop
     TabOrder = 1
+    ExplicitWidth = 443
     object Label11: TLabel
       Left = 6
       Top = 9
@@ -82,9 +87,10 @@ object frameUrlResult: TframeUrlResult
       TitleFont.Height = -11
       TitleFont.Name = 'Tahoma'
       TitleFont.Style = []
+      OnTitleClick = DBGrid1TitleClick
     end
     object btnImport: TButton
-      Left = 725
+      Left = 775
       Top = 6
       Width = 75
       Height = 25
@@ -101,6 +107,15 @@ object frameUrlResult: TframeUrlResult
       Checked = True
       State = cbChecked
       TabOrder = 5
+    end
+    object btnCheck: TButton
+      Left = 698
+      Top = 6
+      Width = 75
+      Height = 25
+      Caption = #26816#26597#25968#25454'(C)'
+      TabOrder = 6
+      OnClick = btnCheckClick
     end
   end
   object DataSource1: TDataSource

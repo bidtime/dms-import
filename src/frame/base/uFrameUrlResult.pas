@@ -24,9 +24,12 @@ type
     DBGrid1: TDBGrid;
     btnImport: TButton;
     cbxRows: TCheckBox;
+    btnCheck: TButton;
     procedure btnImportClick(Sender: TObject);
     procedure btnPostClick(Sender: TObject);
     procedure cbxExcelClick(Sender: TObject);
+    procedure btnCheckClick(Sender: TObject);
+    procedure DBGrid1TitleClick(Column: TColumn);
   private
     { Private declarations }
   public
@@ -39,6 +42,7 @@ type
     procedure addLog(const b: boolean; const data, msg: string); overload;
     function postDataSet(const json: string; var msg:string): boolean; virtual; abstract;
     class function row_json(const dataSet: TDataSet; logs: TStrings = nil ): string;
+    function CheckDataSet(aFiledName:string):boolean;
   end;
 
 implementation
@@ -47,6 +51,15 @@ uses uCharSplit, uHttpPostData, uJsonSUtils, OleServer, Excel2000,
   ADODB, Comobj, uDataSetConvertJson, uExcelReadUtils, uLog4me;
 
 {$R *.dfm}
+
+procedure TframeUrlResult.btnCheckClick(Sender: TObject);
+begin
+  if checkdataset('code') then begin
+    memoresult.Lines.add('重复性检查通过');
+  end else begin
+    memoresult.Lines.add('重复性检查不通过');
+  end;
+end;
 
 procedure TframeUrlResult.btnImportClick(Sender: TObject);
 begin
@@ -75,7 +88,7 @@ procedure TframeUrlResult.btnPostClick(Sender: TObject);
 
   procedure postDataSetx();
     function doPostData(dataSet: TDataSet): boolean;
-    var msg: string;
+    var
       json: string;
     begin
       // convert remove reson field
@@ -83,7 +96,6 @@ procedure TframeUrlResult.btnPostClick(Sender: TObject);
       self.memoCtx.Text := json;
       Result := doPostJson(json);
     end;
-
   begin
     if (not dataSet.Active) then begin
       ShowMessage('请先导入excel数据');
@@ -106,7 +118,6 @@ procedure TframeUrlResult.btnPostClick(Sender: TObject);
           dataset.Next;
         except
           on E: TNoLoginException do begin
-
             break;
           end;
         end;
@@ -124,6 +135,40 @@ end;
 procedure TframeUrlResult.cbxExcelClick(Sender: TObject);
 begin
   self.btnImport.Enabled := TCheckBox(Sender).Checked;
+end;
+
+function TframeUrlResult.CheckDataSet(aFiledName: string): boolean;
+var
+ i:integer;
+begin
+  dataset.DisableControls;
+  try
+    dataset.First;
+    while not dataset.Eof do begin
+      i:=  DataSet.RecNo;
+      if DataSet.Locate(aFiledName,dataset.FieldByName(aFiledName).AsString, []) then
+         begin
+         if i<>DataSet.RecNo then begin
+             memoresult.Lines.add('发现重复记录: ' +IntToStr(DataSet.RecNo)+' '+dataset.FieldByName(aFiledName).AsString);
+             result:=false;
+             exit;
+             end;
+         end ;
+       dataset.Next;
+    end;
+     result:=true;
+  finally
+   dataset.EnableControls;
+  end;
+end;
+
+procedure TframeUrlResult.DBGrid1TitleClick(Column: TColumn);
+begin
+  if checkdataset(Column.FieldName) then begin
+    memoresult.Lines.add('重复性检查通过');
+  end else begin
+    memoresult.Lines.add('重复性检查不通过');
+  end;
 end;
 
 procedure TframeUrlResult.addLog(const S: string);
