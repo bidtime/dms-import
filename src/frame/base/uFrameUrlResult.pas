@@ -30,6 +30,7 @@ type
     procedure cbxExcelClick(Sender: TObject);
     procedure btnCheckClick(Sender: TObject);
     procedure DBGrid1TitleClick(Column: TColumn);
+    procedure DBGrid1DblClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -93,7 +94,7 @@ procedure TframeUrlResult.btnPostClick(Sender: TObject);
     begin
       // convert remove reson field
       json := TDataSetConvertJson.row_json(dataset);
-      self.memoCtx.Text := json;
+      //self.memoCtx.Text := json;
       Result := doPostJson(json);
     end;
   begin
@@ -160,6 +161,11 @@ begin
   finally
    dataset.EnableControls;
   end;
+end;
+
+procedure TframeUrlResult.DBGrid1DblClick(Sender: TObject);
+begin
+dataset.Delete;
 end;
 
 procedure TframeUrlResult.DBGrid1TitleClick(Column: TColumn);

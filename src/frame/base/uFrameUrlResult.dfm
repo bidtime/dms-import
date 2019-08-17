@@ -87,6 +87,7 @@ object frameUrlResult: TframeUrlResult
       TitleFont.Height = -11
       TitleFont.Name = 'Tahoma'
       TitleFont.Style = []
+      OnDblClick = DBGrid1DblClick
       OnTitleClick = DBGrid1TitleClick
     end
     object btnImport: TButton
