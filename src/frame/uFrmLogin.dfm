@@ -1,19 +1,22 @@
 inherited frameLogin: TframeLogin
+  Width = 443
+  Height = 293
   inherited Splitter1: TSplitter
     Top = 313
+    Width = 443
     ExplicitTop = 313
-    ExplicitWidth = 724
+    ExplicitWidth = 893
   end
   inherited memoResult: TMemo
     Top = 316
-    Height = 176
+    Width = 443
+    Height = 239
     ExplicitTop = 316
-    ExplicitWidth = 451
-    ExplicitHeight = 176
+    ExplicitHeight = 239
   end
   inherited GroupBox1: TGroupBox
+    Width = 443
     Height = 313
-    ExplicitWidth = 451
     ExplicitHeight = 313
     inherited Label12: TLabel
       Top = 61
@@ -50,7 +53,7 @@ inherited frameLogin: TframeLogin
     inherited DBGrid1: TDBGrid
       Width = 439
     end
-    object Button1: TButton
+    object Button1: TButton [10]
       Left = 520
       Top = 37
       Width = 75
@@ -59,21 +62,25 @@ inherited frameLogin: TframeLogin
       TabOrder = 6
       OnClick = Button1Click
     end
-    object Edit1: TEdit
+    object Edit1: TEdit [11]
       Left = 56
       Top = 34
       Width = 177
       Height = 21
       TabOrder = 7
-      Text = 'jss'
+      Text = '13161375297'
     end
-    object Edit2: TEdit
+    object Edit2: TEdit [12]
       Left = 328
       Top = 34
       Width = 177
       Height = 21
       TabOrder = 8
       Text = '123456'
+    end
+    inherited btnCheck: TButton
+      TabOrder = 9
+      OnClick = nil
     end
   end
 end

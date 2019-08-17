@@ -36,9 +36,9 @@ end;
 
 class function THttpPostData.post(const url: string; const json: string;
   const tmConn: integer; const tmUpdate: integer; var msg, data: string): boolean;
-var dto: TReturnDTO<String>;
+var dto: TReturnDTO<variant>;
 begin
-  dto := THttpPostData.post<String>(url, json, tmConn, tmUpdate);
+  dto := THttpPostData.post<variant>(url, json, tmConn, tmUpdate);
   msg := dto.msg;
   data := dto.data;
   Result := dto.success;
