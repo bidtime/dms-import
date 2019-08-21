@@ -248,6 +248,7 @@ begin
       // http://101.200.157.7:8083
       // http://172.16.200.233:8082/
       // http://192.168.1.11:38082/
+      // http://sassimport.erepair.cn/
       edtUrl.text := iniFile.readString('mainForm', 'weburl', 'http://192.168.1.11:38082/');
       self.cbxExcel.Checked := iniFile.readBool('mainForm', 'cbxExcel', true);
       self.cbxRows.Checked := iniFile.readBool('mainForm', 'cbxRows', true);

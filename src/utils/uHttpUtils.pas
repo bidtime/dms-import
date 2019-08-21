@@ -268,10 +268,20 @@ const FMT_END_ = '%s, %s, %s, state(%d), result(%s), cookie(%s)';
     end;
   end;
 
+  procedure setcc();
+  var cc: string;
+  begin
+    cc := self.CookieManager.CookieHeaders(TURI.Create(url));
+    //if (COOKIE_.IsEmpty) or (not cc.Equals(COOKIE_)) then begin
+    COOKIE_ := cc;
+    //end;
+  end;
+
+const LOGIN_URL = 'api/dms/import/user/login';
+
 var
   ssRst: TStringStream;
   statusCode: integer;
-  cc: string;
 begin
   Result := '';
   //ShowSysLog(method + ': begin, ' + format(FMT_BEGIN, [url, method, getType()]));
@@ -289,9 +299,8 @@ begin
     statusCode := doResponse(ssRst);
     if ( statusCode = 200 ) then begin
       Result := ssRst.DataString;
-      cc := self.CookieManager.CookieHeaders(TURI.Create(url));
-      if (COOKIE_.IsEmpty) or (not cc.Equals(COOKIE_)) then begin
-        COOKIE_ := cc;
+      if url.Contains(LOGIN_URL) then begin
+        setcc();
       end;
       log4info(method + ': end, ' +
         format(FMT_END_, [url, method, getType(), statusCode, Result, COOKIE_]));
