@@ -48,7 +48,7 @@ type
 
 implementation
 
-uses System.NetConsts, System.Net.URLClient, Forms, uLog4me;
+uses System.NetConsts, System.Net.URLClient, Forms, uLog4me, uCharSplit;
 
 //procedure ShowSysLog(const S: String);
 //begin
@@ -269,12 +269,33 @@ const FMT_END_ = '%s, %s, %s, state(%d), result(%s), cookie(%s)';
   end;
 
   procedure setcc();
+
+    function getSplitS(const S: string): string;
+    var str, k: string;
+      strs: TStrings;
+      i: integer;
+    begin
+      Result := S;
+      strs := TStringList.Create;
+      try
+        TCharSplit.SplitStr(S, ';', strs);
+        for I := 0 to strs.Count - 1 do begin
+          str := strs[I];
+          k := TCharSplit.getSplitFirst(str, '=');
+          if k.Equals('JSESSIONID') then begin
+            Result := str;
+            break;
+          end;
+        end;
+      finally
+        if Assigned(strs) then strs.Free;
+      end;
+    end;
+
   var cc: string;
   begin
     cc := self.CookieManager.CookieHeaders(TURI.Create(url));
-    //if (COOKIE_.IsEmpty) or (not cc.Equals(COOKIE_)) then begin
-    COOKIE_ := cc;
-    //end;
+    COOKIE_ := getSplitS(cc);
   end;
 
 const LOGIN_URL = 'api/dms/import/user/login';
