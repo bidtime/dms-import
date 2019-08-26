@@ -280,7 +280,7 @@ const FMT_END_ = '%s, %s, %s, state(%d), result(%s), cookie(%s)';
       try
         TCharSplit.SplitStr(S, ';', strs);
         for I := 0 to strs.Count - 1 do begin
-          str := strs[I];
+          str := strs[I].trim;
           k := TCharSplit.getSplitFirst(str, '=');
           if k.Equals('JSESSIONID') then begin
             Result := str;
